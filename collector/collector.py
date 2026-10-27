@@ -28,11 +28,16 @@ SOURCES = {
         "regions": {"Rīga", "Jūrmala", "Mārupe", "Ķekava", "Salaspils", "Ādaži", "Stopiņi",
                     "Garkalne", "Carnikava", "Olaine", "Ropaži", "Baldone"},
     },
+    "viada": {
+        "name": "Viada",
+        "url": "https://www.viada.lv/zemakas-degvielas-cenas/",
+        "parser": parsers.parse_viada,
+        "regions": {"Rīga", "Liepāja"},
+    },
 }
 
 UNAVAILABLE = {
     "neste": ("Neste", "нет официальной страницы цен, доступной для чтения без обхода защиты"),
-    "viada": ("Viada", "robots.txt сайта запрещает автоматическое чтение"),
     "kool": ("KOOL", "страница цен не читается автоматически"),
     "astarte": ("Astarte", "не подключено в этой версии"),
     "straujupite": ("Straujupīte", "не подключено в этой версии"),
@@ -209,7 +214,7 @@ def run(data_dir: Path, contact: str, force_stations: bool = False, out_dir: Pat
         sources_meta[key] = {
             "name": src["name"], "status": ss.get("status", "error"), "error": ss.get("error"),
             "fetched_at": ss.get("fetched_at"), "source_date": ss.get("source_date"),
-            "scope": "Рига" if key == "circlek" else "Рига и окрестности",
+            "scope": {"circlek": "Рига", "viada": "Рига и Лиепая"}.get(key, "Рига и окрестности"),
         }
     for key, (name, why) in UNAVAILABLE.items():
         sources_meta[key] = {"name": name, "status": "unavailable", "error": why}

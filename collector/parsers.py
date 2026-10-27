@@ -155,3 +155,51 @@ def parse_virsi(html_or_text: str) -> ParseResult:
         if key not in result.fuels:
             result.fuels[key] = {"price": price, "uniform": uniform, "addresses": addresses}
     return result
+
+
+# --- Viada ----------------------------------------------------------------
+
+# Топливо определяется по имени картинки в первой колонке таблицы.
+# Премиум-варианты (ectoplus), E85 и «обычный» D (продаётся на двух станциях
+# рядом с Ecto D) не нужны.
+VIADA_IMAGES = {
+    "petrol_95ecto_new": "95",
+    "petrol_98_new": "98",
+    "petrol_d_ecto_new": "D",
+    "GAZE": "LPG",
+}
+
+
+def parse_viada(html: str) -> ParseResult:
+    from bs4 import BeautifulSoup
+
+    soup = BeautifulSoup(html, "lxml")
+    result = ParseResult()
+    m = re.search(r"spēkā\s+no\s*(\d{1,2})\s*\.\s*(\d{1,2})\s*\.\s*(\d{4})", soup.get_text(" ", strip=True))
+    if m:
+        try:
+            result.source_date = date(int(m.group(3)), int(m.group(2)), int(m.group(1))).isoformat()
+        except ValueError:
+            pass
+    if result.source_date is None:
+        result.warnings.append("не найдена дата 'spēkā no'")
+
+    for row in soup.find_all("tr"):
+        cells = row.find_all("td")
+        img = cells[0].find("img") if len(cells) >= 3 else None
+        if img is None:
+            continue
+        name = (img.get("src") or "").rsplit("/", 1)[-1].rsplit(".", 1)[0]
+        key = VIADA_IMAGES.get(name)
+        pm = re.search(r"(\d[.,]\d{2,3})", cells[1].get_text(" ", strip=True))
+        if key is None or pm is None or key in result.fuels:
+            continue
+        price = _to_price(pm.group(1))
+        if price is None:
+            result.warnings.append(f"цена вне допустимого диапазона: {name}")
+            continue
+        for span in cells[2].find_all("span", class_="dus-name"):
+            span.decompose()
+        addresses = parse_addresses(cells[2].get_text(" ", strip=True).replace(":", ","))
+        result.fuels[key] = {"price": price, "uniform": False, "addresses": addresses}
+    return result
