@@ -3,8 +3,8 @@
   "circlek": {
    "status": "ok",
    "error": null,
-   "last_attempt": "2026-10-27T14:48:53+00:00",
-   "fetched_at": "2026-10-27T14:48:53+00:00",
+   "last_attempt": "2026-10-27T14:55:26+00:00",
+   "fetched_at": "2026-10-27T14:55:26+00:00",
    "source_date": "2026-10-27",
    "warnings": [],
    "fuels": {
@@ -61,8 +61,8 @@
   "virsi": {
    "status": "ok",
    "error": null,
-   "last_attempt": "2026-10-27T14:48:53+00:00",
-   "fetched_at": "2026-10-27T14:48:53+00:00",
+   "last_attempt": "2026-10-27T14:55:26+00:00",
+   "fetched_at": "2026-10-27T14:55:26+00:00",
    "source_date": "2026-10-26",
    "warnings": [],
    "fuels": {
@@ -102,8 +102,8 @@
   "viada": {
    "status": "ok",
    "error": null,
-   "last_attempt": "2026-10-27T14:48:53+00:00",
-   "fetched_at": "2026-10-27T14:48:53+00:00",
+   "last_attempt": "2026-10-27T14:55:26+00:00",
+   "fetched_at": "2026-10-27T14:55:26+00:00",
    "source_date": "2026-10-27",
    "warnings": [],
    "fuels": {
@@ -155,6 +155,26 @@
      ]
     }
    }
+  },
+  "neste": {
+   "status": "error",
+   "error": "ошибка загрузки: 403 Client Error: Forbidden for url: https://letadegviela.lv/",
+   "last_attempt": "2026-10-27T14:55:26+00:00"
+  },
+  "kool": {
+   "status": "error",
+   "error": "ошибка загрузки: 403 Client Error: Forbidden for url: https://letadegviela.lv/",
+   "last_attempt": "2026-10-27T14:55:26+00:00"
+  },
+  "astarte": {
+   "status": "error",
+   "error": "ошибка загрузки: 403 Client Error: Forbidden for url: https://letadegviela.lv/",
+   "last_attempt": "2026-10-27T14:55:26+00:00"
+  },
+  "straujupite": {
+   "status": "error",
+   "error": "ошибка загрузки: 403 Client Error: Forbidden for url: https://letadegviela.lv/",
+   "last_attempt": "2026-10-27T14:55:26+00:00"
   }
  },
  "prices": {
