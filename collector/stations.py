@@ -70,13 +70,22 @@ def parse_overpass(data: dict, city_overrides: dict | None = None) -> list[dict]
     return stations
 
 
+def load_cache(cache_path: Path) -> list[dict]:
+    """Кэш хранит бренд на момент скачивания; новые бренды применяем к «прочим» сразу."""
+    stations = json.loads(cache_path.read_text("utf-8"))
+    for st in stations:
+        if st.get("brand") == "other":
+            st["brand"] = detect_brand({"name": st.get("name", "")})
+    return stations
+
+
 def fetch_stations(session, cache_path: Path, city_overrides: dict | None = None,
                    force: bool = False) -> tuple[list[dict], str | None]:
     """Возвращает (станции, предупреждение). При сбое берёт старый кэш."""
     if cache_path.exists() and not force:
         age = time.time() - cache_path.stat().st_mtime
         if age < CACHE_MAX_AGE_S:
-            return json.loads(cache_path.read_text("utf-8")), None
+            return load_cache(cache_path), None
     last_err = "неизвестная ошибка"
     for url in OVERPASS_ENDPOINTS:
         try:
@@ -91,5 +100,5 @@ def fetch_stations(session, cache_path: Path, city_overrides: dict | None = None
         except Exception as exc:  # noqa: BLE001
             last_err = f"{url}: {exc}"
     if cache_path.exists():
-        return json.loads(cache_path.read_text("utf-8")), f"Overpass недоступен, использован старый кэш ({last_err})"
+        return load_cache(cache_path), f"Overpass недоступен, использован старый кэш ({last_err})"
     return [], f"Overpass недоступен и кэша нет ({last_err})"
