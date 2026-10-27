@@ -3,8 +3,8 @@
   "circlek": {
    "status": "ok",
    "error": null,
-   "last_attempt": "2026-10-27T15:00:47+00:00",
-   "fetched_at": "2026-10-27T15:00:47+00:00",
+   "last_attempt": "2026-10-27T15:35:23+00:00",
+   "fetched_at": "2026-10-27T15:35:23+00:00",
    "source_date": "2026-10-27",
    "warnings": [],
    "fuels": {
@@ -61,8 +61,8 @@
   "virsi": {
    "status": "ok",
    "error": null,
-   "last_attempt": "2026-10-27T15:00:47+00:00",
-   "fetched_at": "2026-10-27T15:00:47+00:00",
+   "last_attempt": "2026-10-27T15:35:23+00:00",
+   "fetched_at": "2026-10-27T15:35:23+00:00",
    "source_date": "2026-10-26",
    "warnings": [],
    "fuels": {
@@ -102,8 +102,8 @@
   "viada": {
    "status": "ok",
    "error": null,
-   "last_attempt": "2026-10-27T15:00:47+00:00",
-   "fetched_at": "2026-10-27T15:00:47+00:00",
+   "last_attempt": "2026-10-27T15:35:23+00:00",
+   "fetched_at": "2026-10-27T15:35:23+00:00",
    "source_date": "2026-10-27",
    "warnings": [],
    "fuels": {
@@ -174,8 +174,8 @@
   "straujupite": {
    "status": "ok",
    "error": null,
-   "last_attempt": "2026-10-27T15:00:47+00:00",
-   "fetched_at": "2026-10-27T15:00:47+00:00",
+   "last_attempt": "2026-10-27T15:35:23+00:00",
+   "fetched_at": "2026-10-27T15:35:23+00:00",
    "source_date": "2026-10-27",
    "warnings": [],
    "fuels": {
@@ -464,6 +464,71 @@
    "price": 2.004,
    "changed_at": null,
    "first_seen": "2026-10-27T15:00:47+00:00"
+  },
+  "circlek|95|ref": {
+   "price": 1.901,
+   "changed_at": null,
+   "first_seen": "2026-10-27T15:35:23+00:00"
+  },
+  "circlek|98|ref": {
+   "price": 1.971,
+   "changed_at": null,
+   "first_seen": "2026-10-27T15:35:23+00:00"
+  },
+  "circlek|D|ref": {
+   "price": 2.091,
+   "changed_at": null,
+   "first_seen": "2026-10-27T15:35:23+00:00"
+  },
+  "circlek|DP|ref": {
+   "price": 2.221,
+   "changed_at": null,
+   "first_seen": "2026-10-27T15:35:23+00:00"
+  },
+  "circlek|XTL|ref": {
+   "price": 2.49,
+   "changed_at": null,
+   "first_seen": "2026-10-27T15:35:23+00:00"
+  },
+  "circlek|LPG|ref": {
+   "price": 1.065,
+   "changed_at": null,
+   "first_seen": "2026-10-27T15:35:23+00:00"
+  },
+  "virsi|D|ref": {
+   "price": 2.087,
+   "changed_at": null,
+   "first_seen": "2026-10-27T15:35:23+00:00"
+  },
+  "virsi|95|ref": {
+   "price": 1.889,
+   "changed_at": null,
+   "first_seen": "2026-10-27T15:35:23+00:00"
+  },
+  "virsi|98|ref": {
+   "price": 1.959,
+   "changed_at": null,
+   "first_seen": "2026-10-27T15:35:23+00:00"
+  },
+  "viada|95|ref": {
+   "price": 1.847,
+   "changed_at": null,
+   "first_seen": "2026-10-27T15:35:23+00:00"
+  },
+  "viada|98|ref": {
+   "price": 1.952,
+   "changed_at": null,
+   "first_seen": "2026-10-27T15:35:23+00:00"
+  },
+  "viada|D|ref": {
+   "price": 1.947,
+   "changed_at": null,
+   "first_seen": "2026-10-27T15:35:23+00:00"
+  },
+  "viada|LPG|ref": {
+   "price": 0.975,
+   "changed_at": null,
+   "first_seen": "2026-10-27T15:35:23+00:00"
   }
  }
 }
