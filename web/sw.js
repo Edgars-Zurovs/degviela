@@ -1,4 +1,4 @@
-const SHELL = "fuel-shell-v2";
+const SHELL = "fuel-shell-v3";
 const FILES = ["./", "index.html", "styles.css", "app.js", "manifest.webmanifest", "icons/icon-192.png"];
 
 self.addEventListener("install", (e) => {
@@ -19,9 +19,7 @@ self.addEventListener("fetch", (e) => {
     }).catch(() => caches.match("data/offers.json")));
     return;
   }
-  // оболочка: из кэша, но обновляем в фоне, чтобы правки доезжали
-  e.respondWith(caches.match(e.request).then((hit) => {
-    const net = fetch(e.request).then((r) => { caches.open(SHELL).then((c) => c.put(e.request, r.clone())); return r; }).catch(() => hit);
-    return hit || net;
-  }));
+  // оболочка: сначала сеть (новая версия сразу), без связи — копия из кэша
+  e.respondWith(fetch(e.request.url, { cache: "no-cache" }).then((r) => { const copy = r.clone(); caches.open(SHELL).then((c) => c.put(e.request, copy)); return r; })
+    .catch(() => caches.match(e.request)));
 });

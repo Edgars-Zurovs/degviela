@@ -49,6 +49,8 @@ function collect(stations, fuel, settings, { city = null, pos = null, radius = n
   const items = [];
   for (const st of stations) {
     let o = st.offers && st.offers[fuel];
+    const man = !o && settings.manual && settings.manual[`${st.id}|${fuel}`];
+    if (man) o = { price: man.price, kind: "manual", source_date: man.date, checked_at: man.date, changed_at: null };
     if (!o && fuel === "LPG" && st.lpg && !settings.onlyExact) o = { price: null, kind: "none" };  // газовая заправка без известной цены
     if (!o) continue;
     if (settings.onlyExact && (o.kind === "min" || o.kind === "ref")) continue;
@@ -61,7 +63,7 @@ function collect(stations, fuel, settings, { city = null, pos = null, radius = n
   const groups = new Map();
   const out = [];
   for (const it of items) {
-    if (it.o.kind === "here" || it.o.kind === "none") { it.n = 1; out.push(it); continue; }
+    if (it.o.kind === "here" || it.o.kind === "none" || it.o.kind === "manual") { it.n = 1; out.push(it); continue; }
     const k = `${it.st.brand}|${it.o.kind}|${it.o.price}`;
     const g = groups.get(k);
     if (!g) { it.n = 1; groups.set(k, it); out.push(it); }
@@ -119,13 +121,14 @@ if (typeof module !== "undefined") {
 /* ---------- состояние и хранилище ---------- */
 
 const isIOS = typeof navigator !== "undefined" && /iPad|iPhone|iPod/.test(navigator.userAgent || "");
-const DEFAULTS = { fuel: "95", city: "Rīga", tab: "city", radius: 10, discounts: {}, useCard: true, onlyExact: false, mapApp: isIOS ? "apple" : "google" };
+const DEFAULTS = { fuel: "95", city: "Rīga", tab: "city", radius: 10, discounts: {}, useCard: true, onlyExact: false, manual: {}, mapApp: isIOS ? "apple" : "google" };
 const store = {
   get() { try { return JSON.parse(localStorage.getItem("fuel-settings") || "{}"); } catch { return {}; } },
   set(v) { try { localStorage.setItem("fuel-settings", JSON.stringify(v)); } catch { /* приватный режим */ } },
 };
 const S = Object.assign({}, DEFAULTS, store.get());
 S.discounts = Object.assign({}, S.discounts);
+S.manual = Object.assign({}, S.manual);
 const save = () => store.set(S);
 
 const app = { data: null, loadedAt: 0, offline: false, loadError: null, pos: null, geo: "idle", showAll: false };
@@ -137,7 +140,7 @@ async function load(force) {
   const btn = $("#refreshBtn");
   btn.classList.add("spin");
   try {
-    const r = await fetch("data/offers.json", { cache: "no-store" });
+    const r = await fetch("data/offers.json?t=" + Date.now(), { cache: "no-store" });
     if (!r.ok) throw new Error("HTTP " + r.status);
     app.data = await r.json();
     app.offline = false; app.loadError = null; app.loadedAt = Date.now();
@@ -187,6 +190,7 @@ function banners() {
 
 function badges(it) {
   const o = it.o, b = [];
+  if (o.kind === "manual") b.push(`<span class="badge ok">Введено вручную · ${esc(fmtDate(o.source_date))}</span>`);
   if (o.kind === "none") b.push(`<span class="badge warn">Цена не публикуется — уточните на заправке</span>`);
   if (o.kind === "here") b.push(`<span class="badge ok">Цена по данным сети для этой станции</span>`);
   if (o.kind === "uniform") b.push(`<span class="badge ok">Единая цена сети${it.n > 1 ? ` · ${it.n} ст.` : ""}</span>`);
@@ -199,6 +203,7 @@ function badges(it) {
 
 function ageLine(it) {
   const o = it.o, p = [];
+  if (o.kind === "manual") return `<div class="age">Цена записана на этом телефоне</div>`;
   if (o.changed_at) p.push(`Цена изменилась ${esc(ago(o.changed_at))}`);
   else if (o.source_date) p.push(`Цена от ${esc(fmtDate(o.source_date))} по данным сети`);
   if (o.checked_at) p.push(`проверено ${esc(ago(o.checked_at))}`);
@@ -213,10 +218,12 @@ function card(it, best) {
   const cardLine = disc > 0
     ? `<div class="card-price">с картой <b>${fmtPrice(it.eff)}</b> €</div>`
     : "";
+  const editBtn = o.kind === "none" || o.kind === "manual"
+    ? `<button class="icon-btn price-edit" type="button" data-edit="${esc(st.id)}" aria-label="Изменить цену вручную">⚙</button>` : "";
   return `<article class="card${best && o.price != null ? " best" : ""}">
     <div class="row">
       <div><div class="net">${esc(st.brand === "other" ? st.name : netName(st.brand))}</div><div class="addr">${esc(addr || st.name)}</div>${dist}</div>
-      <div>${o.price == null ? `<div class="price">—<small>нет цены</small></div>` : `<div class="price">${fmtPrice(o.price)}<small>€/л</small></div>${cardLine}`}</div>
+      <div>${o.price == null ? `<div class="price-wrap"><div class="price">—<small>нет цены</small></div>${editBtn}</div>` : `<div class="price-wrap"><div class="price">${fmtPrice(o.price)}<small>€/л</small></div>${editBtn}</div>${cardLine}`}</div>
     </div>
     ${badges(it)}${ageLine(it)}
     <button class="go" type="button" data-go="${esc(st.id)}" aria-label="Маршрут до ${esc(netName(st.brand))} ${esc(addr)}">Поехать</button>
@@ -315,6 +322,40 @@ function openSettings() {
 
 /* ---------- события ---------- */
 
+/* ---------- цена, введённая вручную (хранится только на этом телефоне) ---------- */
+
+let priceTarget = null;
+
+function openPrice(stId) {
+  const st = app.data && app.data.stations.find((s) => s.id === stId);
+  if (!st) return;
+  priceTarget = { id: stId, fuel: S.fuel };
+  const cur = S.manual[`${stId}|${S.fuel}`];
+  $("#priceTitle").textContent = `Цена: ${FUEL_NAMES[S.fuel] || S.fuel}`;
+  $("#priceStation").textContent = [st.brand === "other" ? st.name : netName(st.brand), st.address, cityRu(st.city)].filter(Boolean).join(", ");
+  $("#priceInput").value = cur ? String(cur.price).replace(".", ",") : "";
+  $("#priceErr").textContent = "";
+  $("#priceClear").hidden = !cur;
+  $("#priceSheet").showModal();
+}
+
+function today() {
+  const d = new Date();
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+}
+
+function savePrice() {
+  const v = parseFloat($("#priceInput").value.replace(",", "."));
+  if (!(v >= 0.3 && v <= 5)) { $("#priceErr").textContent = "Введите цену за литр, например 0,975"; return; }
+  S.manual[`${priceTarget.id}|${priceTarget.fuel}`] = { price: Math.round(v * 1000) / 1000, date: today() };
+  save(); $("#priceSheet").close(); render();
+}
+
+function clearPrice() {
+  delete S.manual[`${priceTarget.id}|${priceTarget.fuel}`];
+  save(); $("#priceSheet").close(); render();
+}
+
 function bindEvents() {
 document.addEventListener("click", (e) => {
   const t = e.target.closest("button");
@@ -325,6 +366,9 @@ document.addEventListener("click", (e) => {
     const st = app.data.stations.find((s) => s.id === t.dataset.go);
     if (st) window.open(mapUrl(st, S.mapApp), "_blank", "noopener");
   }
+  else if (t.dataset.edit) openPrice(t.dataset.edit);
+  else if (t.id === "priceSave") savePrice();
+  else if (t.id === "priceClear") clearPrice();
   else if (t.dataset.city) { S.city = t.dataset.city; save(); $("#citySheet").close(); render(); }
   else if (t.id === "cityBtn" || t.id === "cityBtn2") openCities();
   else if (t.id === "gearBtn" || t.id === "radiusBtn") openSettings();

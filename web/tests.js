@@ -50,4 +50,16 @@ assert.equal(A.fmtPrice(1.954), "1,954");
   assert.equal(A.collect(gas, "LPG", { ...S, onlyExact: true }, {}).length, 1);
   assert.equal(A.collect(gas, "95", S, {}).length, 0);
 }
+{
+  const gas = [
+    { id: "g1", brand: "circlek", city: "Rīga", lat: 56.95, lon: 24.1, lpg: true, offers: { LPG: { price: 1.065, kind: "uniform", source_date: "2026-10-27" } } },
+    { id: "g2", brand: "intergaz", city: "Daugavpils", lat: 55.88, lon: 26.5, lpg: true, offers: {} },
+  ];
+  const man = { ...S, manual: { "g2|LPG": { price: 0.9, date: "2026-10-27" }, "g1|LPG": { price: 0.1, date: "2026-10-27" } } };
+  const r = A.sortByPrice(A.collect(gas, "LPG", man, {}));
+  assert.deepEqual(r.map((x) => x.st.id), ["g2", "g1"]);   // своя цена учитывается и сортируется
+  assert.equal(r[0].o.kind, "manual");
+  assert.equal(r[1].o.price, 1.065);                         // у станции с ценой сети своя цена не подменяет
+  assert.equal(A.collect(gas, "LPG", { ...man, onlyExact: true }, {}).length, 2);
+}
 console.log("JS tests OK");

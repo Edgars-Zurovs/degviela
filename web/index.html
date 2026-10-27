@@ -50,6 +50,20 @@
   <div class="sheet-body" id="settingsBody"></div>
 </dialog>
 
+<dialog id="priceSheet" aria-labelledby="priceTitle">
+  <form method="dialog" class="sheet-head"><h2 id="priceTitle">Цена</h2><button class="icon-btn" aria-label="Закрыть">✕</button></form>
+  <div class="sheet-body">
+    <p id="priceStation" class="price-station"></p>
+    <label class="price-field">Цена, € за литр
+      <input id="priceInput" type="text" inputmode="decimal" autocomplete="off" placeholder="0,975">
+    </label>
+    <p id="priceErr" class="price-err" role="alert"></p>
+    <p class="price-note">Цена сохраняется только на этом телефоне.</p>
+    <button class="primary" type="button" id="priceSave">Сохранить</button>
+    <button class="more" type="button" id="priceClear">Удалить мою цену</button>
+  </div>
+</dialog>
+
 <script src="app.js"></script>
 </body>
 </html>
