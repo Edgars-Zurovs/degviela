@@ -1,0 +1,195 @@
+{
+ "meta": {
+  "generated_at": "2026-10-27T09:53:34+00:00",
+  "sample": true,
+  "fuels": [
+   "95",
+   "98",
+   "D",
+   "DP",
+   "LPG",
+   "CNG",
+   "XTL"
+  ],
+  "sources": {
+   "circlek": {
+    "name": "Circle K",
+    "status": "ok",
+    "fetched_at": "2026-10-27T09:53:34+00:00",
+    "source_date": "2026-10-26",
+    "scope": "Рига"
+   },
+   "virsi": {
+    "name": "Virši",
+    "status": "ok",
+    "fetched_at": "2026-10-27T09:53:34+00:00",
+    "source_date": "2026-10-26",
+    "scope": "Рига и окрестности"
+   },
+   "neste": {
+    "name": "Neste",
+    "status": "unavailable",
+    "error": "нет официальной страницы цен"
+   },
+   "viada": {
+    "name": "Viada",
+    "status": "unavailable",
+    "error": "robots.txt запрещает чтение"
+   }
+  },
+  "unmatched": {},
+  "warning": null
+ },
+ "stations": [
+  {
+   "id": "s1",
+   "brand": "circlek",
+   "name": "circlek",
+   "lat": 56.929389,
+   "lon": 24.153103,
+   "address": "Krasta iela 93",
+   "city": "Rīga",
+   "offers": {
+    "95": {
+     "price": 1.954,
+     "kind": "here",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T09:53:34+00:00",
+     "changed_at": "2026-10-27T05:11:34+00:00"
+    },
+    "D": {
+     "price": 2.134,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T09:53:34+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 2.054,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T09:53:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "s2",
+   "brand": "circlek",
+   "name": "circlek",
+   "lat": 56.978,
+   "lon": 24.195,
+   "address": "Brīvības gatve 265",
+   "city": "Rīga",
+   "offers": {
+    "95": {
+     "price": 1.954,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T09:53:34+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 2.134,
+     "kind": "here",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T09:53:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "s3",
+   "brand": "virsi",
+   "name": "virsi",
+   "lat": 56.983,
+   "lon": 24.201,
+   "address": "Brīvības gatve 297",
+   "city": "Rīga",
+   "offers": {
+    "95": {
+     "price": 1.889,
+     "kind": "here",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T09:53:34+00:00",
+     "changed_at": "2026-10-26T14:11:34+00:00"
+    },
+    "D": {
+     "price": 2.087,
+     "kind": "here",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T09:53:34+00:00",
+     "changed_at": "2026-10-26T14:11:34+00:00"
+    },
+    "98": {
+     "price": 1.959,
+     "kind": "here",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T09:53:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "s4",
+   "brand": "virsi",
+   "name": "virsi",
+   "lat": 56.904,
+   "lon": 24.2,
+   "address": "Maskavas iela 240",
+   "city": "Rīga",
+   "offers": {
+    "95": {
+     "price": 1.889,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T09:53:34+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 2.087,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T09:53:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "s5",
+   "brand": "virsi",
+   "name": "virsi",
+   "lat": 56.972,
+   "lon": 23.78,
+   "address": "Uzvaras iela 1",
+   "city": "Jūrmala",
+   "offers": {
+    "95": {
+     "price": 1.889,
+     "kind": "min",
+     "source_date": "2026-10-24",
+     "checked_at": "2026-10-27T09:53:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "s6",
+   "brand": "circlek",
+   "name": "circlek",
+   "lat": 56.51,
+   "lon": 21.02,
+   "address": "Rūpniecības iela 1",
+   "city": "Liepāja",
+   "offers": {
+    "LPG": {
+     "price": 1.065,
+     "kind": "uniform",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T09:53:34+00:00",
+     "changed_at": null
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0f1b2d">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Топливо LV">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="stylesheet" href="styles.css">
+<title>Топливо LV</title>
+</head>
+<body>
+<header class="top">
+  <button class="city-btn" id="cityBtn" type="button" aria-haspopup="dialog">
+    <span class="city-label">Город</span>
+    <span class="city-name" id="cityName">Рига</span>
+  </button>
+  <h1 class="page-title" id="pageTitle" hidden></h1>
+  <div class="top-actions">
+    <button class="icon-btn" id="refreshBtn" type="button" aria-label="Обновить цены">⟳</button>
+    <button class="icon-btn" id="gearBtn" type="button" aria-label="Настройки">⚙</button>
+  </div>
+</header>
+
+<nav class="fuels" id="fuels" aria-label="Вид топлива"></nav>
+
+<main id="main" tabindex="-1">
+  <div id="banners"></div>
+  <div id="content"></div>
+</main>
+
+<nav class="tabs" id="tabs" aria-label="Разделы">
+  <button type="button" data-tab="city" aria-current="page"><b>В городе</b><span>самая выгодная</span></button>
+  <button type="button" data-tab="near"><b>Рядом</b><span>в радиусе</span></button>
+  <button type="button" data-tab="fresh"><b>Свежие</b><span>цена обновилась</span></button>
+</nav>
+
+<dialog id="citySheet" aria-labelledby="cityTitle">
+  <form method="dialog" class="sheet-head"><h2 id="cityTitle">Выберите город</h2><button class="icon-btn" aria-label="Закрыть">✕</button></form>
+  <div class="sheet-body" id="cityList"></div>
+</dialog>
+
+<dialog id="settingsSheet" aria-labelledby="setTitle">
+  <form method="dialog" class="sheet-head"><h2 id="setTitle">Настройки</h2><button class="icon-btn" aria-label="Закрыть">✕</button></form>
+  <div class="sheet-body" id="settingsBody"></div>
+</dialog>
+
+<script src="app.js"></script>
+</body>
+</html>
