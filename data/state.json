@@ -1,0 +1,230 @@
+{
+ "sources": {
+  "circlek": {
+   "status": "ok",
+   "error": null,
+   "last_attempt": "2026-10-27T10:42:34+00:00",
+   "fetched_at": "2026-10-27T10:42:34+00:00",
+   "source_date": "2026-10-27",
+   "warnings": [],
+   "fuels": {
+    "95": {
+     "price": 1.901,
+     "uniform": false,
+     "addresses": [
+      "Brīvības gatve 265",
+      "Brīvības gatve 203"
+     ]
+    },
+    "98": {
+     "price": 1.971,
+     "uniform": false,
+     "addresses": [
+      "Brīvības gatve 265",
+      "Brīvības gatve 203"
+     ]
+    },
+    "D": {
+     "price": 2.091,
+     "uniform": false,
+     "addresses": [
+      "Mūkusalas iela 75"
+     ]
+    },
+    "DP": {
+     "price": 2.221,
+     "uniform": false,
+     "addresses": [
+      "Mūkusalas iela 75"
+     ]
+    },
+    "XTL": {
+     "price": 2.49,
+     "uniform": false,
+     "addresses": [
+      "Eksporta iela 1C",
+      "Kārļa Umaņa gatve 110",
+      "Krasta iela 93",
+      "Krišjāņa Valdemāra iela 104",
+      "Dubultu prospekts 42A"
+     ]
+    },
+    "LPG": {
+     "price": 1.065,
+     "uniform": false,
+     "addresses": [
+      "Tvaika iela 2A"
+     ]
+    }
+   }
+  },
+  "virsi": {
+   "status": "ok",
+   "error": null,
+   "last_attempt": "2026-10-27T10:42:34+00:00",
+   "fetched_at": "2026-10-27T10:42:34+00:00",
+   "source_date": "2026-10-26",
+   "warnings": [],
+   "fuels": {
+    "D": {
+     "price": 2.087,
+     "uniform": false,
+     "addresses": [
+      "Brīvības gatve 297"
+     ]
+    },
+    "95": {
+     "price": 1.889,
+     "uniform": false,
+     "addresses": [
+      "Brīvības gatve 297"
+     ]
+    },
+    "98": {
+     "price": 1.959,
+     "uniform": false,
+     "addresses": [
+      "Brīvības gatve 297"
+     ]
+    },
+    "CNG": {
+     "price": 2.195,
+     "uniform": true,
+     "addresses": []
+    },
+    "LPG": {
+     "price": 1.065,
+     "uniform": true,
+     "addresses": []
+    }
+   }
+  }
+ },
+ "prices": {
+  "circlek|95|here:n9178972939": {
+   "price": 1.901,
+   "changed_at": null,
+   "first_seen": "2026-10-27T10:42:34+00:00"
+  },
+  "circlek|95|here:n6920377311": {
+   "price": 1.901,
+   "changed_at": null,
+   "first_seen": "2026-10-27T10:42:34+00:00"
+  },
+  "circlek|95|region": {
+   "price": 1.901,
+   "changed_at": null,
+   "first_seen": "2026-10-27T10:42:34+00:00"
+  },
+  "circlek|98|here:n9178972939": {
+   "price": 1.971,
+   "changed_at": null,
+   "first_seen": "2026-10-27T10:42:34+00:00"
+  },
+  "circlek|98|here:n6920377311": {
+   "price": 1.971,
+   "changed_at": null,
+   "first_seen": "2026-10-27T10:42:34+00:00"
+  },
+  "circlek|98|region": {
+   "price": 1.971,
+   "changed_at": null,
+   "first_seen": "2026-10-27T10:42:34+00:00"
+  },
+  "circlek|D|here:w1351651222": {
+   "price": 2.091,
+   "changed_at": null,
+   "first_seen": "2026-10-27T10:42:34+00:00"
+  },
+  "circlek|D|region": {
+   "price": 2.091,
+   "changed_at": null,
+   "first_seen": "2026-10-27T10:42:34+00:00"
+  },
+  "circlek|DP|here:w1351651222": {
+   "price": 2.221,
+   "changed_at": null,
+   "first_seen": "2026-10-27T10:42:34+00:00"
+  },
+  "circlek|DP|region": {
+   "price": 2.221,
+   "changed_at": null,
+   "first_seen": "2026-10-27T10:42:34+00:00"
+  },
+  "circlek|XTL|here:n1970049777": {
+   "price": 2.49,
+   "changed_at": null,
+   "first_seen": "2026-10-27T10:42:34+00:00"
+  },
+  "circlek|XTL|here:w1556612150": {
+   "price": 2.49,
+   "changed_at": null,
+   "first_seen": "2026-10-27T10:42:34+00:00"
+  },
+  "circlek|XTL|here:n1666785020": {
+   "price": 2.49,
+   "changed_at": null,
+   "first_seen": "2026-10-27T10:42:34+00:00"
+  },
+  "circlek|XTL|here:w1353771528": {
+   "price": 2.49,
+   "changed_at": null,
+   "first_seen": "2026-10-27T10:42:34+00:00"
+  },
+  "circlek|XTL|region": {
+   "price": 2.49,
+   "changed_at": null,
+   "first_seen": "2026-10-27T10:42:34+00:00"
+  },
+  "circlek|LPG|here:w139932687": {
+   "price": 1.065,
+   "changed_at": null,
+   "first_seen": "2026-10-27T10:42:34+00:00"
+  },
+  "circlek|LPG|region": {
+   "price": 1.065,
+   "changed_at": null,
+   "first_seen": "2026-10-27T10:42:34+00:00"
+  },
+  "virsi|D|here:w142028451": {
+   "price": 2.087,
+   "changed_at": null,
+   "first_seen": "2026-10-27T10:42:34+00:00"
+  },
+  "virsi|D|region": {
+   "price": 2.087,
+   "changed_at": null,
+   "first_seen": "2026-10-27T10:42:34+00:00"
+  },
+  "virsi|95|here:w142028451": {
+   "price": 1.889,
+   "changed_at": null,
+   "first_seen": "2026-10-27T10:42:34+00:00"
+  },
+  "virsi|95|region": {
+   "price": 1.889,
+   "changed_at": null,
+   "first_seen": "2026-10-27T10:42:34+00:00"
+  },
+  "virsi|98|here:w142028451": {
+   "price": 1.959,
+   "changed_at": null,
+   "first_seen": "2026-10-27T10:42:34+00:00"
+  },
+  "virsi|98|region": {
+   "price": 1.959,
+   "changed_at": null,
+   "first_seen": "2026-10-27T10:42:34+00:00"
+  },
+  "virsi|CNG|all": {
+   "price": 2.195,
+   "changed_at": null,
+   "first_seen": "2026-10-27T10:42:34+00:00"
+  },
+  "virsi|LPG|all": {
+   "price": 1.065,
+   "changed_at": null,
+   "first_seen": "2026-10-27T10:42:34+00:00"
+  }
+ }
+}

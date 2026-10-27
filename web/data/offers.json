@@ -1,7 +1,7 @@
 {
  "meta": {
-  "generated_at": "2026-10-27T09:53:34+00:00",
-  "sample": true,
+  "generated_at": "2026-10-27T10:42:34+00:00",
+  "sample": false,
   "fuels": [
    "95",
    "98",
@@ -15,178 +15,6444 @@
    "circlek": {
     "name": "Circle K",
     "status": "ok",
-    "fetched_at": "2026-10-27T09:53:34+00:00",
-    "source_date": "2026-10-26",
+    "error": null,
+    "fetched_at": "2026-10-27T10:42:34+00:00",
+    "source_date": "2026-10-27",
     "scope": "Рига"
    },
    "virsi": {
     "name": "Virši",
     "status": "ok",
-    "fetched_at": "2026-10-27T09:53:34+00:00",
+    "error": null,
+    "fetched_at": "2026-10-27T10:42:34+00:00",
     "source_date": "2026-10-26",
     "scope": "Рига и окрестности"
    },
    "neste": {
     "name": "Neste",
     "status": "unavailable",
-    "error": "нет официальной страницы цен"
+    "error": "нет официальной страницы цен, доступной для чтения без обхода защиты"
    },
    "viada": {
     "name": "Viada",
     "status": "unavailable",
-    "error": "robots.txt запрещает чтение"
+    "error": "robots.txt сайта запрещает автоматическое чтение"
+   },
+   "kool": {
+    "name": "KOOL",
+    "status": "unavailable",
+    "error": "страница цен не читается автоматически"
+   },
+   "astarte": {
+    "name": "Astarte",
+    "status": "unavailable",
+    "error": "не подключено в этой версии"
+   },
+   "straujupite": {
+    "name": "Straujupīte",
+    "status": "unavailable",
+    "error": "не подключено в этой версии"
    }
   },
-  "unmatched": {},
+  "unmatched": {
+   "circlek": [
+    "XTL: Krišjāņa Valdemāra iela 104"
+   ]
+  },
   "warning": null
  },
  "stations": [
   {
-   "id": "s1",
-   "brand": "circlek",
-   "name": "circlek",
-   "lat": 56.929389,
-   "lon": 24.153103,
-   "address": "Krasta iela 93",
-   "city": "Rīga",
-   "offers": {
-    "95": {
-     "price": 1.954,
-     "kind": "here",
-     "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T09:53:34+00:00",
-     "changed_at": "2026-10-27T05:11:34+00:00"
-    },
-    "D": {
-     "price": 2.134,
-     "kind": "min",
-     "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T09:53:34+00:00",
-     "changed_at": null
-    },
-    "98": {
-     "price": 2.054,
-     "kind": "min",
-     "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T09:53:34+00:00",
-     "changed_at": null
-    }
-   }
-  },
-  {
-   "id": "s2",
-   "brand": "circlek",
-   "name": "circlek",
-   "lat": 56.978,
-   "lon": 24.195,
-   "address": "Brīvības gatve 265",
-   "city": "Rīga",
-   "offers": {
-    "95": {
-     "price": 1.954,
-     "kind": "min",
-     "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T09:53:34+00:00",
-     "changed_at": null
-    },
-    "D": {
-     "price": 2.134,
-     "kind": "here",
-     "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T09:53:34+00:00",
-     "changed_at": null
-    }
-   }
-  },
-  {
-   "id": "s3",
+   "id": "n33702046",
    "brand": "virsi",
-   "name": "virsi",
-   "lat": 56.983,
-   "lon": 24.201,
-   "address": "Brīvības gatve 297",
+   "name": "Virši A",
+   "lat": 57.427943,
+   "lon": 25.898156,
+   "address": "Stacijas iela 2",
+   "city": "Smiltene",
+   "offers": {}
+  },
+  {
+   "id": "n60575236",
+   "brand": "virsi",
+   "name": "Virši-A",
+   "lat": 57.394147,
+   "lon": 21.615366,
+   "address": "Robežu iela 1",
+   "city": "Ventspils",
+   "offers": {}
+  },
+  {
+   "id": "n130691030",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 55.905769,
+   "lon": 27.179536,
+   "address": "Vasarnieku iela 6",
+   "city": "Krāslava",
+   "offers": {}
+  },
+  {
+   "id": "n181297440",
+   "brand": "astarte",
+   "name": "Astarte",
+   "lat": 56.650848,
+   "lon": 23.707953,
+   "address": "Lielā iela 40",
+   "city": "Jelgava",
+   "offers": {}
+  },
+  {
+   "id": "n199962065",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 57.005458,
+   "lon": 24.291795,
+   "address": "",
+   "city": "Berģi",
+   "offers": {}
+  },
+  {
+   "id": "n251468803",
+   "brand": "neste",
+   "name": "Neste",
+   "lat": 56.92624,
+   "lon": 24.039337,
+   "address": "Upesgrīvas iela 1",
+   "city": "Mārupe",
+   "offers": {}
+  },
+  {
+   "id": "n251468948",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.927278,
+   "lon": 24.049714,
+   "address": "Kārļa Ulmaņa gatve 67",
    "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "n260354672",
+   "brand": "neste",
+   "name": "Neste",
+   "lat": 56.931021,
+   "lon": 24.034087,
+   "address": "Lielirbes iela 30",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "n265709380",
+   "brand": "straujupite",
+   "name": "Straujupīte",
+   "lat": 57.387375,
+   "lon": 21.5813,
+   "address": "Lāčplēša iela 4",
+   "city": "Ventspils",
+   "offers": {}
+  },
+  {
+   "id": "n266487279",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.632379,
+   "lon": 25.715274,
+   "address": "",
+   "city": "Jēkabpils",
+   "offers": {}
+  },
+  {
+   "id": "n266644053",
+   "brand": "straujupite",
+   "name": "Straujupīte",
+   "lat": 56.953153,
+   "lon": 23.981659,
+   "address": "Jūrmalas gatve 144",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "n267939111",
+   "brand": "viada",
+   "name": "Viada, Lidosta",
+   "lat": 56.921453,
+   "lon": 23.991801,
+   "address": "Dzirnieku iela 1",
+   "city": "Lidosta \"Rīga\"",
+   "offers": {}
+  },
+  {
+   "id": "n272408698",
+   "brand": "kool",
+   "name": "KOOL Sauleskalns",
+   "lat": 56.806334,
+   "lon": 26.075751,
+   "address": "Sauleskalna iela 2",
+   "city": "Sauleskalns",
+   "offers": {}
+  },
+  {
+   "id": "n283639209",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 55.874447,
+   "lon": 26.545038,
+   "address": "Ventspils iela 28",
+   "city": "Daugavpils",
+   "offers": {}
+  },
+  {
+   "id": "n293161136",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.960504,
+   "lon": 23.621097,
+   "address": "Brikšķu iela 2",
+   "city": "Jūrmala",
+   "offers": {}
+  },
+  {
+   "id": "n293876120",
+   "brand": "virsi",
+   "name": "Virši",
+   "lat": 56.969664,
+   "lon": 24.340196,
+   "address": "",
+   "city": "Amatnieki",
+   "offers": {}
+  },
+  {
+   "id": "n294935736",
+   "brand": "virsi",
+   "name": "Virši Baldone",
+   "lat": 56.743452,
+   "lon": 24.355395,
+   "address": "Rīgas iela 2",
+   "city": "Baldone",
    "offers": {
-    "95": {
-     "price": 1.889,
-     "kind": "here",
-     "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T09:53:34+00:00",
-     "changed_at": "2026-10-26T14:11:34+00:00"
-    },
     "D": {
      "price": 2.087,
-     "kind": "here",
+     "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T09:53:34+00:00",
-     "changed_at": "2026-10-26T14:11:34+00:00"
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "95": {
+     "price": 1.889,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
     },
     "98": {
      "price": 1.959,
-     "kind": "here",
+     "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T09:53:34+00:00",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "LPG": {
+     "price": 1.065,
+     "kind": "uniform",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
      "changed_at": null
     }
    }
   },
   {
-   "id": "s4",
+   "id": "n298801996",
    "brand": "virsi",
-   "name": "virsi",
-   "lat": 56.904,
-   "lon": 24.2,
-   "address": "Maskavas iela 240",
+   "name": "Virši",
+   "lat": 57.126967,
+   "lon": 24.704066,
+   "address": "",
+   "city": "Inčukalns",
+   "offers": {}
+  },
+  {
+   "id": "n298816044",
+   "brand": "circlek",
+   "name": "Circle K automāts",
+   "lat": 57.145098,
+   "lon": 24.857171,
+   "address": "Vidzemes šoseja 12",
+   "city": "Sigulda",
+   "offers": {}
+  },
+  {
+   "id": "n304083348",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 56.951499,
+   "lon": 24.060477,
+   "address": "Jūrmalas gatve 4",
    "city": "Rīga",
    "offers": {
     "95": {
-     "price": 1.889,
+     "price": 1.901,
      "kind": "min",
-     "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T09:53:34+00:00",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
      "changed_at": null
     },
+    "98": {
+     "price": 1.971,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 2.091,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "DP": {
+     "price": 2.221,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "XTL": {
+     "price": 2.49,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "n305692237",
+   "brand": "astarte",
+   "name": "Astarte",
+   "lat": 56.599459,
+   "lon": 25.65076,
+   "address": "",
+   "city": "Stukmaņi",
+   "offers": {}
+  },
+  {
+   "id": "n321488589",
+   "brand": "neste",
+   "name": "Neste",
+   "lat": 56.980017,
+   "lon": 24.115347,
+   "address": "Rankas iela 2",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "n339851476",
+   "brand": "neste",
+   "name": "Neste",
+   "lat": 56.916855,
+   "lon": 24.087309,
+   "address": "Vienības gatve 77",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "n342859364",
+   "brand": "neste",
+   "name": "Neste",
+   "lat": 56.406669,
+   "lon": 24.188378,
+   "address": "Pionieru iela 2",
+   "city": "Bauska",
+   "offers": {}
+  },
+  {
+   "id": "n343235996",
+   "brand": "neste",
+   "name": "Neste",
+   "lat": 56.399317,
+   "lon": 24.177231,
+   "address": "Elejas iela 1",
+   "city": "Bauska",
+   "offers": {}
+  },
+  {
+   "id": "n353809240",
+   "brand": "virsi",
+   "name": "Virši",
+   "lat": 56.314428,
+   "lon": 24.331514,
+   "address": "",
+   "city": "Bauska",
+   "offers": {}
+  },
+  {
+   "id": "n353811719",
+   "brand": "neste",
+   "name": "Neste",
+   "lat": 56.604622,
+   "lon": 24.208252,
+   "address": "",
+   "city": "Iecava",
+   "offers": {}
+  },
+  {
+   "id": "n367181741",
+   "brand": "neste",
+   "name": "Neste",
+   "lat": 57.175237,
+   "lon": 26.746119,
+   "address": "Brīvības iela 68",
+   "city": "Gulbene",
+   "offers": {}
+  },
+  {
+   "id": "n368399843",
+   "brand": "virsi",
+   "name": "Virši Jelgava 3",
+   "lat": 56.636425,
+   "lon": 23.707805,
+   "address": "Rūpniecības iela 75A",
+   "city": "Jelgava",
+   "offers": {}
+  },
+  {
+   "id": "n389640635",
+   "brand": "virsi",
+   "name": "Virši",
+   "lat": 57.079052,
+   "lon": 24.317651,
+   "address": "Rīgas gatve 45",
+   "city": "Ādaži",
+   "offers": {
     "D": {
      "price": 2.087,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T09:53:34+00:00",
+     "checked_at": "2026-10-27T10:42:34+00:00",
      "changed_at": null
-    }
-   }
-  },
-  {
-   "id": "s5",
-   "brand": "virsi",
-   "name": "virsi",
-   "lat": 56.972,
-   "lon": 23.78,
-   "address": "Uzvaras iela 1",
-   "city": "Jūrmala",
-   "offers": {
+    },
     "95": {
      "price": 1.889,
      "kind": "min",
-     "source_date": "2026-10-24",
-     "checked_at": "2026-10-27T09:53:34+00:00",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.959,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "LPG": {
+     "price": 1.065,
+     "kind": "uniform",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
      "changed_at": null
     }
    }
   },
   {
-   "id": "s6",
+   "id": "n410619902",
+   "brand": "astarte",
+   "name": "Astarte Nafta",
+   "lat": 56.842324,
+   "lon": 23.586835,
+   "address": "Rīgas iela 3",
+   "city": "Tīreļi",
+   "offers": {}
+  },
+  {
+   "id": "n417021448",
+   "brand": "virsi",
+   "name": "Virši",
+   "lat": 56.610616,
+   "lon": 25.693268,
+   "address": "Rīgas iela 31",
+   "city": "Pļaviņas",
+   "offers": {}
+  },
+  {
+   "id": "n417078525",
+   "brand": "neste",
+   "name": "Neste",
+   "lat": 56.518055,
+   "lon": 25.852094,
+   "address": "Rīgas iela 247",
+   "city": "Jēkabpils",
+   "offers": {}
+  },
+  {
+   "id": "n417161545",
+   "brand": "virsi",
+   "name": "Virši-A",
+   "lat": 56.513134,
+   "lon": 25.930414,
+   "address": "Zīlānu iela 145",
+   "city": "Zīlāni",
+   "offers": {}
+  },
+  {
+   "id": "n417640845",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.564769,
+   "lon": 26.933769,
+   "address": "Rīgas iela 52",
+   "city": "Viļāni",
+   "offers": {}
+  },
+  {
+   "id": "n417997614",
+   "brand": "kool",
+   "name": "Kool",
+   "lat": 56.51923,
+   "lon": 27.320503,
+   "address": "Rīgas iela 47A",
+   "city": "Rēzekne",
+   "offers": {}
+  },
+  {
+   "id": "n418065678",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.4987,
+   "lon": 27.329783,
+   "address": "Daugavpils iela 3",
+   "city": "Rēzekne",
+   "offers": {}
+  },
+  {
+   "id": "n418065679",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.498669,
+   "lon": 27.330141,
+   "address": "Daugavpils iela 3",
+   "city": "Rēzekne",
+   "offers": {}
+  },
+  {
+   "id": "n418397456",
    "brand": "circlek",
-   "name": "circlek",
-   "lat": 56.51,
-   "lon": 21.02,
-   "address": "Rūpniecības iela 1",
+   "name": "Circle K",
+   "lat": 56.524251,
+   "lon": 27.341085,
+   "address": "Atbrīvošanas aleja 143B",
+   "city": "Rēzekne",
+   "offers": {}
+  },
+  {
+   "id": "n429801110",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.737505,
+   "lon": 24.109577,
+   "address": "",
+   "city": "Mellupi",
+   "offers": {}
+  },
+  {
+   "id": "n432463918",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 57.503286,
+   "lon": 22.35196,
+   "address": "Talsu iela 21",
+   "city": "Dundaga",
+   "offers": {}
+  },
+  {
+   "id": "n435424872",
+   "brand": "virsi",
+   "name": "Virši-A",
+   "lat": 56.973407,
+   "lon": 26.044643,
+   "address": "",
+   "city": "Cesvaine",
+   "offers": {}
+  },
+  {
+   "id": "n445385533",
+   "brand": "neste",
+   "name": "Neste",
+   "lat": 57.243288,
+   "lon": 22.582599,
+   "address": "Dundagas iela 1",
+   "city": "Talsi",
+   "offers": {}
+  },
+  {
+   "id": "n445828423",
+   "brand": "kool",
+   "name": "KOOL Balvi",
+   "lat": 57.141714,
+   "lon": 27.24625,
+   "address": "Stacijas iela 32",
+   "city": "Balvi",
+   "offers": {}
+  },
+  {
+   "id": "n445828425",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 57.141455,
+   "lon": 27.245088,
+   "address": "Stacijas iela 13",
+   "city": "Balvi",
+   "offers": {}
+  },
+  {
+   "id": "n452376128",
+   "brand": "neste",
+   "name": "Neste Saldus I",
+   "lat": 56.68317,
+   "lon": 22.476952,
+   "address": "Apvedceļš 5",
+   "city": "Saldus",
+   "offers": {}
+  },
+  {
+   "id": "n459798903",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.905312,
+   "lon": 25.65317,
+   "address": "Piebalgas iela 79",
+   "city": "Ērgļi",
+   "offers": {}
+  },
+  {
+   "id": "n460016743",
+   "brand": "neste",
+   "name": "Neste",
+   "lat": 55.879772,
+   "lon": 26.542472,
+   "address": "Smilšu iela 32",
+   "city": "Daugavpils",
+   "offers": {}
+  },
+  {
+   "id": "n463757440",
+   "brand": "neste",
+   "name": "Neste",
+   "lat": 56.965416,
+   "lon": 24.11687,
+   "address": "Skanstes iela 7",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "n471562101",
+   "brand": "virsi",
+   "name": "Virši",
+   "lat": 57.78739,
+   "lon": 26.018076,
+   "address": "Rūjienas iela 7",
+   "city": "Valka",
+   "offers": {}
+  },
+  {
+   "id": "n471562108",
+   "brand": "virsi",
+   "name": "Virši",
+   "lat": 57.759171,
+   "lon": 25.987148,
+   "address": "Rīgas iela 80",
+   "city": "Valka",
+   "offers": {}
+  },
+  {
+   "id": "n478932958",
+   "brand": "neste",
+   "name": "Neste",
+   "lat": 56.924907,
+   "lon": 24.110677,
+   "address": "Lucavsalas iela 1",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "n484795371",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.938738,
+   "lon": 24.181705,
+   "address": "Dārzciema iela 62",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "n489756804",
+   "brand": "neste",
+   "name": "Neste",
+   "lat": 56.968279,
+   "lon": 24.144653,
+   "address": "Senču iela 2B",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "n493703220",
+   "brand": "straujupite",
+   "name": "Straujupīte Bauska",
+   "lat": 56.426597,
+   "lon": 24.230228,
+   "address": "",
+   "city": "Bauska",
+   "offers": {}
+  },
+  {
+   "id": "n493916616",
+   "brand": "virsi",
+   "name": "Virši-A",
+   "lat": 57.431065,
+   "lon": 27.022886,
+   "address": "Rīgas iela 11",
+   "city": "Alūksne",
+   "offers": {}
+  },
+  {
+   "id": "n493916742",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 57.420453,
+   "lon": 25.916639,
+   "address": "Dārza iela 36",
+   "city": "Smiltene",
+   "offers": {}
+  },
+  {
+   "id": "n493916819",
+   "brand": "circlek",
+   "name": "Circle K automāts",
+   "lat": 56.903196,
+   "lon": 24.193849,
+   "address": "Latgales iela 324",
+   "city": "Rīga",
+   "offers": {
+    "95": {
+     "price": 1.901,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.971,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 2.091,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "DP": {
+     "price": 2.221,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "XTL": {
+     "price": 2.49,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "n511159147",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 57.171852,
+   "lon": 26.740864,
+   "address": "Baložu iela 19",
+   "city": "Gulbene",
+   "offers": {}
+  },
+  {
+   "id": "n683434892",
+   "brand": "virsi",
+   "name": "Virši-A",
+   "lat": 56.135444,
+   "lon": 27.002914,
+   "address": "Somersētas iela 11A",
+   "city": "Aglona",
+   "offers": {}
+  },
+  {
+   "id": "n883069874",
+   "brand": "kool",
+   "name": "Kool Usma",
+   "lat": 57.246801,
+   "lon": 22.172113,
+   "address": "",
+   "city": "Cita vieta",
+   "offers": {}
+  },
+  {
+   "id": "n1035682785",
+   "brand": "neste",
+   "name": "Neste",
+   "lat": 56.950962,
+   "lon": 24.174595,
+   "address": "Augusta Deglava iela 51A",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "n1055364535",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.957747,
+   "lon": 24.18921,
+   "address": "Gunāra Astras iela 7",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "n1296804106",
+   "brand": "virsi",
+   "name": "Virši Dobele",
+   "lat": 56.627856,
+   "lon": 23.298078,
+   "address": "Brīvības iela 60",
+   "city": "Dobele",
+   "offers": {}
+  },
+  {
+   "id": "n1315410789",
+   "brand": "neste",
+   "name": "Neste Saldus II",
+   "lat": 56.666691,
+   "lon": 22.495358,
+   "address": "Jelgavas iela 3",
+   "city": "Saldus",
+   "offers": {}
+  },
+  {
+   "id": "n1398956615",
+   "brand": "neste",
+   "name": "Neste",
+   "lat": 57.429684,
+   "lon": 27.038955,
+   "address": "Pils iela 9C",
+   "city": "Alūksne",
+   "offers": {}
+  },
+  {
+   "id": "n1440683839",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 57.0339,
+   "lon": 24.117739,
+   "address": "Emmas iela 45",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "n1558659954",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 57.743534,
+   "lon": 24.360639,
+   "address": "Vidzemes iela 29",
+   "city": "Salacgrīva",
+   "offers": {}
+  },
+  {
+   "id": "n1588926696",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 56.952595,
+   "lon": 24.100599,
+   "address": "Muitas iela 4",
+   "city": "Rīga",
+   "offers": {
+    "95": {
+     "price": 1.901,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.971,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 2.091,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "DP": {
+     "price": 2.221,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "XTL": {
+     "price": 2.49,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "n1593822700",
+   "brand": "kool",
+   "name": "Kool Platene",
+   "lat": 57.397714,
+   "lon": 21.695121,
+   "address": "",
+   "city": "Ventspils",
+   "offers": {}
+  },
+  {
+   "id": "n1655515832",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.938395,
+   "lon": 24.215903,
+   "address": "Brāļu Kaudzīšu iela 29",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "n1666785020",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 56.934427,
+   "lon": 24.006342,
+   "address": "Kārļa Ulmaņa gatve 110",
+   "city": "Rīga",
+   "offers": {
+    "95": {
+     "price": 1.901,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.971,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 2.091,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "DP": {
+     "price": 2.221,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "XTL": {
+     "price": 2.49,
+     "kind": "here",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "LPG": {
+     "price": 1.065,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "n1692696452",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 56.93369,
+   "lon": 24.004017,
+   "address": "Kārļa Ulmaņa gatve 117",
+   "city": "Rīga",
+   "offers": {
+    "95": {
+     "price": 1.901,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.971,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 2.091,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "DP": {
+     "price": 2.221,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "XTL": {
+     "price": 2.49,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "n1704258911",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 55.881719,
+   "lon": 26.517958,
+   "address": "Stacijas iela 66",
+   "city": "Daugavpils",
+   "offers": {}
+  },
+  {
+   "id": "n1714412615",
+   "brand": "neste",
+   "name": "Neste A24",
+   "lat": 56.947764,
+   "lon": 24.125833,
+   "address": "Dzirnavu iela 127",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "n1834875711",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.973948,
+   "lon": 24.341329,
+   "address": "",
+   "city": "Sunīši",
+   "offers": {}
+  },
+  {
+   "id": "n1889511240",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 55.875697,
+   "lon": 26.547108,
+   "address": "18. novembra iela 119",
+   "city": "Daugavpils",
+   "offers": {}
+  },
+  {
+   "id": "n1889516192",
+   "brand": "neste",
+   "name": "Neste Daugavpils II",
+   "lat": 55.865156,
+   "lon": 26.50182,
+   "address": "Dostojevska iela 6",
+   "city": "Daugavpils",
+   "offers": {}
+  },
+  {
+   "id": "n1926548923",
+   "brand": "neste",
+   "name": "Neste",
+   "lat": 56.89749,
+   "lon": 24.210632,
+   "address": "Latgales iela 427B",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "n1942498573",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 55.864842,
+   "lon": 26.581246,
+   "address": "Nometņu iela 99D",
+   "city": "Daugavpils",
+   "offers": {}
+  },
+  {
+   "id": "n1950629626",
+   "brand": "gotika",
+   "name": "Gotika auto",
+   "lat": 56.96998,
+   "lon": 24.637472,
+   "address": "",
+   "city": "Ropaži",
+   "offers": {}
+  },
+  {
+   "id": "n1957966078",
+   "brand": "virsi",
+   "name": "Virši",
+   "lat": 56.53595,
+   "lon": 27.682028,
+   "address": "",
+   "city": "Ludza",
+   "offers": {
+    "CNG": {
+     "price": 2.195,
+     "kind": "uniform",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "n1964893561",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 56.626084,
+   "lon": 23.288124,
+   "address": "Jāņa Čakstes iela 1",
+   "city": "Dobele",
+   "offers": {}
+  },
+  {
+   "id": "n1970049777",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 56.955496,
+   "lon": 24.097442,
+   "address": "Eksporta iela 1C",
+   "city": "Rīga",
+   "offers": {
+    "95": {
+     "price": 1.901,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.971,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 2.091,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "DP": {
+     "price": 2.221,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "XTL": {
+     "price": 2.49,
+     "kind": "here",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "n2014930325",
+   "brand": "astarte",
+   "name": "Astarte",
+   "lat": 56.64228,
+   "lon": 23.697417,
+   "address": "Dambja iela 25",
+   "city": "Jelgava",
+   "offers": {}
+  },
+  {
+   "id": "n2024643308",
+   "brand": "viada",
+   "name": "Viada 1",
+   "lat": 56.637067,
+   "lon": 23.71198,
+   "address": "Rūpniecības iela 20D",
+   "city": "Jelgava",
+   "offers": {}
+  },
+  {
+   "id": "n2058290263",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.418216,
+   "lon": 24.181745,
+   "address": "",
+   "city": "Bauska",
+   "offers": {}
+  },
+  {
+   "id": "n2087383303",
+   "brand": "neste",
+   "name": "Neste truck",
+   "lat": 56.887812,
+   "lon": 24.231267,
+   "address": "Mazjumpravas iela 80",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "n2109302510",
+   "brand": "virsi",
+   "name": "Virši",
+   "lat": 56.893277,
+   "lon": 24.075584,
+   "address": "",
+   "city": "Rīga",
+   "offers": {
+    "D": {
+     "price": 2.087,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "95": {
+     "price": 1.889,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.959,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "n2154753981",
+   "brand": "kool",
+   "name": "KOOL",
+   "lat": 56.889657,
+   "lon": 24.226851,
+   "address": "Latgales iela 446B",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "n2185068057",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.957358,
+   "lon": 23.177043,
+   "address": "Zemgales iela 25",
+   "city": "Tukums",
+   "offers": {}
+  },
+  {
+   "id": "n2188153784",
+   "brand": "virsi",
+   "name": "Virši",
+   "lat": 56.971206,
+   "lon": 23.139484,
+   "address": "Kurzemes iela 55",
+   "city": "Tukums",
+   "offers": {}
+  },
+  {
+   "id": "n2264114397",
+   "brand": "virsi",
+   "name": "Virši Aizpute",
+   "lat": 56.70494,
+   "lon": 21.626087,
+   "address": "Kalvenes iela 75",
+   "city": "Aizpute",
+   "offers": {
+    "LPG": {
+     "price": 1.065,
+     "kind": "uniform",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "n2287712268",
+   "brand": "gotika",
+   "name": "Gotika auto",
+   "lat": 56.481962,
+   "lon": 23.05364,
+   "address": "Jelgavas iela 1B",
+   "city": "Bēne",
+   "offers": {}
+  },
+  {
+   "id": "n2363297945",
+   "brand": "astarte",
+   "name": "Astarte",
+   "lat": 56.155611,
+   "lon": 25.761374,
+   "address": "Augšzemes iela 60",
+   "city": "Aknīste",
+   "offers": {}
+  },
+  {
+   "id": "n2368293246",
+   "brand": "straujupite",
+   "name": "Straujupīte",
+   "lat": 56.953817,
+   "lon": 24.55491,
+   "address": "",
+   "city": "Ropaži",
+   "offers": {}
+  },
+  {
+   "id": "n2405049925",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 57.413848,
+   "lon": 27.042251,
+   "address": "Gulbenes iela 1C",
+   "city": "Alūksne",
+   "offers": {}
+  },
+  {
+   "id": "n2417779392",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 55.914378,
+   "lon": 26.48332,
+   "address": "Vizbuļu iela 8A",
+   "city": "Daugavpils",
+   "offers": {}
+  },
+  {
+   "id": "n2441080606",
+   "brand": "virsi",
+   "name": "Virši",
+   "lat": 56.627857,
+   "lon": 25.118668,
+   "address": "",
+   "city": "Zemkopības institūts",
+   "offers": {}
+  },
+  {
+   "id": "n3776173476",
+   "brand": "neste",
+   "name": "Neste",
+   "lat": 56.961729,
+   "lon": 24.035414,
+   "address": "Kurzemes prospekts 15A",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "n4410132192",
+   "brand": "straujupite",
+   "name": "Straujupīte",
+   "lat": 56.948788,
+   "lon": 24.185973,
+   "address": "Jenotu iela 19",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "n4501314789",
+   "brand": "virsi",
+   "name": "Virši Krāslava",
+   "lat": 55.887886,
+   "lon": 27.184362,
+   "address": "Rīgas iela 165A",
+   "city": "Krāslava",
+   "offers": {
+    "CNG": {
+     "price": 2.195,
+     "kind": "uniform",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "LPG": {
+     "price": 1.065,
+     "kind": "uniform",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "n4553996636",
+   "brand": "virsi",
+   "name": "Virši",
+   "lat": 57.547166,
+   "lon": 25.39499,
+   "address": "Patversmes iela 12",
+   "city": "Valmiera",
+   "offers": {}
+  },
+  {
+   "id": "n4693683473",
+   "brand": "virsi",
+   "name": "Virši",
+   "lat": 56.889287,
+   "lon": 24.146864,
+   "address": "",
+   "city": "Krustkalni",
+   "offers": {}
+  },
+  {
+   "id": "n4791765321",
+   "brand": "neste",
+   "name": "Neste",
+   "lat": 56.534941,
+   "lon": 27.347546,
+   "address": "",
+   "city": "Rēzekne",
+   "offers": {}
+  },
+  {
+   "id": "n5226493483",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 57.382235,
+   "lon": 21.567287,
+   "address": "Inženieru iela 2",
+   "city": "Ventspils",
+   "offers": {}
+  },
+  {
+   "id": "n5229989019",
+   "brand": "neste",
+   "name": "Neste",
+   "lat": 57.396316,
+   "lon": 21.592118,
+   "address": "Kurzemes iela 2",
+   "city": "Ventspils",
+   "offers": {}
+  },
+  {
+   "id": "n5273453721",
+   "brand": "virsi",
+   "name": "Virši-A",
+   "lat": 56.51722,
+   "lon": 21.021284,
+   "address": "Zemnieku iela 24",
    "city": "Liepāja",
    "offers": {
     "LPG": {
      "price": 1.065,
      "kind": "uniform",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T09:53:34+00:00",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "n5782840855",
+   "brand": "virsi",
+   "name": "Virši-A",
+   "lat": 56.854179,
+   "lon": 24.325729,
+   "address": "Zviedru iela 1A",
+   "city": "Salaspils",
+   "offers": {
+    "D": {
+     "price": 2.087,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "95": {
+     "price": 1.889,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.959,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "n5851056585",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 55.965577,
+   "lon": 26.282238,
+   "address": "",
+   "city": "Daugavpils",
+   "offers": {}
+  },
+  {
+   "id": "n5917943448",
+   "brand": "virsi",
+   "name": "Virši-A",
+   "lat": 56.881025,
+   "lon": 23.961976,
+   "address": "",
+   "city": "Mārupe",
+   "offers": {
+    "D": {
+     "price": 2.087,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "95": {
+     "price": 1.889,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.959,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "n5984145875",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.97391,
+   "lon": 24.036391,
+   "address": "Buļļu iela 72A",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "n6001636337",
+   "brand": "virsi",
+   "name": "Virši Eleja",
+   "lat": 56.416576,
+   "lon": 23.682613,
+   "address": "Lietuvas iela 28",
+   "city": "Eleja",
+   "offers": {}
+  },
+  {
+   "id": "n6048787573",
+   "brand": "neste",
+   "name": "Neste Truck",
+   "lat": 56.953278,
+   "lon": 21.991435,
+   "address": "Graudu iela 19",
+   "city": "Kuldīga",
+   "offers": {}
+  },
+  {
+   "id": "n6090596509",
+   "brand": "kool",
+   "name": "KOOL Valka",
+   "lat": 57.790799,
+   "lon": 26.030455,
+   "address": "Rūjienas iela 31",
+   "city": "Valka",
+   "offers": {}
+  },
+  {
+   "id": "n6683627978",
+   "brand": "neste",
+   "name": "Neste",
+   "lat": 57.279144,
+   "lon": 25.492894,
+   "address": "",
+   "city": "Bērzkrogs",
+   "offers": {}
+  },
+  {
+   "id": "n6728287816",
+   "brand": "virsi",
+   "name": "Virši",
+   "lat": 56.97372,
+   "lon": 24.073698,
+   "address": "Daugavgrīvas iela 136A",
+   "city": "Rīga",
+   "offers": {
+    "D": {
+     "price": 2.087,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "95": {
+     "price": 1.889,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.959,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "n6783925802",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 56.959679,
+   "lon": 24.018565,
+   "address": "Anniņmuižas bulvāris 25A",
+   "city": "Rīga",
+   "offers": {
+    "95": {
+     "price": 1.901,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.971,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 2.091,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "DP": {
+     "price": 2.221,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "XTL": {
+     "price": 2.49,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "LPG": {
+     "price": 1.065,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "n6783933079",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 56.951857,
+   "lon": 24.054536,
+   "address": "Jūrmalas gatve 5A",
+   "city": "Rīga",
+   "offers": {
+    "95": {
+     "price": 1.901,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.971,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 2.091,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "DP": {
+     "price": 2.221,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "XTL": {
+     "price": 2.49,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "n6788869344",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 56.958507,
+   "lon": 24.052487,
+   "address": "Dzirciema iela 40",
+   "city": "Rīga",
+   "offers": {
+    "95": {
+     "price": 1.901,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.971,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 2.091,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "DP": {
+     "price": 2.221,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "XTL": {
+     "price": 2.49,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "n6788869345",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 56.821737,
+   "lon": 24.414322,
+   "address": "",
+   "city": "Daugmale",
+   "offers": {}
+  },
+  {
+   "id": "n6795848010",
+   "brand": "neste",
+   "name": "Neste",
+   "lat": 56.860149,
+   "lon": 24.562841,
+   "address": "",
+   "city": "Ogre",
+   "offers": {}
+  },
+  {
+   "id": "n6920377311",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 56.979184,
+   "lon": 24.184437,
+   "address": "Brīvības gatve 265",
+   "city": "Rīga",
+   "offers": {
+    "95": {
+     "price": 1.901,
+     "kind": "here",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.971,
+     "kind": "here",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 2.091,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "DP": {
+     "price": 2.221,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "XTL": {
+     "price": 2.49,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "n7091922483",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.959021,
+   "lon": 24.011632,
+   "address": "Anniņmuižas bulvāris 75",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "n7528951585",
+   "brand": "kool",
+   "name": "KOOL Lubāna",
+   "lat": 56.905658,
+   "lon": 26.707902,
+   "address": "Stacijas iela 16",
+   "city": "Lubāna",
+   "offers": {}
+  },
+  {
+   "id": "n7613437894",
+   "brand": "virsi",
+   "name": "Virši Ugāle",
+   "lat": 57.274452,
+   "lon": 22.019649,
+   "address": "",
+   "city": "Ugāle",
+   "offers": {}
+  },
+  {
+   "id": "n7653215897",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 57.387885,
+   "lon": 24.429575,
+   "address": "",
+   "city": "Saulkrasti",
+   "offers": {}
+  },
+  {
+   "id": "n7984699354",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.488745,
+   "lon": 27.314306,
+   "address": "",
+   "city": "Tēviņi",
+   "offers": {}
+  },
+  {
+   "id": "n8107174418",
+   "brand": "virsi",
+   "name": "Virši",
+   "lat": 56.518779,
+   "lon": 27.347357,
+   "address": "Stacijas iela 13B",
+   "city": "Rēzekne",
+   "offers": {}
+  },
+  {
+   "id": "n8370261117",
+   "brand": "kool",
+   "name": "Kool",
+   "lat": 56.889301,
+   "lon": 24.076827,
+   "address": "Tīraines iela 5D",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "n8592898370",
+   "brand": "neste",
+   "name": "Neste A24",
+   "lat": 56.812614,
+   "lon": 24.600945,
+   "address": "Rīgas iela 11A",
+   "city": "Ogre",
+   "offers": {}
+  },
+  {
+   "id": "n8773860824",
+   "brand": "neste",
+   "name": "Neste",
+   "lat": 56.940766,
+   "lon": 24.137954,
+   "address": "Katoļu iela 4",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "n8910676968",
+   "brand": "gotika",
+   "name": "Gotika",
+   "lat": 57.516976,
+   "lon": 24.664708,
+   "address": "",
+   "city": "Limbaži",
+   "offers": {}
+  },
+  {
+   "id": "n8972891038",
+   "brand": "kool",
+   "name": "KOOL",
+   "lat": 56.960674,
+   "lon": 24.174137,
+   "address": "Dzelzavas iela 36",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "n9114837782",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.938472,
+   "lon": 23.999795,
+   "address": "Kārļa Ulmaņa gatve 135",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "n9114837794",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.939142,
+   "lon": 24.001595,
+   "address": "Valgales iela 1",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "n9161075763",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 56.958387,
+   "lon": 24.233699,
+   "address": "Biķernieku iela 121A",
+   "city": "Rīga",
+   "offers": {
+    "95": {
+     "price": 1.901,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.971,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 2.091,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "DP": {
+     "price": 2.221,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "XTL": {
+     "price": 2.49,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "n9178972939",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 56.97403,
+   "lon": 24.168148,
+   "address": "Brīvības gatve 203",
+   "city": "Rīga",
+   "offers": {
+    "95": {
+     "price": 1.901,
+     "kind": "here",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.971,
+     "kind": "here",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 2.091,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "DP": {
+     "price": 2.221,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "XTL": {
+     "price": 2.49,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "n9219858712",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 56.937432,
+   "lon": 24.048013,
+   "address": "Kalnciema iela 88",
+   "city": "Rīga",
+   "offers": {
+    "95": {
+     "price": 1.901,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.971,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 2.091,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "DP": {
+     "price": 2.221,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "XTL": {
+     "price": 2.49,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "n9219901378",
+   "brand": "virsi",
+   "name": "Virši",
+   "lat": 56.642687,
+   "lon": 24.914956,
+   "address": "",
+   "city": "Dzelmes",
+   "offers": {}
+  },
+  {
+   "id": "n9228416797",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 56.887896,
+   "lon": 21.175375,
+   "address": "",
+   "city": "Pāvilosta",
+   "offers": {}
+  },
+  {
+   "id": "n9273406128",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 56.365154,
+   "lon": 24.279856,
+   "address": "",
+   "city": "Ceraukste",
+   "offers": {}
+  },
+  {
+   "id": "n9297764511",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 56.930542,
+   "lon": 23.58792,
+   "address": "Ventspils šoseja 70 k-2",
+   "city": "Jūrmala",
+   "offers": {}
+  },
+  {
+   "id": "n9328331415",
+   "brand": "virsi",
+   "name": "Virši Tirza, DUS",
+   "lat": 57.139491,
+   "lon": 26.405187,
+   "address": "",
+   "city": "Tirza",
+   "offers": {}
+  },
+  {
+   "id": "n9437534629",
+   "brand": "viada",
+   "name": "DUS \"Daugavpils 2\"",
+   "lat": 55.894648,
+   "lon": 26.520946,
+   "address": "Vidzemes iela 1D",
+   "city": "Daugavpils",
+   "offers": {}
+  },
+  {
+   "id": "n9558909390",
+   "brand": "virsi",
+   "name": "Virši",
+   "lat": 56.949594,
+   "lon": 23.98706,
+   "address": "Kārļa Ulmaņa gatve 162",
+   "city": "Rīga",
+   "offers": {
+    "D": {
+     "price": 2.087,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "95": {
+     "price": 1.889,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.959,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "n9702810088",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 55.876259,
+   "lon": 26.524146,
+   "address": "Stacijas iela 97A",
+   "city": "Daugavpils",
+   "offers": {}
+  },
+  {
+   "id": "n9848019452",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 56.662751,
+   "lon": 24.896823,
+   "address": "",
+   "city": "Lielvārde",
+   "offers": {}
+  },
+  {
+   "id": "n9868843673",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.926015,
+   "lon": 24.16176,
+   "address": "Krasta iela 78",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "n9886923426",
+   "brand": "neste",
+   "name": "Neste Annenieki",
+   "lat": 56.67286,
+   "lon": 23.090865,
+   "address": "",
+   "city": "Annenieki",
+   "offers": {}
+  },
+  {
+   "id": "n9890487700",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.91025,
+   "lon": 24.09617,
+   "address": "Valdeķu iela 34",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "n9927543500",
+   "brand": "virsi",
+   "name": "Virši Roja",
+   "lat": 57.497406,
+   "lon": 22.821313,
+   "address": "Selgas iela 70",
+   "city": "Roja",
+   "offers": {
+    "LPG": {
+     "price": 1.065,
+     "kind": "uniform",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "n10018929478",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 55.878956,
+   "lon": 26.505557,
+   "address": "Cietokšņa iela 82",
+   "city": "Daugavpils",
+   "offers": {}
+  },
+  {
+   "id": "n10048134453",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.930408,
+   "lon": 24.013839,
+   "address": "Šampētera iela 180",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "n10099082113",
+   "brand": "straujupite",
+   "name": "Straujupīte",
+   "lat": 56.916253,
+   "lon": 23.322687,
+   "address": "",
+   "city": "Tukums",
+   "offers": {}
+  },
+  {
+   "id": "n10157783119",
+   "brand": "virsi",
+   "name": "Virši-A",
+   "lat": 55.92951,
+   "lon": 26.636147,
+   "address": "",
+   "city": "Stropica",
+   "offers": {}
+  },
+  {
+   "id": "n11041850492",
+   "brand": "neste",
+   "name": "Neste",
+   "lat": 56.539123,
+   "lon": 21.032608,
+   "address": "Pulvera iela 10B",
+   "city": "Liepāja",
+   "offers": {}
+  },
+  {
+   "id": "n11096525835",
+   "brand": "straujupite",
+   "name": "Straujupīte",
+   "lat": 57.555198,
+   "lon": 25.443412,
+   "address": "",
+   "city": "Valmiermuiža",
+   "offers": {}
+  },
+  {
+   "id": "n11281758661",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 57.539421,
+   "lon": 26.692387,
+   "address": "Dzirnavu iela 1B",
+   "city": "Ape",
+   "offers": {}
+  },
+  {
+   "id": "n11823048265",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 55.895234,
+   "lon": 26.604594,
+   "address": "18. novembra iela 335D",
+   "city": "Daugavpils",
+   "offers": {}
+  },
+  {
+   "id": "n12143806450",
+   "brand": "virsi",
+   "name": "Virši Valmiera 2",
+   "lat": 57.518953,
+   "lon": 25.357557,
+   "address": "",
+   "city": "Brandeļi",
+   "offers": {}
+  },
+  {
+   "id": "n12347144103",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.51488,
+   "lon": 25.866658,
+   "address": "Varoņu iela 6",
+   "city": "Jēkabpils",
+   "offers": {}
+  },
+  {
+   "id": "n12347144106",
+   "brand": "virsi",
+   "name": "Virši",
+   "lat": 56.513528,
+   "lon": 25.868619,
+   "address": "Varoņu iela 10",
+   "city": "Jēkabpils",
+   "offers": {}
+  },
+  {
+   "id": "n12495901996",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.526249,
+   "lon": 27.344124,
+   "address": "Atbrīvošanas aleja 174A",
+   "city": "Rēzekne",
+   "offers": {}
+  },
+  {
+   "id": "n12625675004",
+   "brand": "virsi",
+   "name": "Virši Iecava",
+   "lat": 56.592771,
+   "lon": 24.191067,
+   "address": "Rīgas iela 2B",
+   "city": "Iecava",
+   "offers": {
+    "LPG": {
+     "price": 1.065,
+     "kind": "uniform",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "n12718556339",
+   "brand": "virsi",
+   "name": "Virši-A",
+   "lat": 55.888008,
+   "lon": 26.520211,
+   "address": "Kārklu iela 22",
+   "city": "Daugavpils",
+   "offers": {}
+  },
+  {
+   "id": "n13378941644",
+   "brand": "virsi",
+   "name": "Virši",
+   "lat": 57.759415,
+   "lon": 24.359951,
+   "address": "Viļņu iela 18",
+   "city": "Salacgrīva",
+   "offers": {}
+  },
+  {
+   "id": "n14022401453",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.536203,
+   "lon": 21.140317,
+   "address": "",
+   "city": "Grobiņa",
+   "offers": {}
+  },
+  {
+   "id": "w27263499",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 57.38524,
+   "lon": 21.585574,
+   "address": "Rūpniecības iela 4",
+   "city": "Ventspils",
+   "offers": {}
+  },
+  {
+   "id": "w31716157",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 56.405983,
+   "lon": 24.196776,
+   "address": "Zaļā iela 10",
+   "city": "Bauska",
+   "offers": {}
+  },
+  {
+   "id": "w33342506",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 57.02935,
+   "lon": 24.046788,
+   "address": "Gaigalas iela 19A",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "w34563772",
+   "brand": "neste",
+   "name": "Neste",
+   "lat": 56.831351,
+   "lon": 24.233797,
+   "address": "Rīgas iela 24",
+   "city": "Ķekava",
+   "offers": {}
+  },
+  {
+   "id": "w38316134",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 57.22944,
+   "lon": 24.421064,
+   "address": "",
+   "city": "Saulkrasti",
+   "offers": {}
+  },
+  {
+   "id": "w40492092",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.825021,
+   "lon": 24.599345,
+   "address": "Mežezera iela 1",
+   "city": "Aizupes",
+   "offers": {}
+  },
+  {
+   "id": "w41873479",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 56.816205,
+   "lon": 24.587436,
+   "address": "Rīgas iela 19",
+   "city": "Ogre",
+   "offers": {}
+  },
+  {
+   "id": "w44042209",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 57.02401,
+   "lon": 24.137868,
+   "address": "Mīlgrāvja iela 10",
+   "city": "Rīga",
+   "offers": {
+    "95": {
+     "price": 1.901,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.971,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 2.091,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "DP": {
+     "price": 2.221,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "XTL": {
+     "price": 2.49,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "w67219233",
+   "brand": "neste",
+   "name": "Neste Cēsis I",
+   "lat": 57.315655,
+   "lon": 25.278817,
+   "address": "",
+   "city": "Cēsis",
+   "offers": {}
+  },
+  {
+   "id": "w67531733",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.819121,
+   "lon": 24.562907,
+   "address": "Rīgas iela 116",
+   "city": "Ogre",
+   "offers": {}
+  },
+  {
+   "id": "w67729886",
+   "brand": "virsi",
+   "name": "Virši",
+   "lat": 57.296666,
+   "lon": 25.305327,
+   "address": "",
+   "city": "Cēsis",
+   "offers": {}
+  },
+  {
+   "id": "w67730028",
+   "brand": "kool",
+   "name": "KOOL Cēsis",
+   "lat": 57.307762,
+   "lon": 25.284429,
+   "address": "Lapsu iela 36",
+   "city": "Cēsis",
+   "offers": {}
+  },
+  {
+   "id": "w69635610",
+   "brand": "neste",
+   "name": "Neste",
+   "lat": 57.531705,
+   "lon": 25.428789,
+   "address": "Mazā Stacijas iela 14",
+   "city": "Valmiera",
+   "offers": {}
+  },
+  {
+   "id": "w69974853",
+   "brand": "virsi",
+   "name": "Virši-A",
+   "lat": 57.311985,
+   "lon": 25.280027,
+   "address": "Raiņa iela 32",
+   "city": "Cēsis",
+   "offers": {}
+  },
+  {
+   "id": "w70086070",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 57.320033,
+   "lon": 25.291796,
+   "address": "Valmieras iela 12",
+   "city": "Cēsis",
+   "offers": {}
+  },
+  {
+   "id": "w82845947",
+   "brand": "virsi",
+   "name": "Virši",
+   "lat": 57.179655,
+   "lon": 24.714214,
+   "address": "Tirgus iela 4",
+   "city": "Ragana",
+   "offers": {
+    "LPG": {
+     "price": 1.065,
+     "kind": "uniform",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "w85698941",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 57.508308,
+   "lon": 25.460471,
+   "address": "",
+   "city": "Valmiera",
+   "offers": {}
+  },
+  {
+   "id": "w87173141",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.882383,
+   "lon": 24.246937,
+   "address": "Latgales iela 481",
+   "city": "Rumbula",
+   "offers": {}
+  },
+  {
+   "id": "w87647874",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 56.989347,
+   "lon": 24.24351,
+   "address": "",
+   "city": "Rīga",
+   "offers": {
+    "95": {
+     "price": 1.901,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.971,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 2.091,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "DP": {
+     "price": 2.221,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "XTL": {
+     "price": 2.49,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "w88813438",
+   "brand": "circlek",
+   "name": "Circle K Liepāja 2",
+   "lat": 56.487302,
+   "lon": 21.017219,
+   "address": "Ganību iela 171",
+   "city": "Liepāja",
+   "offers": {}
+  },
+  {
+   "id": "w89390863",
+   "brand": "neste",
+   "name": "Neste A24",
+   "lat": 56.910209,
+   "lon": 24.086933,
+   "address": "",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "w90279661",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 56.934204,
+   "lon": 24.13895,
+   "address": "Krasta iela 47",
+   "city": "Rīga",
+   "offers": {
+    "95": {
+     "price": 1.901,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.971,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 2.091,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "DP": {
+     "price": 2.221,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "XTL": {
+     "price": 2.49,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "w90988189",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.915901,
+   "lon": 24.17544,
+   "address": "Latgales iela 293A",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "w91660137",
+   "brand": "kool",
+   "name": "KOOL Kocēni",
+   "lat": 57.513339,
+   "lon": 25.340151,
+   "address": "",
+   "city": "Kocēni",
+   "offers": {}
+  },
+  {
+   "id": "w91892365",
+   "brand": "kool",
+   "name": "Kool",
+   "lat": 57.002329,
+   "lon": 24.285768,
+   "address": "",
+   "city": "Berģi",
+   "offers": {}
+  },
+  {
+   "id": "w91969921",
+   "brand": "neste",
+   "name": "Neste",
+   "lat": 57.555389,
+   "lon": 25.442846,
+   "address": "",
+   "city": "Valmiera",
+   "offers": {}
+  },
+  {
+   "id": "w94469555",
+   "brand": "neste",
+   "name": "Neste",
+   "lat": 57.387448,
+   "lon": 21.582795,
+   "address": "Lāčplēša iela 1",
+   "city": "Ventspils",
+   "offers": {}
+  },
+  {
+   "id": "w94475615",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 57.397051,
+   "lon": 21.614623,
+   "address": "",
+   "city": "Ventspils",
+   "offers": {}
+  },
+  {
+   "id": "w97771256",
+   "brand": "circlek",
+   "name": "1-2-3",
+   "lat": 56.962212,
+   "lon": 23.724323,
+   "address": "",
+   "city": "Jūrmala",
+   "offers": {}
+  },
+  {
+   "id": "w102902631",
+   "brand": "neste",
+   "name": "Neste",
+   "lat": 56.951831,
+   "lon": 24.034618,
+   "address": "Jūrmalas gatve 46B",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "w104836796",
+   "brand": "virsi",
+   "name": "Virši",
+   "lat": 56.926777,
+   "lon": 24.078434,
+   "address": "Mārupes iela 57",
+   "city": "Rīga",
+   "offers": {
+    "D": {
+     "price": 2.087,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "95": {
+     "price": 1.889,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.959,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "w105110116",
+   "brand": "gotika",
+   "name": "Gotika auto",
+   "lat": 56.954813,
+   "lon": 23.633902,
+   "address": "Staiceles iela 3",
+   "city": "Jūrmala",
+   "offers": {}
+  },
+  {
+   "id": "w105131783",
+   "brand": "neste",
+   "name": "Neste",
+   "lat": 56.964008,
+   "lon": 23.604096,
+   "address": "",
+   "city": "Jūrmala",
+   "offers": {}
+  },
+  {
+   "id": "w105136147",
+   "brand": "neste",
+   "name": "Neste",
+   "lat": 56.978252,
+   "lon": 24.181995,
+   "address": "Brīvības gatve 255",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "w105658640",
+   "brand": "neste",
+   "name": "Neste A24",
+   "lat": 56.964536,
+   "lon": 24.167862,
+   "address": "Dzelzavas iela 5",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "w121221739",
+   "brand": "neste",
+   "name": "Neste Liepāja",
+   "lat": 56.515775,
+   "lon": 21.014172,
+   "address": "Raiņa iela 2",
+   "city": "Liepāja",
+   "offers": {}
+  },
+  {
+   "id": "w121221740",
+   "brand": "neste",
+   "name": "Neste Liepāja II",
+   "lat": 56.511829,
+   "lon": 21.018607,
+   "address": "Kārļa Zāles laukums 7",
+   "city": "Liepāja",
+   "offers": {}
+  },
+  {
+   "id": "w121256609",
+   "brand": "viada",
+   "name": "Viada \"Liepāja 1\"",
+   "lat": 56.534274,
+   "lon": 21.012831,
+   "address": "Krūmu iela 56",
+   "city": "Liepāja",
+   "offers": {}
+  },
+  {
+   "id": "w121481135",
+   "brand": "kool",
+   "name": "Kool",
+   "lat": 56.947559,
+   "lon": 24.201571,
+   "address": "",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "w121535918",
+   "brand": "viada",
+   "name": "Viada Liepāja 4",
+   "lat": 56.520221,
+   "lon": 21.00617,
+   "address": "",
+   "city": "Liepāja",
+   "offers": {}
+  },
+  {
+   "id": "w125335691",
+   "brand": "kool",
+   "name": "KOOL Madona",
+   "lat": 56.861091,
+   "lon": 26.228965,
+   "address": "Saules iela 46",
+   "city": "Madona",
+   "offers": {}
+  },
+  {
+   "id": "w125347564",
+   "brand": "virsi",
+   "name": "Virši",
+   "lat": 56.85908,
+   "lon": 26.231249,
+   "address": "",
+   "city": "Madona",
+   "offers": {}
+  },
+  {
+   "id": "w127168352",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.95836,
+   "lon": 24.239255,
+   "address": "Vecā Biķernieku iela 1",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "w130994161",
+   "brand": "neste",
+   "name": "Neste A24",
+   "lat": 56.670719,
+   "lon": 23.761692,
+   "address": "",
+   "city": "Jelgava",
+   "offers": {}
+  },
+  {
+   "id": "w131673304",
+   "brand": "gotika",
+   "name": "Gotika",
+   "lat": 56.984904,
+   "lon": 24.19238,
+   "address": "Krustabaznīcas iela 10",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "w132257418",
+   "brand": "neste",
+   "name": "Neste",
+   "lat": 57.133962,
+   "lon": 24.781923,
+   "address": "",
+   "city": "Sigulda",
+   "offers": {}
+  },
+  {
+   "id": "w132303325",
+   "brand": "virsi",
+   "name": "Virši",
+   "lat": 56.974907,
+   "lon": 24.173636,
+   "address": "Brīvības gatve 250",
+   "city": "Rīga",
+   "offers": {
+    "D": {
+     "price": 2.087,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "95": {
+     "price": 1.889,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.959,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "w133125131",
+   "brand": "circlek",
+   "name": "Circle K Jelgava 1",
+   "lat": 56.647551,
+   "lon": 23.730171,
+   "address": "Akadēmijas iela 20",
+   "city": "Jelgava",
+   "offers": {}
+  },
+  {
+   "id": "w133336388",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 56.964317,
+   "lon": 24.15048,
+   "address": "Pērnavas iela 7",
+   "city": "Rīga",
+   "offers": {
+    "95": {
+     "price": 1.901,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.971,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 2.091,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "DP": {
+     "price": 2.221,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "XTL": {
+     "price": 2.49,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "w133875440",
+   "brand": "neste",
+   "name": "Neste",
+   "lat": 56.986542,
+   "lon": 24.219939,
+   "address": "Brīvības gatve 386",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "w135805295",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 56.971202,
+   "lon": 24.134286,
+   "address": "",
+   "city": "Rīga",
+   "offers": {
+    "95": {
+     "price": 1.901,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.971,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 2.091,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "DP": {
+     "price": 2.221,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "XTL": {
+     "price": 2.49,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "w137268510",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.893297,
+   "lon": 24.217829,
+   "address": "Latgales iela 440",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "w139932687",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 56.993485,
+   "lon": 24.122092,
+   "address": "Tvaika iela 2A",
+   "city": "Rīga",
+   "offers": {
+    "95": {
+     "price": 1.901,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.971,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 2.091,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "DP": {
+     "price": 2.221,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "XTL": {
+     "price": 2.49,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "LPG": {
+     "price": 1.065,
+     "kind": "here",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "w142028451",
+   "brand": "virsi",
+   "name": "Virši",
+   "lat": 56.981464,
+   "lon": 24.192474,
+   "address": "Brīvības gatve 297",
+   "city": "Rīga",
+   "offers": {
+    "D": {
+     "price": 2.087,
+     "kind": "here",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "95": {
+     "price": 1.889,
+     "kind": "here",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.959,
+     "kind": "here",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "w144460225",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 57.089696,
+   "lon": 24.314153,
+   "address": "Rīgas gatve 65",
+   "city": "Ādaži",
+   "offers": {}
+  },
+  {
+   "id": "w145485483",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.922649,
+   "lon": 24.179837,
+   "address": "Salaspils iela 4A",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "w147156838",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 56.981695,
+   "lon": 24.135664,
+   "address": "Duntes iela 15",
+   "city": "Rīga",
+   "offers": {
+    "95": {
+     "price": 1.901,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.971,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 2.091,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "DP": {
+     "price": 2.221,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "XTL": {
+     "price": 2.49,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "w148771702",
+   "brand": "neste",
+   "name": "Neste",
+   "lat": 57.849724,
+   "lon": 24.353565,
+   "address": "",
+   "city": "Ainaži",
+   "offers": {}
+  },
+  {
+   "id": "w149509745",
+   "brand": "virsi",
+   "name": "Virši",
+   "lat": 56.950465,
+   "lon": 24.153582,
+   "address": "Pērnavas iela 78",
+   "city": "Rīga",
+   "offers": {
+    "D": {
+     "price": 2.087,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "95": {
+     "price": 1.889,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.959,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "w151676253",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 56.950492,
+   "lon": 24.186712,
+   "address": "Gunāra Astras iela 10",
+   "city": "Rīga",
+   "offers": {
+    "95": {
+     "price": 1.901,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.971,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 2.091,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "DP": {
+     "price": 2.221,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "XTL": {
+     "price": 2.49,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "w152286279",
+   "brand": "virsi",
+   "name": "Virši-A",
+   "lat": 56.883032,
+   "lon": 24.242262,
+   "address": "Latgales iela 450K",
+   "city": "Rīga",
+   "offers": {
+    "D": {
+     "price": 2.087,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "95": {
+     "price": 1.889,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.959,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "w152292411",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.940126,
+   "lon": 24.182989,
+   "address": "Dārzciema iela 69",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "w153012926",
+   "brand": "neste",
+   "name": "Neste",
+   "lat": 56.851425,
+   "lon": 24.334129,
+   "address": "Zviedru iela 1C",
+   "city": "Salaspils",
+   "offers": {}
+  },
+  {
+   "id": "w153090207",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 56.856512,
+   "lon": 24.322083,
+   "address": "Nometņu iela 1",
+   "city": "Salaspils",
+   "offers": {}
+  },
+  {
+   "id": "w153131223",
+   "brand": "virsi",
+   "name": "Virši",
+   "lat": 56.913443,
+   "lon": 24.237573,
+   "address": "Granīta iela 13A",
+   "city": "Rumbula",
+   "offers": {}
+  },
+  {
+   "id": "w153135163",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 56.942836,
+   "lon": 24.229622,
+   "address": "Augusta Deglava iela 164C",
+   "city": "Rīga",
+   "offers": {
+    "95": {
+     "price": 1.901,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.971,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 2.091,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "DP": {
+     "price": 2.221,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "XTL": {
+     "price": 2.49,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "LPG": {
+     "price": 1.065,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "w153918648",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.810062,
+   "lon": 24.246866,
+   "address": "",
+   "city": "Ķekava",
+   "offers": {}
+  },
+  {
+   "id": "w153918652",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 56.821519,
+   "lon": 24.246142,
+   "address": "Rīgas iela 107",
+   "city": "Ķekava",
+   "offers": {}
+  },
+  {
+   "id": "w154081163",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 56.96297,
+   "lon": 24.169334,
+   "address": "Dzelzavas iela 14",
+   "city": "Rīga",
+   "offers": {
+    "95": {
+     "price": 1.901,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.971,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 2.091,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "DP": {
+     "price": 2.221,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "XTL": {
+     "price": 2.49,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "w156611760",
+   "brand": "neste",
+   "name": "Neste",
+   "lat": 56.975201,
+   "lon": 23.857467,
+   "address": "Viestura iela 21",
+   "city": "Jūrmala",
+   "offers": {}
+  },
+  {
+   "id": "w157034702",
+   "brand": "neste",
+   "name": "Neste",
+   "lat": 56.92818,
+   "lon": 24.051954,
+   "address": "",
+   "city": "Mārupe",
+   "offers": {}
+  },
+  {
+   "id": "w161368431",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 56.94371,
+   "lon": 24.258767,
+   "address": "Kuršu iela 1",
+   "city": "Ulbroka",
+   "offers": {}
+  },
+  {
+   "id": "w161794232",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.982084,
+   "lon": 24.183549,
+   "address": "Džutas iela 16",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "w170040936",
+   "brand": "neste",
+   "name": "Neste",
+   "lat": 56.516434,
+   "lon": 27.337272,
+   "address": "Atbrīvošanas aleja 146",
+   "city": "Rēzekne",
+   "offers": {}
+  },
+  {
+   "id": "w175868384",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 56.912475,
+   "lon": 24.12284,
+   "address": "",
+   "city": "Rīga",
+   "offers": {
+    "95": {
+     "price": 1.901,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.971,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 2.091,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "DP": {
+     "price": 2.221,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "XTL": {
+     "price": 2.49,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "w176865500",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 56.970269,
+   "lon": 23.168542,
+   "address": "Meža iela 30",
+   "city": "Tukums",
+   "offers": {}
+  },
+  {
+   "id": "w176865571",
+   "brand": "neste",
+   "name": "Neste",
+   "lat": 56.970605,
+   "lon": 23.157533,
+   "address": "Kurzemes iela 7A",
+   "city": "Tukums",
+   "offers": {}
+  },
+  {
+   "id": "w177032995",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.521457,
+   "lon": 21.027051,
+   "address": "Zemnieku iela 58",
+   "city": "Liepāja",
+   "offers": {}
+  },
+  {
+   "id": "w177033033",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 56.534458,
+   "lon": 21.055825,
+   "address": "Cukura iela 3",
+   "city": "Liepāja",
+   "offers": {}
+  },
+  {
+   "id": "w181836562",
+   "brand": "virsi",
+   "name": "Virši",
+   "lat": 56.974204,
+   "lon": 24.10282,
+   "address": "Katrīnas dambis 35",
+   "city": "Rīga",
+   "offers": {
+    "D": {
+     "price": 2.087,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "95": {
+     "price": 1.889,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.959,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "w184328974",
+   "brand": "astarte",
+   "name": "Astarte",
+   "lat": 56.744955,
+   "lon": 24.719405,
+   "address": "Ķeguma prospekts 1A",
+   "city": "Ķegums",
+   "offers": {}
+  },
+  {
+   "id": "w184805884",
+   "brand": "virsi",
+   "name": "Virši",
+   "lat": 56.510795,
+   "lon": 24.722254,
+   "address": "Rīgas iela 2",
+   "city": "Valle",
+   "offers": {
+    "LPG": {
+     "price": 1.065,
+     "kind": "uniform",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "w185302541",
+   "brand": "virsi",
+   "name": "Virši",
+   "lat": 56.376149,
+   "lon": 26.163622,
+   "address": "",
+   "city": "Līvāni",
+   "offers": {}
+  },
+  {
+   "id": "w187990784",
+   "brand": "gotika",
+   "name": "Gotika auto",
+   "lat": 56.924077,
+   "lon": 22.791233,
+   "address": "",
+   "city": "Zemīte",
+   "offers": {}
+  },
+  {
+   "id": "w191364231",
+   "brand": "neste",
+   "name": "Neste",
+   "lat": 56.988036,
+   "lon": 24.130516,
+   "address": "",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "w196306321",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 56.655654,
+   "lon": 23.69784,
+   "address": "Satiksmes iela 29",
+   "city": "Jelgava",
+   "offers": {}
+  },
+  {
+   "id": "w197907765",
+   "brand": "virsi",
+   "name": "Virši-A",
+   "lat": 57.138734,
+   "lon": 27.257803,
+   "address": "Krasta iela 3",
+   "city": "Balvi",
+   "offers": {}
+  },
+  {
+   "id": "w200480401",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.494666,
+   "lon": 25.878042,
+   "address": "Vienības iela 3",
+   "city": "Jēkabpils",
+   "offers": {}
+  },
+  {
+   "id": "w203414397",
+   "brand": "straujupite",
+   "name": "Straujupīte",
+   "lat": 57.099371,
+   "lon": 24.312633,
+   "address": "",
+   "city": "Ādaži",
+   "offers": {}
+  },
+  {
+   "id": "w208829778",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 56.909534,
+   "lon": 24.0847,
+   "address": "Vienības gatve 105",
+   "city": "Rīga",
+   "offers": {
+    "95": {
+     "price": 1.901,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.971,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 2.091,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "DP": {
+     "price": 2.221,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "XTL": {
+     "price": 2.49,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "w210669136",
+   "brand": "kool",
+   "name": "KOOL",
+   "lat": 57.052741,
+   "lon": 24.154713,
+   "address": "",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "w211888951",
+   "brand": "virsi",
+   "name": "Virši Tukums 2",
+   "lat": 56.950447,
+   "lon": 23.118864,
+   "address": "Kuldīgas iela 69",
+   "city": "Tukums",
+   "offers": {
+    "LPG": {
+     "price": 1.065,
+     "kind": "uniform",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "w220965927",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.934875,
+   "lon": 24.202848,
+   "address": "Andreja Saharova iela 10",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "w221429174",
+   "brand": "virsi",
+   "name": "Virši",
+   "lat": 56.911352,
+   "lon": 24.095339,
+   "address": "Valdeķu iela 35",
+   "city": "Rīga",
+   "offers": {
+    "D": {
+     "price": 2.087,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "95": {
+     "price": 1.889,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.959,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "w224255416",
+   "brand": "neste",
+   "name": "Neste",
+   "lat": 57.0705,
+   "lon": 24.320188,
+   "address": "Rīgas gatve 5A",
+   "city": "Ādaži",
+   "offers": {}
+  },
+  {
+   "id": "w226345105",
+   "brand": "virsi",
+   "name": "Virši",
+   "lat": 57.035191,
+   "lon": 22.78116,
+   "address": "Abavas iela 4",
+   "city": "Kandava",
+   "offers": {}
+  },
+  {
+   "id": "w227623100",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.910003,
+   "lon": 24.127649,
+   "address": "Ziepniekkalna iela 20",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "w229715560",
+   "brand": "neste",
+   "name": "Neste A24",
+   "lat": 56.930025,
+   "lon": 24.154523,
+   "address": "Krasta iela 68",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "w231852846",
+   "brand": "kool",
+   "name": "KOOL Inčukalna",
+   "lat": 57.113164,
+   "lon": 24.62309,
+   "address": "",
+   "city": "Inčukalns",
+   "offers": {}
+  },
+  {
+   "id": "w231940986",
+   "brand": "gotika",
+   "name": "Gotika Auto",
+   "lat": 56.533663,
+   "lon": 21.056776,
+   "address": "Cukura iela 1A",
+   "city": "Liepāja",
+   "offers": {}
+  },
+  {
+   "id": "w235350262",
+   "brand": "viada",
+   "name": "VIADA \"Grobiņa\"",
+   "lat": 56.536257,
+   "lon": 21.14346,
+   "address": "",
+   "city": "Grobiņa",
+   "offers": {}
+  },
+  {
+   "id": "w236625808",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.958767,
+   "lon": 21.986075,
+   "address": "Graudu iela 9",
+   "city": "Kuldīga",
+   "offers": {}
+  },
+  {
+   "id": "w238434527",
+   "brand": "circlek",
+   "name": "Circle K Kuldīga",
+   "lat": 56.958259,
+   "lon": 21.991796,
+   "address": "",
+   "city": "Kuldīga",
+   "offers": {}
+  },
+  {
+   "id": "w238818579",
+   "brand": "neste",
+   "name": "Neste",
+   "lat": 56.966531,
+   "lon": 21.957636,
+   "address": "",
+   "city": "Kuldīga",
+   "offers": {}
+  },
+  {
+   "id": "w241893194",
+   "brand": "virsi",
+   "name": "Virši-A",
+   "lat": 56.368628,
+   "lon": 25.003813,
+   "address": "",
+   "city": "Cita vieta",
+   "offers": {}
+  },
+  {
+   "id": "w245122517",
+   "brand": "virsi",
+   "name": "Virši veikals",
+   "lat": 57.039013,
+   "lon": 22.906044,
+   "address": "",
+   "city": "Kandava",
+   "offers": {}
+  },
+  {
+   "id": "w246126919",
+   "brand": "gotika",
+   "name": "Gotika auto",
+   "lat": 56.843243,
+   "lon": 23.040333,
+   "address": "",
+   "city": "Tukums",
+   "offers": {}
+  },
+  {
+   "id": "w288230491",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 57.064199,
+   "lon": 25.8077,
+   "address": "",
+   "city": "Cita vieta",
+   "offers": {}
+  },
+  {
+   "id": "w301440745",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 56.966243,
+   "lon": 24.145623,
+   "address": "Brīvības iela 176A",
+   "city": "Rīga",
+   "offers": {
+    "95": {
+     "price": 1.901,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.971,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 2.091,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "DP": {
+     "price": 2.221,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "XTL": {
+     "price": 2.49,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "w305596110",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.48534,
+   "lon": 21.015306,
+   "address": "Ganību iela 180",
+   "city": "Liepāja",
+   "offers": {}
+  },
+  {
+   "id": "w308584034",
+   "brand": "kool",
+   "name": "KOOL Mazblīdene",
+   "lat": 56.647165,
+   "lon": 22.854107,
+   "address": "",
+   "city": "Brocēni",
+   "offers": {}
+  },
+  {
+   "id": "w308892116",
+   "brand": "neste",
+   "name": "Neste A24",
+   "lat": 56.95387,
+   "lon": 24.068943,
+   "address": "Kuldīgas iela 1",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "w348514705",
+   "brand": "neste",
+   "name": "Neste",
+   "lat": 56.930858,
+   "lon": 24.184238,
+   "address": "",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "w349322228",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.298201,
+   "lon": 26.706002,
+   "address": "Rīgas iela 8",
+   "city": "Preiļi",
+   "offers": {}
+  },
+  {
+   "id": "w352093275",
+   "brand": "viada",
+   "name": "VIADA \"Nīca\"",
+   "lat": 56.346851,
+   "lon": 21.060186,
+   "address": "",
+   "city": "Nīca",
+   "offers": {}
+  },
+  {
+   "id": "w371646944",
+   "brand": "virsi",
+   "name": "Virši",
+   "lat": 56.574045,
+   "lon": 25.224904,
+   "address": "",
+   "city": "Aizkraukle",
+   "offers": {}
+  },
+  {
+   "id": "w390794513",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 57.22548,
+   "lon": 24.390636,
+   "address": "",
+   "city": "Saulkrasti",
+   "offers": {}
+  },
+  {
+   "id": "w390795462",
+   "brand": "virsi",
+   "name": "Virši",
+   "lat": 56.938395,
+   "lon": 24.089623,
+   "address": "Uzvaras bulvāris 16",
+   "city": "Rīga",
+   "offers": {
+    "D": {
+     "price": 2.087,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "95": {
+     "price": 1.889,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.959,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "w391707193",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 57.233181,
+   "lon": 22.584024,
+   "address": "",
+   "city": "Talsi",
+   "offers": {}
+  },
+  {
+   "id": "w475425084",
+   "brand": "viada",
+   "name": "Viada Limbaži",
+   "lat": 57.512291,
+   "lon": 24.729413,
+   "address": "Cēsu iela 32",
+   "city": "Limbaži",
+   "offers": {}
+  },
+  {
+   "id": "w492950990",
+   "brand": "virsi",
+   "name": "Virši-A",
+   "lat": 57.039145,
+   "lon": 22.905755,
+   "address": "Daigones iela 13A",
+   "city": "Pūre",
+   "offers": {
+    "LPG": {
+     "price": 1.065,
+     "kind": "uniform",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "w501249177",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.352589,
+   "lon": 27.173478,
+   "address": "",
+   "city": "Mostovaja",
+   "offers": {}
+  },
+  {
+   "id": "w518492431",
+   "brand": "neste",
+   "name": "Neste",
+   "lat": 57.531774,
+   "lon": 25.393215,
+   "address": "Rīgas iela 76",
+   "city": "Valmiera",
+   "offers": {}
+  },
+  {
+   "id": "w518498222",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 57.530523,
+   "lon": 25.392646,
+   "address": "",
+   "city": "Valmiera",
+   "offers": {}
+  },
+  {
+   "id": "w530664906",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 56.516201,
+   "lon": 25.856107,
+   "address": "Rīgas iela 218G",
+   "city": "Jēkabpils",
+   "offers": {}
+  },
+  {
+   "id": "w530820221",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.509954,
+   "lon": 25.874302,
+   "address": "Latgales iela 42",
+   "city": "Jēkabpils",
+   "offers": {}
+  },
+  {
+   "id": "w534093801",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 56.906349,
+   "lon": 24.189078,
+   "address": "",
+   "city": "Rīga",
+   "offers": {
+    "95": {
+     "price": 1.901,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.971,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 2.091,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "DP": {
+     "price": 2.221,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "XTL": {
+     "price": 2.49,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "w537078090",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 57.279796,
+   "lon": 25.49131,
+   "address": "",
+   "city": "Bērzkrogs",
+   "offers": {}
+  },
+  {
+   "id": "w542993941",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 57.757009,
+   "lon": 24.362114,
+   "address": "Viļņu iela 4",
+   "city": "Salacgrīva",
+   "offers": {}
+  },
+  {
+   "id": "w542993942",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 57.526948,
+   "lon": 25.43504,
+   "address": "Stacijas iela 29",
+   "city": "Valmiera",
+   "offers": {}
+  },
+  {
+   "id": "w542993943",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 57.29834,
+   "lon": 25.300381,
+   "address": "",
+   "city": "Cēsis",
+   "offers": {}
+  },
+  {
+   "id": "w542993946",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 56.515768,
+   "lon": 21.018055,
+   "address": "Esperanto iela 2/8",
+   "city": "Liepāja",
+   "offers": {}
+  },
+  {
+   "id": "w547126934",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 57.17763,
+   "lon": 26.742684,
+   "address": "",
+   "city": "Gulbene",
+   "offers": {}
+  },
+  {
+   "id": "w547126935",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 56.950722,
+   "lon": 24.185287,
+   "address": "Gunāra Astras iela 17",
+   "city": "Rīga",
+   "offers": {
+    "95": {
+     "price": 1.901,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.971,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 2.091,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "DP": {
+     "price": 2.221,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "XTL": {
+     "price": 2.49,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "w547126938",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 56.682511,
+   "lon": 22.471258,
+   "address": "",
+   "city": "Saldus",
+   "offers": {}
+  },
+  {
+   "id": "w585672583",
+   "brand": "neste",
+   "name": "Neste",
+   "lat": 56.493301,
+   "lon": 25.87575,
+   "address": "Vienības iela 1E",
+   "city": "Jēkabpils",
+   "offers": {}
+  },
+  {
+   "id": "w585672601",
+   "brand": "astarte",
+   "name": "Astarte",
+   "lat": 56.494334,
+   "lon": 25.88492,
+   "address": "Kļavu iela 4",
+   "city": "Jēkabpils",
+   "offers": {}
+  },
+  {
+   "id": "w593733065",
+   "brand": "virsi",
+   "name": "Virši-A",
+   "lat": 56.779568,
+   "lon": 27.696711,
+   "address": "",
+   "city": "Malnavas fermas",
+   "offers": {}
+  },
+  {
+   "id": "w598401890",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 57.351368,
+   "lon": 24.951229,
+   "address": "",
+   "city": "Cēsis",
+   "offers": {}
+  },
+  {
+   "id": "w642849154",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 57.226824,
+   "lon": 24.419682,
+   "address": "",
+   "city": "Saulkrasti",
+   "offers": {}
+  },
+  {
+   "id": "w646094992",
+   "brand": "straujupite",
+   "name": "Straujupīte",
+   "lat": 56.721608,
+   "lon": 24.781995,
+   "address": "Lāčplēša iela 60",
+   "city": "Lielvārde",
+   "offers": {}
+  },
+  {
+   "id": "w654849331",
+   "brand": "virsi",
+   "name": "Virši Auce",
+   "lat": 56.460208,
+   "lon": 22.893694,
+   "address": "Raiņa iela 30",
+   "city": "Auce",
+   "offers": {}
+  },
+  {
+   "id": "w673048949",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.775062,
+   "lon": 27.688208,
+   "address": "",
+   "city": "Cita vieta",
+   "offers": {}
+  },
+  {
+   "id": "w686473080",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.9287,
+   "lon": 24.934915,
+   "address": "",
+   "city": "Ropaži",
+   "offers": {}
+  },
+  {
+   "id": "w694301499",
+   "brand": "kool",
+   "name": "KOOL Valmiera 2",
+   "lat": 57.52188,
+   "lon": 25.450048,
+   "address": "",
+   "city": "Valmiera",
+   "offers": {}
+  },
+  {
+   "id": "w700604211",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.988596,
+   "lon": 24.129812,
+   "address": "",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "w718428884",
+   "brand": "neste",
+   "name": "Neste Vecumnieki",
+   "lat": 56.611004,
+   "lon": 24.514776,
+   "address": "Rīgas iela 1",
+   "city": "Vecumnieki",
+   "offers": {}
+  },
+  {
+   "id": "w719365987",
+   "brand": "kool",
+   "name": "KOOL Jelgava1",
+   "lat": 56.635874,
+   "lon": 23.727327,
+   "address": "",
+   "city": "Jelgava",
+   "offers": {}
+  },
+  {
+   "id": "w719365990",
+   "brand": "kool",
+   "name": "KOOL Līgatne",
+   "lat": 57.181622,
+   "lon": 25.029851,
+   "address": "",
+   "city": "Augšlīgatne",
+   "offers": {}
+  },
+  {
+   "id": "w719365995",
+   "brand": "kool",
+   "name": "KOOL Saurieši",
+   "lat": 56.91262,
+   "lon": 24.367642,
+   "address": "",
+   "city": "Stopiņi",
+   "offers": {}
+  },
+  {
+   "id": "w719442954",
+   "brand": "kool",
+   "name": "KOOL Ādaži",
+   "lat": 57.09422,
+   "lon": 24.312624,
+   "address": "Rīgas gatve 69",
+   "city": "Ādaži",
+   "offers": {}
+  },
+  {
+   "id": "w719442957",
+   "brand": "kool",
+   "name": "KOOL Valmiera",
+   "lat": 57.529282,
+   "lon": 25.38638,
+   "address": "Rīgas iela 90",
+   "city": "Valmiera",
+   "offers": {}
+  },
+  {
+   "id": "w808297110",
+   "brand": "virsi",
+   "name": "Virši",
+   "lat": 57.012223,
+   "lon": 21.392176,
+   "address": "",
+   "city": "Jūrkalne",
+   "offers": {}
+  },
+  {
+   "id": "w818829665",
+   "brand": "virsi",
+   "name": "Virši",
+   "lat": 56.720503,
+   "lon": 25.486381,
+   "address": "",
+   "city": "Vecbebri",
+   "offers": {}
+  },
+  {
+   "id": "w835511623",
+   "brand": "virsi",
+   "name": "Virši-A",
+   "lat": 56.598758,
+   "lon": 25.245427,
+   "address": "Gaismas iela 1",
+   "city": "Aizkraukle",
+   "offers": {}
+  },
+  {
+   "id": "w839278624",
+   "brand": "virsi",
+   "name": "Virši",
+   "lat": 57.021277,
+   "lon": 21.690887,
+   "address": "Dārza iela 7",
+   "city": "Ēdole",
+   "offers": {}
+  },
+  {
+   "id": "w896084470",
+   "brand": "astarte",
+   "name": "Astarte",
+   "lat": 56.645354,
+   "lon": 25.435984,
+   "address": "",
+   "city": "Aizkraukle",
+   "offers": {}
+  },
+  {
+   "id": "w903867512",
+   "brand": "neste",
+   "name": "Neste Cēsis 2",
+   "lat": 57.312366,
+   "lon": 25.304385,
+   "address": "Jāņa Poruka iela 49",
+   "city": "Cēsis",
+   "offers": {}
+  },
+  {
+   "id": "w905226220",
+   "brand": "virsi",
+   "name": "Virši",
+   "lat": 57.295236,
+   "lon": 25.264477,
+   "address": "",
+   "city": "Cēsis",
+   "offers": {}
+  },
+  {
+   "id": "w906131184",
+   "brand": "virsi",
+   "name": "Virši-A",
+   "lat": 56.485605,
+   "lon": 25.880102,
+   "address": "Jāņa Akuratera iela 13",
+   "city": "Jēkabpils",
+   "offers": {}
+  },
+  {
+   "id": "w930449699",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.48738,
+   "lon": 25.884868,
+   "address": "Brīvības iela 23",
+   "city": "Jēkabpils",
+   "offers": {}
+  },
+  {
+   "id": "w938162986",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.538941,
+   "lon": 27.70181,
+   "address": "",
+   "city": "Ludza",
+   "offers": {}
+  },
+  {
+   "id": "w958436334",
+   "brand": "kool",
+   "name": "KOOL Alūksne",
+   "lat": 57.431862,
+   "lon": 27.018502,
+   "address": "",
+   "city": "Alūksne",
+   "offers": {}
+  },
+  {
+   "id": "w967486210",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.942178,
+   "lon": 24.241023,
+   "address": "Lubānas iela 150B",
+   "city": "Dreiliņi",
+   "offers": {}
+  },
+  {
+   "id": "w993342640",
+   "brand": "circlek",
+   "name": "Circle K Jelgava 2",
+   "lat": 56.657289,
+   "lon": 23.742811,
+   "address": "Brīvības bulvāris 1",
+   "city": "Jelgava",
+   "offers": {}
+  },
+  {
+   "id": "w1023547511",
+   "brand": "virsi",
+   "name": "Virši",
+   "lat": 56.932995,
+   "lon": 23.202588,
+   "address": "",
+   "city": "Tukums",
+   "offers": {
+    "LPG": {
+     "price": 1.065,
+     "kind": "uniform",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "w1042628311",
+   "brand": "astarte",
+   "name": "Astarte",
+   "lat": 56.337942,
+   "lon": 25.560504,
+   "address": "",
+   "city": "Cita vieta",
+   "offers": {}
+  },
+  {
+   "id": "w1066979734",
+   "brand": "astarte",
+   "name": "Astarte",
+   "lat": 56.282348,
+   "lon": 26.742157,
+   "address": "",
+   "city": "Jaunsaimnieki",
+   "offers": {}
+  },
+  {
+   "id": "w1069436964",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 57.069064,
+   "lon": 24.316727,
+   "address": "Vidlauku iela 1",
+   "city": "Stapriņi",
+   "offers": {}
+  },
+  {
+   "id": "w1069437769",
+   "brand": "neste",
+   "name": "Neste",
+   "lat": 56.933876,
+   "lon": 23.201588,
+   "address": "",
+   "city": "Tukums",
+   "offers": {}
+  },
+  {
+   "id": "w1074122443",
+   "brand": "virsi",
+   "name": "Virši",
+   "lat": 56.276186,
+   "lon": 26.718978,
+   "address": "",
+   "city": "Jaunsaimnieki",
+   "offers": {
+    "LPG": {
+     "price": 1.065,
+     "kind": "uniform",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "w1076155258",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.933514,
+   "lon": 24.145864,
+   "address": "Krasta iela 50",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "w1085968711",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.941142,
+   "lon": 24.021458,
+   "address": "",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "w1100580542",
+   "brand": "virsi",
+   "name": "Virši",
+   "lat": 56.773393,
+   "lon": 24.241609,
+   "address": "",
+   "city": "Ķekava",
+   "offers": {
+    "D": {
+     "price": 2.087,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "95": {
+     "price": 1.889,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.959,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "w1106958284",
+   "brand": "straujupite",
+   "name": "Straujupīte",
+   "lat": 56.925096,
+   "lon": 24.187138,
+   "address": "Krustpils iela 6A",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "w1108471790",
+   "brand": "kool",
+   "name": "KOOL",
+   "lat": 56.952624,
+   "lon": 24.215373,
+   "address": "Dzelzavas iela 116",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "w1119221771",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 57.512559,
+   "lon": 24.728003,
+   "address": "Cēsu iela 30",
+   "city": "Limbaži",
+   "offers": {}
+  },
+  {
+   "id": "w1119706630",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.928624,
+   "lon": 24.06243,
+   "address": "Krūzes iela 53",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "w1130752931",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.99783,
+   "lon": 24.270672,
+   "address": "",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "w1156050589",
+   "brand": "straujupite",
+   "name": "Straujupīte",
+   "lat": 56.957549,
+   "lon": 24.071631,
+   "address": "Ūdens iela 29",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "w1161973534",
+   "brand": "neste",
+   "name": "Neste",
+   "lat": 56.342223,
+   "lon": 26.180354,
+   "address": "",
+   "city": "Līvāni",
+   "offers": {}
+  },
+  {
+   "id": "w1163105884",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 57.142852,
+   "lon": 24.843148,
+   "address": "",
+   "city": "Sigulda",
+   "offers": {}
+  },
+  {
+   "id": "w1178260890",
+   "brand": "neste",
+   "name": "Neste",
+   "lat": 56.628261,
+   "lon": 23.754078,
+   "address": "Miera iela 18",
+   "city": "Jelgava",
+   "offers": {}
+  },
+  {
+   "id": "w1181332167",
+   "brand": "neste",
+   "name": "Neste A24",
+   "lat": 56.651977,
+   "lon": 23.690756,
+   "address": "Atmodas iela 21B",
+   "city": "Jelgava",
+   "offers": {}
+  },
+  {
+   "id": "w1185448160",
+   "brand": "virsi",
+   "name": "Virši",
+   "lat": 56.544977,
+   "lon": 21.05417,
+   "address": "Cukura iela 29",
+   "city": "Liepāja",
+   "offers": {}
+  },
+  {
+   "id": "w1192166024",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.976466,
+   "lon": 24.255405,
+   "address": "Juglas iela 16C",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "w1207110418",
+   "brand": "virsi",
+   "name": "Virši Olaine 2",
+   "lat": 56.795243,
+   "lon": 23.969704,
+   "address": "",
+   "city": "Jaunolaine",
+   "offers": {}
+  },
+  {
+   "id": "w1216262739",
+   "brand": "viada",
+   "name": "VIADA 3",
+   "lat": 56.675547,
+   "lon": 23.772061,
+   "address": "",
+   "city": "Jelgava",
+   "offers": {}
+  },
+  {
+   "id": "w1233656522",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 56.859245,
+   "lon": 26.229442,
+   "address": "Cesvaines iela 10",
+   "city": "Madona",
+   "offers": {}
+  },
+  {
+   "id": "w1234412919",
+   "brand": "neste",
+   "name": "Neste",
+   "lat": 56.860406,
+   "lon": 26.227284,
+   "address": "Rūpniecības iela 47A",
+   "city": "Madona",
+   "offers": {}
+  },
+  {
+   "id": "w1234456866",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.85889,
+   "lon": 26.205937,
+   "address": "Rūpniecības iela 19",
+   "city": "Madona",
+   "offers": {}
+  },
+  {
+   "id": "w1235479397",
+   "brand": "virsi",
+   "name": "Virši",
+   "lat": 57.150293,
+   "lon": 24.877921,
+   "address": "Nītaures iela 22",
+   "city": "Sigulda",
+   "offers": {}
+  },
+  {
+   "id": "w1236854043",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.624246,
+   "lon": 23.724112,
+   "address": "Lietuvas šoseja 72",
+   "city": "Jelgava",
+   "offers": {}
+  },
+  {
+   "id": "w1236854059",
+   "brand": "virsi",
+   "name": "Virši Jelgava",
+   "lat": 56.625762,
+   "lon": 23.724259,
+   "address": "Lietuvas šoseja 70",
+   "city": "Jelgava",
+   "offers": {
+    "LPG": {
+     "price": 1.065,
+     "kind": "uniform",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "w1242438404",
+   "brand": "virsi",
+   "name": "Virši Olaine",
+   "lat": 56.795734,
+   "lon": 23.974703,
+   "address": "",
+   "city": "Jaunolaine",
+   "offers": {
+    "LPG": {
+     "price": 1.065,
+     "kind": "uniform",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "w1248831971",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 56.857989,
+   "lon": 24.563825,
+   "address": "",
+   "city": "Ogre",
+   "offers": {}
+  },
+  {
+   "id": "w1252548089",
+   "brand": "virsi",
+   "name": "Virši",
+   "lat": 56.947405,
+   "lon": 24.128728,
+   "address": "Satekles iela 2",
+   "city": "Rīga",
+   "offers": {
+    "D": {
+     "price": 2.087,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "95": {
+     "price": 1.889,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.959,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "w1254899032",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.59013,
+   "lon": 27.24283,
+   "address": "",
+   "city": "Audriņi",
+   "offers": {}
+  },
+  {
+   "id": "w1255217288",
+   "brand": "virsi",
+   "name": "Virši",
+   "lat": 56.983609,
+   "lon": 24.182733,
+   "address": "Viskaļu iela 2A",
+   "city": "Rīga",
+   "offers": {
+    "D": {
+     "price": 2.087,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "95": {
+     "price": 1.889,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.959,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "w1255606820",
+   "brand": "neste",
+   "name": "Neste",
+   "lat": 57.14207,
+   "lon": 24.843612,
+   "address": "Vidzemes šoseja 4",
+   "city": "Sigulda",
+   "offers": {}
+  },
+  {
+   "id": "w1257261997",
+   "brand": "virsi",
+   "name": "Virši",
+   "lat": 56.574079,
+   "lon": 25.224913,
+   "address": "",
+   "city": "Aizkraukle",
+   "offers": {}
+  },
+  {
+   "id": "w1271682153",
+   "brand": "kool",
+   "name": "KOOL",
+   "lat": 56.933197,
+   "lon": 24.182529,
+   "address": "Dārzciema iela 127",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "w1271928176",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.993683,
+   "lon": 24.173515,
+   "address": "Ķīšezera iela 31",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "w1281153010",
+   "brand": "neste",
+   "name": "Neste",
+   "lat": 56.791594,
+   "lon": 23.947057,
+   "address": "Zemgales iela 1A",
+   "city": "Olaine",
+   "offers": {}
+  },
+  {
+   "id": "w1285117014",
+   "brand": "virsi",
+   "name": "Virši Babīte",
+   "lat": 56.958113,
+   "lon": 23.95965,
+   "address": "",
+   "city": "Spilve",
+   "offers": {}
+  },
+  {
+   "id": "w1285122283",
+   "brand": "virsi",
+   "name": "Virši",
+   "lat": 57.012307,
+   "lon": 24.965769,
+   "address": "Skulmes iela 5",
+   "city": "Mālpils",
+   "offers": {
+    "LPG": {
+     "price": 1.065,
+     "kind": "uniform",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "w1287594282",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.4947,
+   "lon": 25.877729,
+   "address": "",
+   "city": "Jēkabpils",
+   "offers": {}
+  },
+  {
+   "id": "w1287950054",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 56.932196,
+   "lon": 24.202889,
+   "address": "Lubānas iela 119A",
+   "city": "Rīga",
+   "offers": {
+    "95": {
+     "price": 1.901,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.971,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 2.091,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "DP": {
+     "price": 2.221,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "XTL": {
+     "price": 2.49,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "w1290297135",
+   "brand": "virsi",
+   "name": "Virši Berģi",
+   "lat": 57.004427,
+   "lon": 24.287027,
+   "address": "Brīvības gatve 481",
+   "city": "Berģi",
+   "offers": {}
+  },
+  {
+   "id": "w1294774058",
+   "brand": "circlek",
+   "name": "Circle K \"Apvedceļš\"",
+   "lat": 56.943948,
+   "lon": 24.380366,
+   "address": "",
+   "city": "Stopiņi",
+   "offers": {}
+  },
+  {
+   "id": "w1294868090",
+   "brand": "virsi",
+   "name": "Virši",
+   "lat": 56.919075,
+   "lon": 24.340422,
+   "address": "",
+   "city": "Saurieši",
+   "offers": {}
+  },
+  {
+   "id": "w1296633069",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 56.931022,
+   "lon": 24.199539,
+   "address": "Katlakalna iela 16",
+   "city": "Rīga",
+   "offers": {
+    "95": {
+     "price": 1.901,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.971,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 2.091,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "DP": {
+     "price": 2.221,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "XTL": {
+     "price": 2.49,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "w1296733278",
+   "brand": "virsi",
+   "name": "Virši",
+   "lat": 56.847561,
+   "lon": 24.36051,
+   "address": "Līvzemes iela 40",
+   "city": "Salaspils",
+   "offers": {
+    "D": {
+     "price": 2.087,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "95": {
+     "price": 1.889,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.959,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "w1304459000",
+   "brand": "virsi",
+   "name": "Virši Nākotne",
+   "lat": 56.622389,
+   "lon": 23.447235,
+   "address": "",
+   "city": "Nākotne",
+   "offers": {}
+  },
+  {
+   "id": "w1304805071",
+   "brand": "virsi",
+   "name": "Virši",
+   "lat": 56.941799,
+   "lon": 24.155551,
+   "address": "Lauvas iela 10",
+   "city": "Rīga",
+   "offers": {
+    "D": {
+     "price": 2.087,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "95": {
+     "price": 1.889,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.959,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "w1305375338",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 57.179101,
+   "lon": 24.715569,
+   "address": "",
+   "city": "Ragana",
+   "offers": {}
+  },
+  {
+   "id": "w1319632935",
+   "brand": "virsi",
+   "name": "Virši",
+   "lat": 56.99788,
+   "lon": 24.116412,
+   "address": "",
+   "city": "Rīga",
+   "offers": {
+    "D": {
+     "price": 2.087,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "95": {
+     "price": 1.889,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.959,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "w1322913891",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.912422,
+   "lon": 24.217048,
+   "address": "Granīta iela 7A",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "w1322944905",
+   "brand": "kool",
+   "name": "KOOL Olerex",
+   "lat": 56.891121,
+   "lon": 24.223256,
+   "address": "Strengu iela 2",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "w1324134043",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.801473,
+   "lon": 24.868504,
+   "address": "",
+   "city": "Lielvārde",
+   "offers": {}
+  },
+  {
+   "id": "w1329395745",
+   "brand": "viada",
+   "name": "VIADA 2",
+   "lat": 56.636272,
+   "lon": 23.727638,
+   "address": "Lietuvas šoseja 2B",
+   "city": "Jelgava",
+   "offers": {}
+  },
+  {
+   "id": "w1343709936",
+   "brand": "virsi",
+   "name": "Virši Apvedceļš",
+   "lat": 56.81036,
+   "lon": 24.203039,
+   "address": "",
+   "city": "Ķekava",
+   "offers": {
+    "D": {
+     "price": 2.087,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "95": {
+     "price": 1.889,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.959,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "w1345996967",
+   "brand": "virsi",
+   "name": "Virši-A",
+   "lat": 57.182683,
+   "lon": 26.737257,
+   "address": "",
+   "city": "Gulbene",
+   "offers": {}
+  },
+  {
+   "id": "w1351651222",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 56.921831,
+   "lon": 24.108227,
+   "address": "Mūkusalas iela 75",
+   "city": "Rīga",
+   "offers": {
+    "95": {
+     "price": 1.901,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.971,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 2.091,
+     "kind": "here",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "DP": {
+     "price": 2.221,
+     "kind": "here",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "XTL": {
+     "price": 2.49,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "w1353771527",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 56.928549,
+   "lon": 24.15662,
+   "address": "Krasta iela 70",
+   "city": "Rīga",
+   "offers": {
+    "95": {
+     "price": 1.901,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.971,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 2.091,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "DP": {
+     "price": 2.221,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "XTL": {
+     "price": 2.49,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "w1353771528",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 56.929533,
+   "lon": 24.152385,
+   "address": "Krasta iela 93",
+   "city": "Rīga",
+   "offers": {
+    "95": {
+     "price": 1.901,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.971,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 2.091,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "DP": {
+     "price": 2.221,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "XTL": {
+     "price": 2.49,
+     "kind": "here",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "w1354278826",
+   "brand": "virsi",
+   "name": "Virši",
+   "lat": 56.91152,
+   "lon": 24.095395,
+   "address": "",
+   "city": "Rīga",
+   "offers": {
+    "D": {
+     "price": 2.087,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "95": {
+     "price": 1.889,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.959,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "w1356980855",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 56.923617,
+   "lon": 24.188227,
+   "address": "Jāņavārtu iela 21",
+   "city": "Rīga",
+   "offers": {
+    "95": {
+     "price": 1.901,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.971,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 2.091,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "DP": {
+     "price": 2.221,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "XTL": {
+     "price": 2.49,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "w1361901551",
+   "brand": "virsi",
+   "name": "Virši",
+   "lat": 56.772932,
+   "lon": 24.241907,
+   "address": "",
+   "city": "Ķekava",
+   "offers": {
+    "D": {
+     "price": 2.087,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "95": {
+     "price": 1.889,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.959,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "w1365540878",
+   "brand": "astarte",
+   "name": "Astarte",
+   "lat": 56.405871,
+   "lon": 25.773272,
+   "address": "",
+   "city": "Birži",
+   "offers": {}
+  },
+  {
+   "id": "w1367934265",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 56.947536,
+   "lon": 24.136781,
+   "address": "Kurbada iela 8",
+   "city": "Rīga",
+   "offers": {
+    "95": {
+     "price": 1.901,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.971,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 2.091,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "DP": {
+     "price": 2.221,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "XTL": {
+     "price": 2.49,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "w1380616679",
+   "brand": "virsi",
+   "name": "Virši Brankstūri",
+   "lat": 56.657507,
+   "lon": 23.809907,
+   "address": "",
+   "city": "Jelgava",
+   "offers": {
+    "LPG": {
+     "price": 1.065,
+     "kind": "uniform",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "w1414403422",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 57.138055,
+   "lon": 24.824247,
+   "address": "",
+   "city": "Sigulda",
+   "offers": {}
+  },
+  {
+   "id": "w1419111941",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.916451,
+   "lon": 24.118947,
+   "address": "Mūkusalas iela 78",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "w1421982418",
+   "brand": "neste",
+   "name": "Neste",
+   "lat": 56.959097,
+   "lon": 24.231064,
+   "address": "Biķernieku iela 115A",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "w1421983244",
+   "brand": "kool",
+   "name": "KOOL",
+   "lat": 56.90657,
+   "lon": 24.082392,
+   "address": "",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "w1442878137",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.90591,
+   "lon": 24.083739,
+   "address": "Vienības gatve 162A",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "w1447531856",
+   "brand": "circlek",
+   "name": "Circle K Jelgava 4",
+   "lat": 56.630445,
+   "lon": 23.734698,
+   "address": "",
+   "city": "Jelgava",
+   "offers": {}
+  },
+  {
+   "id": "w1450119136",
+   "brand": "virsi",
+   "name": "Virši",
+   "lat": 56.935608,
+   "lon": 24.222808,
+   "address": "Lubānas iela 102A",
+   "city": "Rīga",
+   "offers": {
+    "D": {
+     "price": 2.087,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "95": {
+     "price": 1.889,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.959,
+     "kind": "min",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "CNG": {
+     "price": 2.195,
+     "kind": "uniform",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "LPG": {
+     "price": 1.065,
+     "kind": "uniform",
+     "source_date": "2026-10-26",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "w1451022981",
+   "brand": "kool",
+   "name": "KOOL Smiltene",
+   "lat": 57.387642,
+   "lon": 25.97379,
+   "address": "",
+   "city": "Smiltene",
+   "offers": {}
+  },
+  {
+   "id": "w1451026147",
+   "brand": "kool",
+   "name": "KOOL Sigulda",
+   "lat": 57.148558,
+   "lon": 24.869661,
+   "address": "Vidzemes šoseja 69",
+   "city": "Sigulda",
+   "offers": {}
+  },
+  {
+   "id": "w1451028360",
+   "brand": "kool",
+   "name": "KOOL Strenči",
+   "lat": 57.625592,
+   "lon": 25.671698,
+   "address": "",
+   "city": "Valmiera",
+   "offers": {}
+  },
+  {
+   "id": "w1451028582",
+   "brand": "kool",
+   "name": "KOOL Aloja",
+   "lat": 57.758082,
+   "lon": 24.86909,
+   "address": "",
+   "city": "Mazsalaca",
+   "offers": {}
+  },
+  {
+   "id": "w1451028666",
+   "brand": "kool",
+   "name": "KOOL Rūjiena",
+   "lat": 57.898132,
+   "lon": 25.323271,
+   "address": "Ganību iela 11",
+   "city": "Rūjiena",
+   "offers": {}
+  },
+  {
+   "id": "w1451076593",
+   "brand": "kool",
+   "name": "KOOL Taurene",
+   "lat": 57.160655,
+   "lon": 25.665188,
+   "address": "",
+   "city": "Cita vieta",
+   "offers": {}
+  },
+  {
+   "id": "w1451077614",
+   "brand": "kool",
+   "name": "KOOL Ērgļi",
+   "lat": 56.899077,
+   "lon": 25.6491,
+   "address": "",
+   "city": "Cita vieta",
+   "offers": {}
+  },
+  {
+   "id": "w1451081567",
+   "brand": "kool",
+   "name": "KOOL Gulbene",
+   "lat": 57.181741,
+   "lon": 26.750979,
+   "address": "",
+   "city": "Gulbene",
+   "offers": {}
+  },
+  {
+   "id": "w1455886376",
+   "brand": "neste",
+   "name": "Neste",
+   "lat": 56.957486,
+   "lon": 24.183996,
+   "address": "Dzelzavas iela 60",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "w1456236682",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 55.894684,
+   "lon": 26.545621,
+   "address": "",
+   "city": "Daugavpils",
+   "offers": {}
+  },
+  {
+   "id": "w1456890955",
+   "brand": "virsi",
+   "name": "Virši",
+   "lat": 56.957236,
+   "lon": 21.985662,
+   "address": "Zirņu iela 20",
+   "city": "Kuldīga",
+   "offers": {}
+  },
+  {
+   "id": "w1469730037",
+   "brand": "virsi",
+   "name": "Virši-A",
+   "lat": 56.6151,
+   "lon": 25.235919,
+   "address": "",
+   "city": "Aizkraukle",
+   "offers": {}
+  },
+  {
+   "id": "w1475219692",
+   "brand": "neste",
+   "name": "Neste",
+   "lat": 56.860094,
+   "lon": 24.562515,
+   "address": "",
+   "city": "Ogre",
+   "offers": {}
+  },
+  {
+   "id": "w1487120155",
+   "brand": "kool",
+   "name": "KOOL",
+   "lat": 56.716494,
+   "lon": 24.826866,
+   "address": "Laimdotas iela 23",
+   "city": "Lielvārde",
+   "offers": {}
+  },
+  {
+   "id": "w1492430904",
+   "brand": "kool",
+   "name": "KOOL Jūrmalas šoseja",
+   "lat": 56.955611,
+   "lon": 23.91838,
+   "address": "",
+   "city": "Piņķi",
+   "offers": {}
+  },
+  {
+   "id": "w1501552433",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.909811,
+   "lon": 24.127566,
+   "address": "Ziepniekkalna iela 20",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "w1548062871",
+   "brand": "gotika",
+   "name": "Gotika auto",
+   "lat": 56.565229,
+   "lon": 23.959832,
+   "address": "",
+   "city": "Iecava",
+   "offers": {}
+  },
+  {
+   "id": "w1553764884",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 57.067151,
+   "lon": 22.816986,
+   "address": "",
+   "city": "Kandava",
+   "offers": {}
+  },
+  {
+   "id": "w1553956086",
+   "brand": "viada",
+   "name": "Viada Broceni",
+   "lat": 56.683276,
+   "lon": 22.569069,
+   "address": "",
+   "city": "Brocēni",
+   "offers": {}
+  },
+  {
+   "id": "w1553956793",
+   "brand": "virsi",
+   "name": "Virši Tērvete",
+   "lat": 56.476914,
+   "lon": 23.391751,
+   "address": "",
+   "city": "Tērvete",
+   "offers": {}
+  },
+  {
+   "id": "w1554270014",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 56.928253,
+   "lon": 24.017583,
+   "address": "Kārļa Ulmaņa gatve 127",
+   "city": "Mārupe",
+   "offers": {}
+  },
+  {
+   "id": "w1554280718",
+   "brand": "kool",
+   "name": "KOOL",
+   "lat": 56.883551,
+   "lon": 23.933035,
+   "address": "Mazcenu aleja 20B",
+   "city": "Jaunmārupe",
+   "offers": {}
+  },
+  {
+   "id": "w1554557352",
+   "brand": "viada",
+   "name": "Viada",
+   "lat": 56.929385,
+   "lon": 24.106483,
+   "address": "Mūkusalas iela 59",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "w1554558764",
+   "brand": "straujupite",
+   "name": "Straujupīte",
+   "lat": 56.950485,
+   "lon": 24.073186,
+   "address": "Daugavgrīvas iela 29",
+   "city": "Rīga",
+   "offers": {}
+  },
+  {
+   "id": "w1554561012",
+   "brand": "virsi",
+   "name": "Virši",
+   "lat": 56.685487,
+   "lon": 22.564982,
+   "address": "Liepnieku iela 1",
+   "city": "Brocēni",
+   "offers": {}
+  },
+  {
+   "id": "w1556612150",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 56.966749,
+   "lon": 23.763301,
+   "address": "Dubultu prospekts 42A",
+   "city": "Jūrmala",
+   "offers": {
+    "XTL": {
+     "price": 2.49,
+     "kind": "here",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    }
+   }
+  },
+  {
+   "id": "w1556614443",
+   "brand": "kool",
+   "name": "KOOL Piņķi",
+   "lat": 56.934464,
+   "lon": 23.916856,
+   "address": "",
+   "city": "Piņķi",
+   "offers": {}
+  },
+  {
+   "id": "w1558762050",
+   "brand": "circlek",
+   "name": "Circle K",
+   "lat": 56.912433,
+   "lon": 24.12298,
+   "address": "",
+   "city": "Rīga",
+   "offers": {
+    "95": {
+     "price": 1.901,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.971,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 2.091,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "DP": {
+     "price": 2.221,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
+     "changed_at": null
+    },
+    "XTL": {
+     "price": 2.49,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T10:42:34+00:00",
      "changed_at": null
     }
    }
