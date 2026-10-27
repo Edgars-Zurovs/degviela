@@ -30,7 +30,7 @@ class Offers(unittest.TestCase):
         by = {x["id"]: x["offers"] for x in s}
         self.assertEqual(by["n1"]["95"]["kind"], "here")
         self.assertEqual(by["n2"]["95"]["kind"], "min")      # Рига, но не в списке
-        self.assertNotIn("95", by["n3"])                      # вне региона данных нет
+        self.assertEqual(by["n3"]["95"]["kind"], "ref")       # вне региона данных - только ориентир
         self.assertEqual(by["n2"]["LPG"]["kind"], "uniform")
         self.assertNotIn("LPG", by["n1"])                     # нет тега LPG
         self.assertEqual(by["n4"]["D"]["kind"], "here")

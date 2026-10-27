@@ -194,11 +194,14 @@ def build_offers(stations: list[dict], state: dict) -> tuple[list[dict], dict]:
             for sid in matched_ids:
                 put(by_id[sid], "here", f"here:{sid}")
             for st in brand_stations:
-                if st["id"] in matched_ids or st["city"] not in src["regions"]:
+                if st["id"] in matched_ids:
                     continue
                 if fuel in ("LPG", "CNG") and not st["lpg" if fuel == "LPG" else "cng"]:
                     continue
-                put(st, "min", "region")
+                if st["city"] in src["regions"]:
+                    put(st, "min", "region")
+                else:
+                    put(st, "ref", "ref")  # сеть публикует цены только по своим регионам
     return stations, unmatched
 
 
