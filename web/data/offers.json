@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated_at": "2026-10-27T14:55:26+00:00",
+  "generated_at": "2026-10-27T15:00:47+00:00",
   "sample": false,
   "fuels": [
    "95",
@@ -16,7 +16,7 @@
     "name": "Circle K",
     "status": "ok",
     "error": null,
-    "fetched_at": "2026-10-27T14:55:26+00:00",
+    "fetched_at": "2026-10-27T15:00:47+00:00",
     "source_date": "2026-10-27",
     "scope": "Рига",
     "via": null
@@ -25,7 +25,7 @@
     "name": "Virši",
     "status": "ok",
     "error": null,
-    "fetched_at": "2026-10-27T14:55:26+00:00",
+    "fetched_at": "2026-10-27T15:00:47+00:00",
     "source_date": "2026-10-26",
     "scope": "Рига и окрестности",
     "via": null
@@ -34,46 +34,34 @@
     "name": "Viada",
     "status": "ok",
     "error": null,
-    "fetched_at": "2026-10-27T14:55:26+00:00",
+    "fetched_at": "2026-10-27T15:00:47+00:00",
     "source_date": "2026-10-27",
     "scope": "Рига и Лиепая",
     "via": null
    },
+   "straujupite": {
+    "name": "Straujupīte",
+    "status": "ok",
+    "error": null,
+    "fetched_at": "2026-10-27T15:00:47+00:00",
+    "source_date": "2026-10-27",
+    "scope": "вся Латвия",
+    "via": "Cenometrs.lv"
+   },
    "neste": {
     "name": "Neste",
-    "status": "error",
-    "error": "ошибка загрузки: 403 Client Error: Forbidden for url: https://letadegviela.lv/",
-    "fetched_at": null,
-    "source_date": null,
-    "scope": "вся Латвия",
-    "via": "LetaDegviela.lv"
+    "status": "unavailable",
+    "error": "сеть больше не публикует цены, а агрегаторы закрыты для автоматического чтения"
    },
    "kool": {
     "name": "KOOL",
-    "status": "error",
-    "error": "ошибка загрузки: 403 Client Error: Forbidden for url: https://letadegviela.lv/",
-    "fetched_at": null,
-    "source_date": null,
-    "scope": "вся Латвия",
-    "via": "LetaDegviela.lv"
+    "status": "unavailable",
+    "error": "нет страницы цен, доступной для автоматического чтения"
    },
    "astarte": {
     "name": "Astarte",
-    "status": "error",
-    "error": "ошибка загрузки: 403 Client Error: Forbidden for url: https://letadegviela.lv/",
-    "fetched_at": null,
-    "source_date": null,
-    "scope": "вся Латвия",
-    "via": "LetaDegviela.lv"
-   },
-   "straujupite": {
-    "name": "Straujupīte",
-    "status": "error",
-    "error": "ошибка загрузки: 403 Client Error: Forbidden for url: https://letadegviela.lv/",
-    "fetched_at": null,
-    "source_date": null,
-    "scope": "вся Латвия",
-    "via": "LetaDegviela.lv"
+    "status": "unavailable",
+    "error": "нет страницы цен, доступной для автоматического чтения"
    }
   },
   "unmatched": {
@@ -157,21 +145,21 @@
      "price": 1.847,
      "kind": "here",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.952,
      "kind": "here",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 1.947,
      "kind": "here",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -194,7 +182,22 @@
    "lon": 21.5813,
    "address": "Lāčplēša iela 4",
    "city": "Ventspils",
-   "offers": {}
+   "offers": {
+    "95": {
+     "price": 1.824,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T15:00:47+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 2.004,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T15:00:47+00:00",
+     "changed_at": null
+    }
+   }
   },
   {
    "id": "n266487279",
@@ -214,7 +217,22 @@
    "lon": 23.981659,
    "address": "Jūrmalas gatve 144",
    "city": "Rīga",
-   "offers": {}
+   "offers": {
+    "95": {
+     "price": 1.824,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T15:00:47+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 2.004,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T15:00:47+00:00",
+     "changed_at": null
+    }
+   }
   },
   {
    "id": "n267939111",
@@ -279,28 +297,28 @@
      "price": 2.087,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "95": {
      "price": 1.889,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.959,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "LPG": {
      "price": 1.065,
      "kind": "uniform",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -338,35 +356,35 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -474,28 +492,28 @@
      "price": 2.087,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "95": {
      "price": 1.889,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.959,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "LPG": {
      "price": 1.065,
      "kind": "uniform",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -733,21 +751,21 @@
      "price": 1.847,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.952,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 1.947,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -770,7 +788,22 @@
    "lon": 24.230228,
    "address": "",
    "city": "Bauska",
-   "offers": {}
+   "offers": {
+    "95": {
+     "price": 1.824,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T15:00:47+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 2.004,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T15:00:47+00:00",
+     "changed_at": null
+    }
+   }
   },
   {
    "id": "n493916616",
@@ -805,35 +838,35 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -891,28 +924,28 @@
      "price": 1.847,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.952,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 1.947,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "LPG": {
      "price": 0.975,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -960,28 +993,28 @@
      "price": 1.847,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.952,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 1.947,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "LPG": {
      "price": 0.975,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -1009,35 +1042,35 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -1065,28 +1098,28 @@
      "price": 1.847,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.952,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 1.947,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "LPG": {
      "price": 0.975,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -1104,42 +1137,42 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "here",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "LPG": {
      "price": 1.065,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -1157,35 +1190,35 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -1283,7 +1316,7 @@
      "price": 2.195,
      "kind": "uniform",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -1311,35 +1344,35 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "here",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -1397,21 +1430,21 @@
      "price": 2.087,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "95": {
      "price": 1.889,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.959,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -1459,7 +1492,7 @@
      "price": 1.065,
      "kind": "uniform",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -1492,7 +1525,22 @@
    "lon": 24.55491,
    "address": "",
    "city": "Ropaži",
-   "offers": {}
+   "offers": {
+    "95": {
+     "price": 1.824,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T15:00:47+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 2.004,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T15:00:47+00:00",
+     "changed_at": null
+    }
+   }
   },
   {
    "id": "n2405049925",
@@ -1542,7 +1590,22 @@
    "lon": 24.185973,
    "address": "Jenotu iela 19",
    "city": "Rīga",
-   "offers": {}
+   "offers": {
+    "95": {
+     "price": 1.824,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T15:00:47+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 2.004,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T15:00:47+00:00",
+     "changed_at": null
+    }
+   }
   },
   {
    "id": "n4501314789",
@@ -1557,14 +1620,14 @@
      "price": 2.195,
      "kind": "uniform",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "LPG": {
      "price": 1.065,
      "kind": "uniform",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -1632,7 +1695,7 @@
      "price": 1.065,
      "kind": "uniform",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -1650,21 +1713,21 @@
      "price": 2.087,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "95": {
      "price": 1.889,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.959,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -1692,21 +1755,21 @@
      "price": 2.087,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "95": {
      "price": 1.889,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.959,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -1724,28 +1787,28 @@
      "price": 1.847,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.952,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 1.947,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "LPG": {
      "price": 0.975,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -1803,21 +1866,21 @@
      "price": 2.087,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "95": {
      "price": 1.889,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.959,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -1835,42 +1898,42 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "LPG": {
      "price": 1.065,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -1888,35 +1951,35 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -1934,35 +1997,35 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -2000,35 +2063,35 @@
      "price": 1.901,
      "kind": "here",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "here",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -2046,28 +2109,28 @@
      "price": 1.847,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.952,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 1.947,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "LPG": {
      "price": 0.975,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -2185,21 +2248,21 @@
      "price": 1.847,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.952,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 1.947,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -2217,21 +2280,21 @@
      "price": 1.847,
      "kind": "here",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.952,
      "kind": "here",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 1.947,
      "kind": "here",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -2249,35 +2312,35 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -2295,35 +2358,35 @@
      "price": 1.901,
      "kind": "here",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "here",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -2341,35 +2404,35 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -2447,21 +2510,21 @@
      "price": 2.087,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "95": {
      "price": 1.889,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.959,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -2499,21 +2562,21 @@
      "price": 1.847,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.952,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 1.947,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -2541,28 +2604,28 @@
      "price": 1.847,
      "kind": "here",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.952,
      "kind": "here",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 1.947,
      "kind": "here",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "LPG": {
      "price": 0.975,
      "kind": "here",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -2580,7 +2643,7 @@
      "price": 1.065,
      "kind": "uniform",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -2608,28 +2671,28 @@
      "price": 1.847,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.952,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 1.947,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "LPG": {
      "price": 0.975,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -2642,7 +2705,22 @@
    "lon": 23.322687,
    "address": "",
    "city": "Tukums",
-   "offers": {}
+   "offers": {
+    "95": {
+     "price": 1.824,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T15:00:47+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 2.004,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T15:00:47+00:00",
+     "changed_at": null
+    }
+   }
   },
   {
    "id": "n10157783119",
@@ -2672,7 +2750,22 @@
    "lon": 25.443412,
    "address": "",
    "city": "Valmiermuiža",
-   "offers": {}
+   "offers": {
+    "95": {
+     "price": 1.824,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T15:00:47+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 2.004,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T15:00:47+00:00",
+     "changed_at": null
+    }
+   }
   },
   {
    "id": "n11281758661",
@@ -2747,7 +2840,7 @@
      "price": 1.065,
      "kind": "uniform",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -2815,28 +2908,28 @@
      "price": 1.847,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.952,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 1.947,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "LPG": {
      "price": 0.975,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -2894,35 +2987,35 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -3010,7 +3103,7 @@
      "price": 1.065,
      "kind": "uniform",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -3048,35 +3141,35 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -3114,35 +3207,35 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -3160,21 +3253,21 @@
      "price": 1.847,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.952,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 1.947,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -3262,21 +3355,21 @@
      "price": 2.087,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "95": {
      "price": 1.889,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.959,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -3354,28 +3447,28 @@
      "price": 1.847,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.952,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 1.947,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "LPG": {
      "price": 0.975,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -3403,28 +3496,28 @@
      "price": 1.847,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.952,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 1.947,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "LPG": {
      "price": 0.975,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -3462,21 +3555,21 @@
      "price": 1.847,
      "kind": "here",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.952,
      "kind": "here",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 1.947,
      "kind": "here",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -3524,21 +3617,21 @@
      "price": 2.087,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "95": {
      "price": 1.889,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.959,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -3566,35 +3659,35 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -3622,35 +3715,35 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -3668,21 +3761,21 @@
      "price": 1.847,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.952,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 1.947,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -3700,42 +3793,42 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "LPG": {
      "price": 1.065,
      "kind": "here",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -3753,21 +3846,21 @@
      "price": 2.087,
      "kind": "here",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "95": {
      "price": 1.889,
      "kind": "here",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.959,
      "kind": "here",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -3795,21 +3888,21 @@
      "price": 1.847,
      "kind": "here",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.952,
      "kind": "here",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 1.947,
      "kind": "here",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -3827,35 +3920,35 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -3883,21 +3976,21 @@
      "price": 2.087,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "95": {
      "price": 1.889,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.959,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -3915,35 +4008,35 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -3961,21 +4054,21 @@
      "price": 2.087,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "95": {
      "price": 1.889,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.959,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -3993,21 +4086,21 @@
      "price": 1.847,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.952,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 1.947,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -4055,42 +4148,42 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "LPG": {
      "price": 1.065,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -4128,35 +4221,35 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -4204,28 +4297,28 @@
      "price": 1.847,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.952,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 1.947,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "LPG": {
      "price": 0.975,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -4253,35 +4346,35 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -4319,21 +4412,21 @@
      "price": 1.847,
      "kind": "here",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.952,
      "kind": "here",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 1.947,
      "kind": "here",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -4361,21 +4454,21 @@
      "price": 2.087,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "95": {
      "price": 1.889,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.959,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -4403,7 +4496,7 @@
      "price": 1.065,
      "kind": "uniform",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -4476,7 +4569,22 @@
    "lon": 24.312633,
    "address": "",
    "city": "Ādaži",
-   "offers": {}
+   "offers": {
+    "95": {
+     "price": 1.824,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T15:00:47+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 2.004,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T15:00:47+00:00",
+     "changed_at": null
+    }
+   }
   },
   {
    "id": "w208829778",
@@ -4491,35 +4599,35 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -4547,7 +4655,7 @@
      "price": 1.065,
      "kind": "uniform",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -4565,28 +4673,28 @@
      "price": 1.847,
      "kind": "here",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.952,
      "kind": "here",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 1.947,
      "kind": "here",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "LPG": {
      "price": 0.975,
      "kind": "here",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -4604,21 +4712,21 @@
      "price": 2.087,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "95": {
      "price": 1.889,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.959,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -4656,21 +4764,21 @@
      "price": 1.847,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.952,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 1.947,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -4798,35 +4906,35 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -4844,28 +4952,28 @@
      "price": 1.847,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.952,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 1.947,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "LPG": {
      "price": 0.975,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -4953,21 +5061,21 @@
      "price": 2.087,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "95": {
      "price": 1.889,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.959,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -5005,7 +5113,7 @@
      "price": 1.065,
      "kind": "uniform",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -5073,35 +5181,35 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -5179,35 +5287,35 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -5280,7 +5388,22 @@
    "lon": 24.781995,
    "address": "Lāčplēša iela 60",
    "city": "Lielvārde",
-   "offers": {}
+   "offers": {
+    "95": {
+     "price": 1.824,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T15:00:47+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 2.004,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T15:00:47+00:00",
+     "changed_at": null
+    }
+   }
   },
   {
    "id": "w654849331",
@@ -5335,21 +5458,21 @@
      "price": 1.847,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.952,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 1.947,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -5557,7 +5680,7 @@
      "price": 1.065,
      "kind": "uniform",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -5615,7 +5738,7 @@
      "price": 1.065,
      "kind": "uniform",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -5633,28 +5756,28 @@
      "price": 1.847,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.952,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 1.947,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "LPG": {
      "price": 0.975,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -5672,21 +5795,21 @@
      "price": 1.847,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.952,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 1.947,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -5704,21 +5827,21 @@
      "price": 2.087,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "95": {
      "price": 1.889,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.959,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -5731,7 +5854,22 @@
    "lon": 24.187138,
    "address": "Krustpils iela 6A",
    "city": "Rīga",
-   "offers": {}
+   "offers": {
+    "95": {
+     "price": 1.824,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T15:00:47+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 2.004,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T15:00:47+00:00",
+     "changed_at": null
+    }
+   }
   },
   {
    "id": "w1108471790",
@@ -5766,21 +5904,21 @@
      "price": 1.847,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.952,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 1.947,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -5798,21 +5936,21 @@
      "price": 1.847,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.952,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 1.947,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -5825,7 +5963,22 @@
    "lon": 24.071631,
    "address": "Ūdens iela 29",
    "city": "Rīga",
-   "offers": {}
+   "offers": {
+    "95": {
+     "price": 1.824,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T15:00:47+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 2.004,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T15:00:47+00:00",
+     "changed_at": null
+    }
+   }
   },
   {
    "id": "w1161973534",
@@ -5890,21 +6043,21 @@
      "price": 1.847,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.952,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 1.947,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -5992,7 +6145,7 @@
      "price": 1.065,
      "kind": "uniform",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -6010,7 +6163,7 @@
      "price": 1.065,
      "kind": "uniform",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -6038,21 +6191,21 @@
      "price": 2.087,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "95": {
      "price": 1.889,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.959,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -6080,21 +6233,21 @@
      "price": 2.087,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "95": {
      "price": 1.889,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.959,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -6142,28 +6295,28 @@
      "price": 1.847,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.952,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 1.947,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "LPG": {
      "price": 0.975,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -6201,7 +6354,7 @@
      "price": 1.065,
      "kind": "uniform",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -6229,35 +6382,35 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -6305,35 +6458,35 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -6351,21 +6504,21 @@
      "price": 2.087,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "95": {
      "price": 1.889,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.959,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -6393,21 +6546,21 @@
      "price": 2.087,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "95": {
      "price": 1.889,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.959,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -6435,21 +6588,21 @@
      "price": 2.087,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "95": {
      "price": 1.889,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.959,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -6467,21 +6620,21 @@
      "price": 1.847,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.952,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 1.947,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -6529,21 +6682,21 @@
      "price": 2.087,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "95": {
      "price": 1.889,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.959,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -6571,35 +6724,35 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "here",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "here",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -6617,35 +6770,35 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -6663,35 +6816,35 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "here",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -6709,21 +6862,21 @@
      "price": 2.087,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "95": {
      "price": 1.889,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.959,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -6741,35 +6894,35 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -6787,21 +6940,21 @@
      "price": 2.087,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "95": {
      "price": 1.889,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.959,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -6829,35 +6982,35 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -6875,7 +7028,7 @@
      "price": 1.065,
      "kind": "uniform",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -6903,28 +7056,28 @@
      "price": 1.847,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.952,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 1.947,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "LPG": {
      "price": 0.975,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -6962,21 +7115,21 @@
      "price": 1.847,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.952,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 1.947,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -7004,35 +7157,35 @@
      "price": 2.087,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "95": {
      "price": 1.889,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.959,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "CNG": {
      "price": 2.195,
      "kind": "uniform",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "LPG": {
      "price": 1.065,
      "kind": "uniform",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -7200,21 +7353,21 @@
      "price": 1.847,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.952,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 1.947,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -7292,21 +7445,21 @@
      "price": 1.847,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.952,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 1.947,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -7319,7 +7472,22 @@
    "lon": 24.073186,
    "address": "Daugavgrīvas iela 29",
    "city": "Rīga",
-   "offers": {}
+   "offers": {
+    "95": {
+     "price": 1.824,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T15:00:47+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 2.004,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T15:00:47+00:00",
+     "changed_at": null
+    }
+   }
   },
   {
    "id": "w1554561012",
@@ -7344,7 +7512,7 @@
      "price": 2.49,
      "kind": "here",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
@@ -7372,35 +7540,35 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T14:55:26+00:00",
+     "checked_at": "2026-10-27T15:00:47+00:00",
      "changed_at": null
     }
    }
