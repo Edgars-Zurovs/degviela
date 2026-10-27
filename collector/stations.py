@@ -28,8 +28,8 @@ BRANDS = [
     ("astarte", re.compile(r"astarte", re.I)),
     ("straujupite", re.compile(r"straujup[iī]te", re.I)),
     ("gotika", re.compile(r"gotika", re.I)),
-    ("intergaz", re.compile(r"inters?ga[sz]", re.I)),
-    ("propane", re.compile(r"prop[āa]nas+g[āa]ze|pros?g[āa]ze", re.I)),
+    ("intergaz", re.compile(r"inter\s?ga[sz]", re.I)),
+    ("propane", re.compile(r"prop[āa]na\s+g[āa]ze|pro\s?g[āa]ze", re.I)),
 ]
 CACHE_MAX_AGE_S = 7 * 24 * 3600
 
