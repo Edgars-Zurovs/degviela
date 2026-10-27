@@ -109,6 +109,13 @@ function fmtDate(iso) {
 }
 const fmtPrice = (p) => p.toFixed(3).replace(".", ",");
 
+/* Соседний вид топлива: dir = 1 (следующий) или -1 (предыдущий); на краях остаётся тот же. */
+function nextFuel(fuels, current, dir) {
+  const i = fuels.indexOf(current);
+  if (i < 0) return fuels[0];
+  return fuels[Math.max(0, Math.min(fuels.length - 1, i + dir))];
+}
+
 function mapUrl(st, app) {
   if (app === "apple") return `https://maps.apple.com/?daddr=${st.lat},${st.lon}&dirflg=d`;
   if (app === "waze") return `https://waze.com/ul?ll=${st.lat},${st.lon}&navigate=yes`;
@@ -116,7 +123,7 @@ function mapUrl(st, app) {
 }
 
 if (typeof module !== "undefined") {
-  module.exports = { haversineKm, collect, sortByPrice, sortFresh, effPrice, ago, mapUrl, hoursSince, fmtPrice };
+  module.exports = { haversineKm, collect, sortByPrice, sortFresh, effPrice, ago, mapUrl, hoursSince, fmtPrice, nextFuel };
 }
 
 /* ---------- состояние и хранилище ---------- */
@@ -390,6 +397,25 @@ document.addEventListener("input", (e) => {
   else return;
   save(); render();
 });
+
+/* Свайп по списку влево/вправо — соседний вид топлива */
+let swipe = null;
+document.addEventListener("touchstart", (e) => {
+  const t = e.touches[0];
+  swipe = e.touches.length === 1 && !e.target.closest("dialog, .fuels, .tabs, input, select") ? { x: t.clientX, y: t.clientY } : null;
+}, { passive: true });
+document.addEventListener("touchend", (e) => {
+  if (!swipe) return;
+  const t = e.changedTouches[0], dx = t.clientX - swipe.x, dy = t.clientY - swipe.y;
+  swipe = null;
+  if (Math.abs(dx) < 60 || Math.abs(dx) < Math.abs(dy) * 1.5) return;
+  const fuels = (app.data && app.data.meta.fuels) || Object.keys(FUEL_NAMES);
+  const next = nextFuel(fuels, S.fuel, dx < 0 ? 1 : -1);
+  if (next === S.fuel) return;
+  S.fuel = next; app.showAll = false; save(); render();
+  const on = document.querySelector('#fuels button[aria-pressed="true"]');
+  if (on && on.scrollIntoView) on.scrollIntoView({ inline: "center", block: "nearest", behavior: "smooth" });
+}, { passive: true });
 
 document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible") load(false); });
 

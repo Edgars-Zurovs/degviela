@@ -64,4 +64,12 @@ assert.equal(A.fmtPrice(1.954), "1,954");
 }
 assert.equal(A.mapUrl({ lat: 1, lon: 2 }, "waze"), "https://waze.com/ul?ll=1,2&navigate=yes");
 assert.ok(A.mapUrl({ lat: 1, lon: 2 }, "google").startsWith("https://www.google.com/maps/dir/"));
+{
+  const f = ["95", "98", "D", "LPG"];
+  assert.equal(A.nextFuel(f, "95", 1), "98");
+  assert.equal(A.nextFuel(f, "98", -1), "95");
+  assert.equal(A.nextFuel(f, "95", -1), "95");     // край — остаёмся
+  assert.equal(A.nextFuel(f, "LPG", 1), "LPG");
+  assert.equal(A.nextFuel(f, "XTL", 1), "95");     // неизвестный вид — первый
+}
 console.log("JS tests OK");
