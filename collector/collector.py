@@ -231,7 +231,8 @@ def run(data_dir: Path, contact: str, force_stations: bool = False, out_dir: Pat
         return 1
 
     stations, unmatched = build_offers(stations, state)
-    stations = [s for s in stations if s["offers"] or s["brand"] != "other"]
+    # независимые газовые заправки остаются в списке и без цены (в приложении - в конце списка «Газ»)
+    stations = [s for s in stations if s["offers"] or s["brand"] != "other" or s["lpg"]]
 
     sources_meta = {}
     for key, src in SOURCES.items():
@@ -256,7 +257,7 @@ def run(data_dir: Path, contact: str, force_stations: bool = False, out_dir: Pat
             "warning": st_warn,
         },
         "stations": [
-            {k: v for k, v in s.items() if k not in ("lpg", "cng")} for s in stations
+            {k: v for k, v in s.items() if k != "cng"} for s in stations
         ],
     }
     (out_dir / "offers.json").write_text(json.dumps(out, ensure_ascii=False, indent=1), "utf-8")

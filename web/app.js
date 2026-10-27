@@ -2,7 +2,7 @@
 /* Топливо LV — клиентская часть. Данные: data/offers.json (обновляет сборщик). */
 
 const FUEL_NAMES = { "95": "95", "98": "98", D: "Дизель", DP: "Дизель+", LPG: "Газ", CNG: "CNG", XTL: "XTL" };
-const NETS = { circlek: "Circle K", virsi: "Virši", neste: "Neste", viada: "Viada", kool: "KOOL", astarte: "Astarte", straujupite: "Straujupīte", gotika: "Gotika", other: "Другая сеть" };
+const NETS = { circlek: "Circle K", virsi: "Virši", neste: "Neste", viada: "Viada", kool: "KOOL", astarte: "Astarte", straujupite: "Straujupīte", gotika: "Gotika", intergaz: "Intergaz", propane: "Latvijas Propāna Gāze", other: "Другая сеть" };
 const CITY_RU = {
   "Rīga": "Рига", "Jūrmala": "Юрмала", "Jelgava": "Елгава", "Daugavpils": "Даугавпилс", "Liepāja": "Лиепая",
   "Ventspils": "Вентспилс", "Valmiera": "Валмиера", "Rēzekne": "Резекне", "Jēkabpils": "Екабпилс", "Ogre": "Огре",
@@ -39,16 +39,17 @@ function hoursSince(iso, now = Date.now()) {
 
 function effPrice(st, o, settings) {
   const disc = settings.useCard ? (settings.discounts[st.brand] || 0) / 100 : 0;
-  return o.price - disc;
+  return o.price == null ? Infinity : o.price - disc;
 }
 
-const certainty = (o) => (o.kind === "ref" ? 2 : o.kind === "min" ? 1 : 0);
+const certainty = (o) => (o.kind === "none" ? 3 : o.kind === "ref" ? 2 : o.kind === "min" ? 1 : 0);
 
 /* Список предложений для вида топлива -> группы (одинаковые «минимум по сети» схлопываются). */
 function collect(stations, fuel, settings, { city = null, pos = null, radius = null } = {}) {
   const items = [];
   for (const st of stations) {
-    const o = st.offers && st.offers[fuel];
+    let o = st.offers && st.offers[fuel];
+    if (!o && fuel === "LPG" && st.lpg && !settings.onlyExact) o = { price: null, kind: "none" };  // газовая заправка без известной цены
     if (!o) continue;
     if (settings.onlyExact && (o.kind === "min" || o.kind === "ref")) continue;
     if (city && st.city !== city) continue;
@@ -60,7 +61,7 @@ function collect(stations, fuel, settings, { city = null, pos = null, radius = n
   const groups = new Map();
   const out = [];
   for (const it of items) {
-    if (it.o.kind === "here") { it.n = 1; out.push(it); continue; }
+    if (it.o.kind === "here" || it.o.kind === "none") { it.n = 1; out.push(it); continue; }
     const k = `${it.st.brand}|${it.o.kind}|${it.o.price}`;
     const g = groups.get(k);
     if (!g) { it.n = 1; groups.set(k, it); out.push(it); }
@@ -186,6 +187,7 @@ function banners() {
 
 function badges(it) {
   const o = it.o, b = [];
+  if (o.kind === "none") b.push(`<span class="badge warn">Цена не публикуется — уточните на заправке</span>`);
   if (o.kind === "here") b.push(`<span class="badge ok">Цена по данным сети для этой станции</span>`);
   if (o.kind === "uniform") b.push(`<span class="badge ok">Единая цена сети${it.n > 1 ? ` · ${it.n} ст.` : ""}</span>`);
   if (o.kind === "ref") b.push(`<span class="badge warn">Ориентир: минимальная цена сети, в этом городе сеть цен не публикует${it.n > 1 ? ` · ${it.n} ст.` : ""}</span>`);
@@ -211,10 +213,10 @@ function card(it, best) {
   const cardLine = disc > 0
     ? `<div class="card-price">с картой <b>${fmtPrice(it.eff)}</b> €</div>`
     : "";
-  return `<article class="card${best ? " best" : ""}">
+  return `<article class="card${best && o.price != null ? " best" : ""}">
     <div class="row">
-      <div><div class="net">${esc(netName(st.brand))}</div><div class="addr">${esc(addr || st.name)}</div>${dist}</div>
-      <div><div class="price">${fmtPrice(o.price)}<small>€/л</small></div>${cardLine}</div>
+      <div><div class="net">${esc(st.brand === "other" ? st.name : netName(st.brand))}</div><div class="addr">${esc(addr || st.name)}</div>${dist}</div>
+      <div>${o.price == null ? `<div class="price">—<small>нет цены</small></div>` : `<div class="price">${fmtPrice(o.price)}<small>€/л</small></div>${cardLine}`}</div>
     </div>
     ${badges(it)}${ageLine(it)}
     <button class="go" type="button" data-go="${esc(st.id)}" aria-label="Маршрут до ${esc(netName(st.brand))} ${esc(addr)}">Поехать</button>
@@ -273,7 +275,7 @@ function render() {
     }
   } else {
     const pos = app.geo === "ok" ? app.pos : null;
-    const items = sortFresh(collect(stations, S.fuel, S, { pos }));
+    const items = sortFresh(collect(stations, S.fuel, S, { pos }).filter((it) => it.o.kind !== "none"));
     html = `<p class="section-note">Цена обновилась совсем недавно (${esc(fname)}). Точный момент смены известен только если мы сами её заметили — иначе показана дата сети.</p>` +
       (items.length ? list(items) : emptyHtml("Нет данных", `Для «${fname}» цен пока нет.`));
   }

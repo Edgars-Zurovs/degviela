@@ -38,4 +38,16 @@ r = A.sortFresh(A.collect(fr, "95", S, {}));
 assert.deepEqual(r.map((x) => x.st.id), ["v5", "v4", "v3", "w"]);
 assert.ok(A.mapUrl({ lat: 1, lon: 2 }, "apple").startsWith("https://maps.apple.com/?daddr=1,2"));
 assert.equal(A.fmtPrice(1.954), "1,954");
+{
+  const gas = [
+    { id: "g1", brand: "circlek", city: "Rīga", lat: 56.95, lon: 24.1, lpg: true, offers: { LPG: { price: 1.065, kind: "uniform", source_date: "2026-10-27" } } },
+    { id: "g2", brand: "intergaz", city: "Daugavpils", lat: 55.88, lon: 26.5, lpg: true, offers: {} },
+    { id: "g3", brand: "other", city: "Daugavpils", lat: 55.9, lon: 26.5, lpg: false, offers: {} },
+  ];
+  const r = A.sortByPrice(A.collect(gas, "LPG", S, {}));
+  assert.deepEqual(r.map((x) => x.st.id), ["g1", "g2"]);   // без цены - в конце; без газа - не попадает
+  assert.equal(r[1].o.kind, "none");
+  assert.equal(A.collect(gas, "LPG", { ...S, onlyExact: true }, {}).length, 1);
+  assert.equal(A.collect(gas, "95", S, {}).length, 0);
+}
 console.log("JS tests OK");
