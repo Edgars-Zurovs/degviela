@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#0f1b2d">
+<meta name="theme-color" content="#0b1220">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Топливо LV">
@@ -22,8 +22,8 @@
   </button>
   <h1 class="page-title" id="pageTitle" hidden></h1>
   <div class="top-actions">
-    <button class="icon-btn" id="refreshBtn" type="button" aria-label="Обновить цены">⟳</button>
-    <button class="icon-btn" id="gearBtn" type="button" aria-label="Настройки">⚙</button>
+    <button class="icon-btn" id="refreshBtn" type="button" aria-label="Обновить цены"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.34-5.66"/><path d="M20 4v5h-5"/></svg></button>
+    <button class="icon-btn" id="gearBtn" type="button" aria-label="Настройки"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h2M10 17h10"/><circle cx="16" cy="7" r="2"/><circle cx="8" cy="17" r="2"/></svg></button>
   </div>
 </header>
 
@@ -35,9 +35,9 @@
 </main>
 
 <nav class="tabs" id="tabs" aria-label="Разделы">
-  <button type="button" data-tab="city" aria-current="page"><b>В городе</b><span>самая выгодная</span></button>
-  <button type="button" data-tab="near"><b>Рядом</b><span>в радиусе</span></button>
-  <button type="button" data-tab="fresh"><b>Свежие</b><span>цена обновилась</span></button>
+  <button type="button" data-tab="city" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><b>В городе</b><span>самая выгодная</span></button>
+  <button type="button" data-tab="near"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="8"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2"/></svg><b>Рядом</b><span>в радиусе</span></button>
+  <button type="button" data-tab="fresh"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><b>Свежие</b><span>цена обновилась</span></button>
 </nav>
 
 <dialog id="citySheet" aria-labelledby="cityTitle">

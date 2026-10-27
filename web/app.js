@@ -220,7 +220,7 @@ function card(it, best) {
     : "";
   const editBtn = o.kind === "none" || o.kind === "manual"
     ? `<button class="icon-btn price-edit" type="button" data-edit="${esc(st.id)}" aria-label="Изменить цену вручную">⚙</button>` : "";
-  return `<article class="card${best && o.price != null ? " best" : ""}">
+  return `<article class="card${best && o.price != null ? " best" : ""}" data-brand="${esc(st.brand)}">
     <div class="row">
       <div><div class="net">${esc(st.brand === "other" ? st.name : netName(st.brand))}</div><div class="addr">${esc(addr || st.name)}</div>${dist}</div>
       <div>${o.price == null ? `<div class="price-wrap"><div class="price">—<small>нет цены</small></div>${editBtn}</div>` : `<div class="price-wrap"><div class="price">${fmtPrice(o.price)}<small>€/л</small></div>${editBtn}</div>${cardLine}`}</div>
