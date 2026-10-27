@@ -111,6 +111,7 @@ const fmtPrice = (p) => p.toFixed(3).replace(".", ",");
 
 function mapUrl(st, app) {
   if (app === "apple") return `https://maps.apple.com/?daddr=${st.lat},${st.lon}&dirflg=d`;
+  if (app === "waze") return `https://waze.com/ul?ll=${st.lat},${st.lon}&navigate=yes`;
   return `https://www.google.com/maps/dir/?api=1&destination=${st.lat},${st.lon}&travelmode=driving`;
 }
 
@@ -121,7 +122,7 @@ if (typeof module !== "undefined") {
 /* ---------- состояние и хранилище ---------- */
 
 const isIOS = typeof navigator !== "undefined" && /iPad|iPhone|iPod/.test(navigator.userAgent || "");
-const DEFAULTS = { fuel: "95", city: "Rīga", tab: "city", radius: 10, discounts: {}, useCard: true, onlyExact: false, manual: {}, mapApp: isIOS ? "apple" : "google" };
+const DEFAULTS = { fuel: "95", city: "Rīga", tab: "city", radius: 10, discounts: {}, useCard: true, onlyExact: false, manual: {} };
 const store = {
   get() { try { return JSON.parse(localStorage.getItem("fuel-settings") || "{}"); } catch { return {}; } },
   set(v) { try { localStorage.setItem("fuel-settings", JSON.stringify(v)); } catch { /* приватный режим */ } },
@@ -226,7 +227,7 @@ function card(it, best) {
       <div>${o.price == null ? `<div class="price-wrap"><div class="price">—<small>нет цены</small></div>${editBtn}</div>` : `<div class="price-wrap"><div class="price">${fmtPrice(o.price)}<small>€/л</small></div>${editBtn}</div>${cardLine}`}</div>
     </div>
     ${badges(it)}${ageLine(it)}
-    <button class="go" type="button" data-go="${esc(st.id)}" aria-label="Маршрут до ${esc(netName(st.brand))} ${esc(addr)}">Поехать</button>
+    <button class="go" type="button" data-go="${esc(st.id)}" aria-label="Маршрут до ${esc(netName(st.brand))} ${esc(addr)}">В путь</button>
   </article>`;
 }
 
@@ -314,9 +315,7 @@ function openSettings() {
       <div class="set-line"><label for="useCard">Сравнивать по цене с картой</label><input type="checkbox" id="useCard" ${S.useCard ? "checked" : ""}></div></div>
     <div class="set-group"><h3>Точность</h3>
       <div class="set-line"><label for="onlyExact">Только цены, привязанные к станции</label><input type="checkbox" id="onlyExact" ${S.onlyExact ? "checked" : ""}></div>
-      <p>Сети публикуют минимум по городу, а не цену каждой станции. Без этого флажка такие цены показываются с пометкой.</p></div>
-    <div class="set-group"><h3>Карты для маршрута</h3>
-      <div class="set-line"><label for="mapApp">Открывать в</label><select id="mapApp"><option value="google"${S.mapApp === "google" ? " selected" : ""}>Google Maps</option><option value="apple"${S.mapApp === "apple" ? " selected" : ""}>Apple Maps</option></select></div></div>`;
+      <p>Сети публикуют минимум по городу, а не цену каждой станции. Без этого флажка такие цены показываются с пометкой.</p></div>`;
   $("#settingsSheet").showModal();
 }
 
@@ -325,6 +324,7 @@ function openSettings() {
 /* ---------- цена, введённая вручную (хранится только на этом телефоне) ---------- */
 
 let priceTarget = null;
+let mapTarget = null;
 
 function openPrice(stId) {
   const st = app.data && app.data.stations.find((s) => s.id === stId);
@@ -364,7 +364,11 @@ document.addEventListener("click", (e) => {
   else if (t.dataset.tab) { S.tab = t.dataset.tab; app.showAll = false; save(); if (S.tab === "near" && app.geo === "idle") askGeo(); render(); scrollTo(0, 0); }
   else if (t.dataset.go) {
     const st = app.data.stations.find((s) => s.id === t.dataset.go);
-    if (st) window.open(mapUrl(st, S.mapApp), "_blank", "noopener");
+    if (st) { mapTarget = st; $("#mapStation").textContent = [st.brand === "other" ? st.name : netName(st.brand), st.address, cityRu(st.city)].filter(Boolean).join(", "); $("#mapSheet").showModal(); }
+  }
+  else if (t.dataset.map) {
+    if (mapTarget) window.open(mapUrl(mapTarget, t.dataset.map), "_blank", "noopener");
+    $("#mapSheet").close();
   }
   else if (t.dataset.edit) openPrice(t.dataset.edit);
   else if (t.id === "priceSave") savePrice();
@@ -383,7 +387,6 @@ document.addEventListener("input", (e) => {
   else if (el.dataset && el.dataset.disc) { S.discounts[el.dataset.disc] = Math.max(0, Math.min(20, parseFloat(el.value.replace(",", ".")) || 0)); }
   else if (el.id === "useCard") S.useCard = el.checked;
   else if (el.id === "onlyExact") S.onlyExact = el.checked;
-  else if (el.id === "mapApp") S.mapApp = el.value;
   else return;
   save(); render();
 });

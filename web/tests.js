@@ -62,4 +62,6 @@ assert.equal(A.fmtPrice(1.954), "1,954");
   assert.equal(r[1].o.price, 1.065);                         // у станции с ценой сети своя цена не подменяет
   assert.equal(A.collect(gas, "LPG", { ...man, onlyExact: true }, {}).length, 2);
 }
+assert.equal(A.mapUrl({ lat: 1, lon: 2 }, "waze"), "https://waze.com/ul?ll=1,2&navigate=yes");
+assert.ok(A.mapUrl({ lat: 1, lon: 2 }, "google").startsWith("https://www.google.com/maps/dir/"));
 console.log("JS tests OK");

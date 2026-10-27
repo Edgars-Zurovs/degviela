@@ -50,6 +50,16 @@
   <div class="sheet-body" id="settingsBody"></div>
 </dialog>
 
+<dialog id="mapSheet" aria-labelledby="mapTitle">
+  <form method="dialog" class="sheet-head"><h2 id="mapTitle">Открыть маршрут в</h2><button class="icon-btn" aria-label="Закрыть">✕</button></form>
+  <div class="sheet-body">
+    <p id="mapStation" class="price-station"></p>
+    <button class="map-opt" type="button" data-map="google"><span class="map-dot" style="--c:#34a853">G</span>Google Maps</button>
+    <button class="map-opt" type="button" data-map="apple"><span class="map-dot" style="--c:#0a84ff">A</span>Apple Maps</button>
+    <button class="map-opt" type="button" data-map="waze"><span class="map-dot" style="--c:#33ccff">W</span>Waze</button>
+  </div>
+</dialog>
+
 <dialog id="priceSheet" aria-labelledby="priceTitle">
   <form method="dialog" class="sheet-head"><h2 id="priceTitle">Цена</h2><button class="icon-btn" aria-label="Закрыть">✕</button></form>
   <div class="sheet-body">
