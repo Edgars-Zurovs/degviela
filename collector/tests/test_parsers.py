@@ -31,6 +31,17 @@ VIADA = """<p>Cenas spēkā no 27.10 .2026.</p><table>
 </table>"""
 
 
+LETA = """<table class="nt"><thead><tr><th></th><th>95</th><th>98</th><th>D</th><th>D+</th><th>LPG</th><th>CNG</th></tr></thead><tbody>
+<tr><th class="ntb" scope="row"><a href="#b-astarte">Astarte</a></th>
+<td class="ntc"><b>1.963 €</b><span class="pc pc-user" tabindex="0">lietotāju dati · 26.10.<span class="pct">cena mainīta 26.10. 06:32</span></span></td><td class="ntc ntn">—</td>
+<td class="ntc"><b>2.105 €</b><span class="pc pc-user" tabindex="0">lietotāju dati · 27.10.<span class="pct">cena mainīta 27.10. 06:45</span></span></td><td class="ntc ntn">—</td><td class="ntc ntn">—</td><td class="ntc ntn">—</td></tr>
+<tr><th class="ntb" scope="row"><a href="#b-neste">Neste</a></th>
+<td class="ntc"><b>1.920 €</b><span class="pc" tabindex="0">tīkls · 3 h<span class="pct">cena mainīta 27.10. 13:26</span></span></td>
+<td class="ntc"><b>1.967 €</b><span class="pc" tabindex="0">zemākā · 51 min<span class="pct">cena mainīta 27.10. 11:00</span></span></td>
+<td class="ntc"><b>2.000 €</b><span class="pc" tabindex="0">šīs DUS cena · 5 min<span class="pct">cena mainīta 27.10. 11:00</span></span></td><td class="ntc ntn">—</td><td class="ntc ntn">—</td><td class="ntc ntn">—</td></tr>
+</tbody></table>"""
+
+
 class Parsers(unittest.TestCase):
     def test_circlek(self):
         r = parse_circlek(CK)

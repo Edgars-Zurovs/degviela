@@ -6,6 +6,7 @@ import json
 import os
 import sys
 from datetime import datetime, timezone
+from functools import partial
 from pathlib import Path
 from urllib import robotparser
 from urllib.parse import urlsplit
