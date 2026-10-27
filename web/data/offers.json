@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated_at": "2026-10-27T10:42:34+00:00",
+  "generated_at": "2026-10-27T14:48:53+00:00",
   "sample": false,
   "fuels": [
    "95",
@@ -16,7 +16,7 @@
     "name": "Circle K",
     "status": "ok",
     "error": null,
-    "fetched_at": "2026-10-27T10:42:34+00:00",
+    "fetched_at": "2026-10-27T14:48:53+00:00",
     "source_date": "2026-10-27",
     "scope": "Рига"
    },
@@ -24,19 +24,22 @@
     "name": "Virši",
     "status": "ok",
     "error": null,
-    "fetched_at": "2026-10-27T10:42:34+00:00",
+    "fetched_at": "2026-10-27T14:48:53+00:00",
     "source_date": "2026-10-26",
     "scope": "Рига и окрестности"
+   },
+   "viada": {
+    "name": "Viada",
+    "status": "ok",
+    "error": null,
+    "fetched_at": "2026-10-27T14:48:53+00:00",
+    "source_date": "2026-10-27",
+    "scope": "Рига и Лиепая"
    },
    "neste": {
     "name": "Neste",
     "status": "unavailable",
     "error": "нет официальной страницы цен, доступной для чтения без обхода защиты"
-   },
-   "viada": {
-    "name": "Viada",
-    "status": "unavailable",
-    "error": "robots.txt сайта запрещает автоматическое чтение"
    },
    "kool": {
     "name": "KOOL",
@@ -130,7 +133,29 @@
    "lon": 24.049714,
    "address": "Kārļa Ulmaņa gatve 67",
    "city": "Rīga",
-   "offers": {}
+   "offers": {
+    "95": {
+     "price": 1.847,
+     "kind": "here",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.952,
+     "kind": "here",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 1.947,
+     "kind": "here",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    }
+   }
   },
   {
    "id": "n260354672",
@@ -235,28 +260,28 @@
      "price": 2.087,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "95": {
      "price": 1.889,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.959,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "LPG": {
      "price": 1.065,
      "kind": "uniform",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -294,35 +319,35 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -430,28 +455,28 @@
      "price": 2.087,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "95": {
      "price": 1.889,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.959,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "LPG": {
      "price": 1.065,
      "kind": "uniform",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -684,7 +709,29 @@
    "lon": 24.181705,
    "address": "Dārzciema iela 62",
    "city": "Rīga",
-   "offers": {}
+   "offers": {
+    "95": {
+     "price": 1.847,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.952,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 1.947,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    }
+   }
   },
   {
    "id": "n489756804",
@@ -739,35 +786,35 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -820,7 +867,36 @@
    "lon": 24.18921,
    "address": "Gunāra Astras iela 7",
    "city": "Rīga",
-   "offers": {}
+   "offers": {
+    "95": {
+     "price": 1.847,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.952,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 1.947,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "LPG": {
+     "price": 0.975,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    }
+   }
   },
   {
    "id": "n1296804106",
@@ -860,7 +936,36 @@
    "lon": 24.117739,
    "address": "Emmas iela 45",
    "city": "Rīga",
-   "offers": {}
+   "offers": {
+    "95": {
+     "price": 1.847,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.952,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 1.947,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "LPG": {
+     "price": 0.975,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    }
+   }
   },
   {
    "id": "n1558659954",
@@ -885,35 +990,35 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -936,7 +1041,36 @@
    "lon": 24.215903,
    "address": "Brāļu Kaudzīšu iela 29",
    "city": "Rīga",
-   "offers": {}
+   "offers": {
+    "95": {
+     "price": 1.847,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.952,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 1.947,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "LPG": {
+     "price": 0.975,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    }
+   }
   },
   {
    "id": "n1666785020",
@@ -951,42 +1085,42 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "here",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "LPG": {
      "price": 1.065,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -1004,35 +1138,35 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -1130,7 +1264,7 @@
      "price": 2.195,
      "kind": "uniform",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -1158,35 +1292,35 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "here",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -1244,21 +1378,21 @@
      "price": 2.087,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "95": {
      "price": 1.889,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.959,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -1306,7 +1440,7 @@
      "price": 1.065,
      "kind": "uniform",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -1404,14 +1538,14 @@
      "price": 2.195,
      "kind": "uniform",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "LPG": {
      "price": 1.065,
      "kind": "uniform",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -1479,7 +1613,7 @@
      "price": 1.065,
      "kind": "uniform",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -1497,21 +1631,21 @@
      "price": 2.087,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "95": {
      "price": 1.889,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.959,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -1539,21 +1673,21 @@
      "price": 2.087,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "95": {
      "price": 1.889,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.959,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -1566,7 +1700,36 @@
    "lon": 24.036391,
    "address": "Buļļu iela 72A",
    "city": "Rīga",
-   "offers": {}
+   "offers": {
+    "95": {
+     "price": 1.847,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.952,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 1.947,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "LPG": {
+     "price": 0.975,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    }
+   }
   },
   {
    "id": "n6001636337",
@@ -1621,21 +1784,21 @@
      "price": 2.087,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "95": {
      "price": 1.889,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.959,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -1653,42 +1816,42 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "LPG": {
      "price": 1.065,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -1706,35 +1869,35 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -1752,35 +1915,35 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -1818,35 +1981,35 @@
      "price": 1.901,
      "kind": "here",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "here",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -1859,7 +2022,36 @@
    "lon": 24.011632,
    "address": "Anniņmuižas bulvāris 75",
    "city": "Rīga",
-   "offers": {}
+   "offers": {
+    "95": {
+     "price": 1.847,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.952,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 1.947,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "LPG": {
+     "price": 0.975,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    }
+   }
   },
   {
    "id": "n7528951585",
@@ -1969,7 +2161,29 @@
    "lon": 23.999795,
    "address": "Kārļa Ulmaņa gatve 135",
    "city": "Rīga",
-   "offers": {}
+   "offers": {
+    "95": {
+     "price": 1.847,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.952,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 1.947,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    }
+   }
   },
   {
    "id": "n9114837794",
@@ -1979,7 +2193,29 @@
    "lon": 24.001595,
    "address": "Valgales iela 1",
    "city": "Rīga",
-   "offers": {}
+   "offers": {
+    "95": {
+     "price": 1.847,
+     "kind": "here",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.952,
+     "kind": "here",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 1.947,
+     "kind": "here",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    }
+   }
   },
   {
    "id": "n9161075763",
@@ -1994,35 +2230,35 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -2040,35 +2276,35 @@
      "price": 1.901,
      "kind": "here",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "here",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -2086,35 +2322,35 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -2192,21 +2428,21 @@
      "price": 2.087,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "95": {
      "price": 1.889,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.959,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -2239,7 +2475,29 @@
    "lon": 24.16176,
    "address": "Krasta iela 78",
    "city": "Rīga",
-   "offers": {}
+   "offers": {
+    "95": {
+     "price": 1.847,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.952,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 1.947,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    }
+   }
   },
   {
    "id": "n9886923426",
@@ -2259,7 +2517,36 @@
    "lon": 24.09617,
    "address": "Valdeķu iela 34",
    "city": "Rīga",
-   "offers": {}
+   "offers": {
+    "95": {
+     "price": 1.847,
+     "kind": "here",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.952,
+     "kind": "here",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 1.947,
+     "kind": "here",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "LPG": {
+     "price": 0.975,
+     "kind": "here",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    }
+   }
   },
   {
    "id": "n9927543500",
@@ -2274,7 +2561,7 @@
      "price": 1.065,
      "kind": "uniform",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -2297,7 +2584,36 @@
    "lon": 24.013839,
    "address": "Šampētera iela 180",
    "city": "Rīga",
-   "offers": {}
+   "offers": {
+    "95": {
+     "price": 1.847,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.952,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 1.947,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "LPG": {
+     "price": 0.975,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    }
+   }
   },
   {
    "id": "n10099082113",
@@ -2412,7 +2728,7 @@
      "price": 1.065,
      "kind": "uniform",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -2475,7 +2791,36 @@
    "lon": 24.046788,
    "address": "Gaigalas iela 19A",
    "city": "Rīga",
-   "offers": {}
+   "offers": {
+    "95": {
+     "price": 1.847,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.952,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 1.947,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "LPG": {
+     "price": 0.975,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    }
+   }
   },
   {
    "id": "w34563772",
@@ -2530,35 +2875,35 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -2646,7 +2991,7 @@
      "price": 1.065,
      "kind": "uniform",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -2684,35 +3029,35 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -2750,35 +3095,35 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -2791,7 +3136,29 @@
    "lon": 24.17544,
    "address": "Latgales iela 293A",
    "city": "Rīga",
-   "offers": {}
+   "offers": {
+    "95": {
+     "price": 1.847,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.952,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 1.947,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    }
+   }
   },
   {
    "id": "w91660137",
@@ -2876,21 +3243,21 @@
      "price": 2.087,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "95": {
      "price": 1.889,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.959,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -2963,7 +3330,36 @@
    "lon": 21.012831,
    "address": "Krūmu iela 56",
    "city": "Liepāja",
-   "offers": {}
+   "offers": {
+    "95": {
+     "price": 1.847,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.952,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 1.947,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "LPG": {
+     "price": 0.975,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    }
+   }
   },
   {
    "id": "w121481135",
@@ -2983,7 +3379,36 @@
    "lon": 21.00617,
    "address": "",
    "city": "Liepāja",
-   "offers": {}
+   "offers": {
+    "95": {
+     "price": 1.847,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.952,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 1.947,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "LPG": {
+     "price": 0.975,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    }
+   }
   },
   {
    "id": "w125335691",
@@ -3013,7 +3438,29 @@
    "lon": 24.239255,
    "address": "Vecā Biķernieku iela 1",
    "city": "Rīga",
-   "offers": {}
+   "offers": {
+    "95": {
+     "price": 1.847,
+     "kind": "here",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.952,
+     "kind": "here",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 1.947,
+     "kind": "here",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    }
+   }
   },
   {
    "id": "w130994161",
@@ -3058,21 +3505,21 @@
      "price": 2.087,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "95": {
      "price": 1.889,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.959,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -3100,35 +3547,35 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -3156,35 +3603,35 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -3197,7 +3644,29 @@
    "lon": 24.217829,
    "address": "Latgales iela 440",
    "city": "Rīga",
-   "offers": {}
+   "offers": {
+    "95": {
+     "price": 1.847,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.952,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 1.947,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    }
+   }
   },
   {
    "id": "w139932687",
@@ -3212,42 +3681,42 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "LPG": {
      "price": 1.065,
      "kind": "here",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -3265,21 +3734,21 @@
      "price": 2.087,
      "kind": "here",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "95": {
      "price": 1.889,
      "kind": "here",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.959,
      "kind": "here",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -3302,7 +3771,29 @@
    "lon": 24.179837,
    "address": "Salaspils iela 4A",
    "city": "Rīga",
-   "offers": {}
+   "offers": {
+    "95": {
+     "price": 1.847,
+     "kind": "here",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.952,
+     "kind": "here",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 1.947,
+     "kind": "here",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    }
+   }
   },
   {
    "id": "w147156838",
@@ -3317,35 +3808,35 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -3373,21 +3864,21 @@
      "price": 2.087,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "95": {
      "price": 1.889,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.959,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -3405,35 +3896,35 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -3451,21 +3942,21 @@
      "price": 2.087,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "95": {
      "price": 1.889,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.959,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -3478,7 +3969,29 @@
    "lon": 24.182989,
    "address": "Dārzciema iela 69",
    "city": "Rīga",
-   "offers": {}
+   "offers": {
+    "95": {
+     "price": 1.847,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.952,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 1.947,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    }
+   }
   },
   {
    "id": "w153012926",
@@ -3523,42 +4036,42 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "LPG": {
      "price": 1.065,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -3596,35 +4109,35 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -3667,7 +4180,36 @@
    "lon": 24.183549,
    "address": "Džutas iela 16",
    "city": "Rīga",
-   "offers": {}
+   "offers": {
+    "95": {
+     "price": 1.847,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.952,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 1.947,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "LPG": {
+     "price": 0.975,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    }
+   }
   },
   {
    "id": "w170040936",
@@ -3692,35 +4234,35 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -3753,7 +4295,29 @@
    "lon": 21.027051,
    "address": "Zemnieku iela 58",
    "city": "Liepāja",
-   "offers": {}
+   "offers": {
+    "95": {
+     "price": 1.847,
+     "kind": "here",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.952,
+     "kind": "here",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 1.947,
+     "kind": "here",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    }
+   }
   },
   {
    "id": "w177033033",
@@ -3778,21 +4342,21 @@
      "price": 2.087,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "95": {
      "price": 1.889,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.959,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -3820,7 +4384,7 @@
      "price": 1.065,
      "kind": "uniform",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -3908,35 +4472,35 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -3964,7 +4528,7 @@
      "price": 1.065,
      "kind": "uniform",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -3977,7 +4541,36 @@
    "lon": 24.202848,
    "address": "Andreja Saharova iela 10",
    "city": "Rīga",
-   "offers": {}
+   "offers": {
+    "95": {
+     "price": 1.847,
+     "kind": "here",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.952,
+     "kind": "here",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 1.947,
+     "kind": "here",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "LPG": {
+     "price": 0.975,
+     "kind": "here",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    }
+   }
   },
   {
    "id": "w221429174",
@@ -3992,21 +4585,21 @@
      "price": 2.087,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "95": {
      "price": 1.889,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.959,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -4039,7 +4632,29 @@
    "lon": 24.127649,
    "address": "Ziepniekkalna iela 20",
    "city": "Rīga",
-   "offers": {}
+   "offers": {
+    "95": {
+     "price": 1.847,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.952,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 1.947,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    }
+   }
   },
   {
    "id": "w229715560",
@@ -4164,35 +4779,35 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -4205,7 +4820,36 @@
    "lon": 21.015306,
    "address": "Ganību iela 180",
    "city": "Liepāja",
-   "offers": {}
+   "offers": {
+    "95": {
+     "price": 1.847,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.952,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 1.947,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "LPG": {
+     "price": 0.975,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    }
+   }
   },
   {
    "id": "w308584034",
@@ -4290,21 +4934,21 @@
      "price": 2.087,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "95": {
      "price": 1.889,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.959,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -4342,7 +4986,7 @@
      "price": 1.065,
      "kind": "uniform",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -4410,35 +5054,35 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -4516,35 +5160,35 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -4667,7 +5311,29 @@
    "lon": 24.129812,
    "address": "",
    "city": "Rīga",
-   "offers": {}
+   "offers": {
+    "95": {
+     "price": 1.847,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.952,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 1.947,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    }
+   }
   },
   {
    "id": "w718428884",
@@ -4872,7 +5538,7 @@
      "price": 1.065,
      "kind": "uniform",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -4930,7 +5596,7 @@
      "price": 1.065,
      "kind": "uniform",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -4943,7 +5609,36 @@
    "lon": 24.145864,
    "address": "Krasta iela 50",
    "city": "Rīga",
-   "offers": {}
+   "offers": {
+    "95": {
+     "price": 1.847,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.952,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 1.947,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "LPG": {
+     "price": 0.975,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    }
+   }
   },
   {
    "id": "w1085968711",
@@ -4953,7 +5648,29 @@
    "lon": 24.021458,
    "address": "",
    "city": "Rīga",
-   "offers": {}
+   "offers": {
+    "95": {
+     "price": 1.847,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.952,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 1.947,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    }
+   }
   },
   {
    "id": "w1100580542",
@@ -4968,21 +5685,21 @@
      "price": 2.087,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "95": {
      "price": 1.889,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.959,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -5025,7 +5742,29 @@
    "lon": 24.06243,
    "address": "Krūzes iela 53",
    "city": "Rīga",
-   "offers": {}
+   "offers": {
+    "95": {
+     "price": 1.847,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.952,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 1.947,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    }
+   }
   },
   {
    "id": "w1130752931",
@@ -5035,7 +5774,29 @@
    "lon": 24.270672,
    "address": "",
    "city": "Rīga",
-   "offers": {}
+   "offers": {
+    "95": {
+     "price": 1.847,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.952,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 1.947,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    }
+   }
   },
   {
    "id": "w1156050589",
@@ -5105,7 +5866,29 @@
    "lon": 24.255405,
    "address": "Juglas iela 16C",
    "city": "Rīga",
-   "offers": {}
+   "offers": {
+    "95": {
+     "price": 1.847,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.952,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 1.947,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    }
+   }
   },
   {
    "id": "w1207110418",
@@ -5190,7 +5973,7 @@
      "price": 1.065,
      "kind": "uniform",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -5208,7 +5991,7 @@
      "price": 1.065,
      "kind": "uniform",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -5236,21 +6019,21 @@
      "price": 2.087,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "95": {
      "price": 1.889,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.959,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -5278,21 +6061,21 @@
      "price": 2.087,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "95": {
      "price": 1.889,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.959,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -5335,7 +6118,36 @@
    "lon": 24.173515,
    "address": "Ķīšezera iela 31",
    "city": "Rīga",
-   "offers": {}
+   "offers": {
+    "95": {
+     "price": 1.847,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.952,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 1.947,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "LPG": {
+     "price": 0.975,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    }
+   }
   },
   {
    "id": "w1281153010",
@@ -5370,7 +6182,7 @@
      "price": 1.065,
      "kind": "uniform",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -5398,35 +6210,35 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -5474,35 +6286,35 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -5520,21 +6332,21 @@
      "price": 2.087,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "95": {
      "price": 1.889,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.959,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -5562,21 +6374,21 @@
      "price": 2.087,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "95": {
      "price": 1.889,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.959,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -5604,21 +6416,21 @@
      "price": 2.087,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "95": {
      "price": 1.889,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.959,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -5631,7 +6443,29 @@
    "lon": 24.217048,
    "address": "Granīta iela 7A",
    "city": "Rīga",
-   "offers": {}
+   "offers": {
+    "95": {
+     "price": 1.847,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.952,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 1.947,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    }
+   }
   },
   {
    "id": "w1322944905",
@@ -5676,21 +6510,21 @@
      "price": 2.087,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "95": {
      "price": 1.889,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.959,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -5718,35 +6552,35 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "here",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "here",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -5764,35 +6598,35 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -5810,35 +6644,35 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "here",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -5856,21 +6690,21 @@
      "price": 2.087,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "95": {
      "price": 1.889,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.959,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -5888,35 +6722,35 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -5934,21 +6768,21 @@
      "price": 2.087,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "95": {
      "price": 1.889,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.959,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -5976,35 +6810,35 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -6022,7 +6856,7 @@
      "price": 1.065,
      "kind": "uniform",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -6045,7 +6879,36 @@
    "lon": 24.118947,
    "address": "Mūkusalas iela 78",
    "city": "Rīga",
-   "offers": {}
+   "offers": {
+    "95": {
+     "price": 1.847,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.952,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 1.947,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "LPG": {
+     "price": 0.975,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    }
+   }
   },
   {
    "id": "w1421982418",
@@ -6075,7 +6938,29 @@
    "lon": 24.083739,
    "address": "Vienības gatve 162A",
    "city": "Rīga",
-   "offers": {}
+   "offers": {
+    "95": {
+     "price": 1.847,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.952,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 1.947,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    }
+   }
   },
   {
    "id": "w1447531856",
@@ -6100,35 +6985,35 @@
      "price": 2.087,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "95": {
      "price": 1.889,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.959,
      "kind": "min",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "CNG": {
      "price": 2.195,
      "kind": "uniform",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "LPG": {
      "price": 1.065,
      "kind": "uniform",
      "source_date": "2026-10-26",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -6291,7 +7176,29 @@
    "lon": 24.127566,
    "address": "Ziepniekkalna iela 20",
    "city": "Rīga",
-   "offers": {}
+   "offers": {
+    "95": {
+     "price": 1.847,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.952,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 1.947,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    }
+   }
   },
   {
    "id": "w1548062871",
@@ -6361,7 +7268,29 @@
    "lon": 24.106483,
    "address": "Mūkusalas iela 59",
    "city": "Rīga",
-   "offers": {}
+   "offers": {
+    "95": {
+     "price": 1.847,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "98": {
+     "price": 1.952,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    },
+    "D": {
+     "price": 1.947,
+     "kind": "min",
+     "source_date": "2026-10-27",
+     "checked_at": "2026-10-27T14:48:53+00:00",
+     "changed_at": null
+    }
+   }
   },
   {
    "id": "w1554558764",
@@ -6396,7 +7325,7 @@
      "price": 2.49,
      "kind": "here",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
@@ -6424,35 +7353,35 @@
      "price": 1.901,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "98": {
      "price": 1.971,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "D": {
      "price": 2.091,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "DP": {
      "price": 2.221,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     },
     "XTL": {
      "price": 2.49,
      "kind": "min",
      "source_date": "2026-10-27",
-     "checked_at": "2026-10-27T10:42:34+00:00",
+     "checked_at": "2026-10-27T14:48:53+00:00",
      "changed_at": null
     }
    }
