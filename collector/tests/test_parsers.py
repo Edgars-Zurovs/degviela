@@ -1,5 +1,6 @@
 import unittest
-from collector.parsers import parse_circlek, parse_virsi, parse_viada, parse_addresses
+from datetime import date
+from collector.parsers import parse_circlek, parse_virsi, parse_viada, parse_leta, parse_addresses
 from collector.geo import addresses_match, haversine_km, nearest_town, assign_city
 
 CK = ("Degvielas cenas Zemākās cenas Rīgā Cenas spēkā no 26.10.2026 "
@@ -60,6 +61,20 @@ class Parsers(unittest.TestCase):
         self.assertEqual(r.fuels["95"]["price"], 1.847)
         self.assertEqual(r.fuels["95"]["addresses"], ["Kārļa Ulmaņa gatve 67", "Zemnieku iela 58"])
         self.assertEqual(r.fuels["LPG"]["addresses"], ["Andreja Saharova iela 10"])
+
+    def test_leta(self):
+        today = date(2026, 10, 27)
+        r = parse_leta(LETA, "astarte", today)
+        self.assertEqual(set(r.fuels), {"95", "D"})
+        self.assertEqual(r.fuels["95"]["kind"], "user")
+        self.assertEqual(r.fuels["D"]["price"], 2.105)
+        self.assertEqual(r.source_date, "2026-10-27")
+        n = parse_leta(LETA, "neste", today)
+        self.assertEqual(n.fuels["95"]["kind"], "uniform")
+        self.assertEqual(n.fuels["98"]["kind"], "min")
+        self.assertNotIn("D", n.fuels)
+        self.assertFalse(parse_leta(LETA, "kool", today).ok)
+        self.assertFalse(parse_leta("nothing", "neste", today).ok)
 
     def test_empty(self):
         self.assertFalse(parse_circlek("nothing here").ok)

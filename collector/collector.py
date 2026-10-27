@@ -36,12 +36,17 @@ SOURCES = {
     },
 }
 
-UNAVAILABLE = {
-    "neste": ("Neste", "нет официальной страницы цен, доступной для чтения без обхода защиты"),
-    "kool": ("KOOL", "страница цен не читается автоматически"),
-    "astarte": ("Astarte", "не подключено в этой версии"),
-    "straujupite": ("Straujupīte", "не подключено в этой версии"),
-}
+# Сети без своей страницы цен: берём из таблицы сетей LetaDegviela.lv (одна загрузка на всех).
+LETA_URL = "https://letadegviela.lv/"
+for _key, _name in [("neste", "Neste"), ("kool", "KOOL"), ("astarte", "Astarte"),
+                    ("straujupite", "Straujupīte")]:
+    SOURCES[_key] = {
+        "name": _name, "url": LETA_URL, "via": "LetaDegviela.lv",
+        "parser": partial(parsers.parse_leta, brand=_key),
+        "regions": None,  # цена сети действует для всех её станций
+    }
+
+UNAVAILABLE: dict = {}
 
 FUELS = ["95", "98", "D", "DP", "LPG", "CNG", "XTL"]
 
@@ -78,17 +83,32 @@ def robots_allows(session, url: str) -> tuple[bool, str]:
     return False, "robots.txt запрещает чтение страницы"
 
 
+def fetch_page(session, url: str) -> tuple[str | None, str | None]:
+    """Загружает страницу один раз за запуск (несколько сетей могут читаться с одной страницы)."""
+    cache = session.__dict__.setdefault("_pages", {})
+    if url not in cache:
+        allowed, why = robots_allows(session, url)
+        if not allowed:
+            cache[url] = (None, why)
+        else:
+            try:
+                r = session.get(url, timeout=30)
+                r.raise_for_status()
+                cache[url] = (r.text, None)
+            except Exception as exc:  # noqa: BLE001
+                cache[url] = (None, f"ошибка загрузки: {exc}")
+    return cache[url]
+
+
 def fetch_source(session, key: str) -> tuple[parsers.ParseResult | None, str | None]:
     src = SOURCES[key]
-    allowed, why = robots_allows(session, src["url"])
-    if not allowed:
-        return None, why
+    text, err = fetch_page(session, src["url"])
+    if text is None:
+        return None, err
     try:
-        r = session.get(src["url"], timeout=30)
-        r.raise_for_status()
-        result = src["parser"](r.text)
+        result = src["parser"](text)
     except Exception as exc:  # noqa: BLE001
-        return None, f"ошибка загрузки: {exc}"
+        return None, f"ошибка разбора: {exc}"
     if not result.ok:
         return None, "цены на странице не найдены (возможно, сайт изменил вёрстку)"
     return result, None
@@ -152,13 +172,14 @@ def build_offers(stations: list[dict], state: dict) -> tuple[list[dict], dict]:
                     "changed_at": changed,
                 }
 
-            if info.get("uniform"):
+            kind = info.get("kind") or ("uniform" if info.get("uniform") else None)
+            if kind:
                 for st in brand_stations:
                     if fuel == "LPG" and not st["lpg"]:
                         continue
                     if fuel == "CNG" and not st["cng"]:
                         continue
-                    put(st, "uniform", "all")
+                    put(st, kind, "all")
                 continue
 
             matched_ids = set()
@@ -214,7 +235,9 @@ def run(data_dir: Path, contact: str, force_stations: bool = False, out_dir: Pat
         sources_meta[key] = {
             "name": src["name"], "status": ss.get("status", "error"), "error": ss.get("error"),
             "fetched_at": ss.get("fetched_at"), "source_date": ss.get("source_date"),
-            "scope": {"circlek": "Рига", "viada": "Рига и Лиепая"}.get(key, "Рига и окрестности"),
+            "scope": {"circlek": "Рига", "viada": "Рига и Лиепая"}.get(
+                key, "вся Латвия" if src.get("via") else "Рига и окрестности"),
+            "via": src.get("via"),
         }
     for key, (name, why) in UNAVAILABLE.items():
         sources_meta[key] = {"name": name, "status": "unavailable", "error": why}

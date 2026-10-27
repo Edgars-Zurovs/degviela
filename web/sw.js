@@ -1,4 +1,4 @@
-const SHELL = "fuel-shell-v1";
+const SHELL = "fuel-shell-v2";
 const FILES = ["./", "index.html", "styles.css", "app.js", "manifest.webmanifest", "icons/icon-192.png"];
 
 self.addEventListener("install", (e) => {

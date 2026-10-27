@@ -203,3 +203,68 @@ def parse_viada(html: str) -> ParseResult:
         addresses = parse_addresses(cells[2].get_text(" ", strip=True).replace(":", ","))
         result.fuels[key] = {"price": price, "uniform": False, "addresses": addresses}
     return result
+
+
+# --- LetaDegviela.lv: сети без собственной страницы цен --------------------
+
+LETA_COLUMNS = {"95": "95", "98": "98", "D": "D", "D+": "DP", "LPG": "LPG", "CNG": "CNG"}
+
+
+def _leta_kind(label: str, is_user: bool) -> str | None:
+    label = label.lower()
+    if is_user or "lietotāj" in label:
+        return "user"
+    if "zemākā" in label:
+        return "min"
+    if label.startswith("tīkl"):
+        return "uniform"
+    return None  # «šīs DUS cena» и прочее нам не подходит
+
+
+def parse_leta(html: str, brand: str, today: date | None = None) -> ParseResult:
+    """Строка сети из таблицы «Tīklu cenas» -> цены с типом: uniform / min / user.
+
+    user — цена, введённая водителями; она может быть устаревшей.
+    """
+    from bs4 import BeautifulSoup
+
+    today = today or date.today()
+    soup = BeautifulSoup(html, "lxml")
+    result = ParseResult()
+    table = soup.find("table", class_="nt")
+    if table is None:
+        return result
+    columns = [LETA_COLUMNS.get(th.get_text(strip=True)) for th in table.find("thead").find_all("th")]
+    link = table.find("a", href=f"#b-{brand}")
+    row = link.find_parent("tr") if link else None
+    if row is None:
+        return result
+
+    newest = None
+    for idx, td in enumerate(row.find_all("td"), start=1):
+        fuel = columns[idx] if idx < len(columns) else None
+        b = td.find("b")
+        pc = td.find("span", class_="pc")
+        if fuel is None or b is None or pc is None:
+            continue
+        pm = re.search(r"(\d[.,]\d{2,3})", b.get_text())
+        price = _to_price(pm.group(1)) if pm else None
+        label = pc.find(string=True, recursive=False) or ""
+        kind = _leta_kind(label, "pc-user" in (pc.get("class") or []))
+        if price is None or kind is None:
+            result.warnings.append(f"пропущено: {brand} {fuel} ({label.strip()})")
+            continue
+        changed = re.search(r"mainīta\s+(\d{1,2})\.(\d{1,2})\.", pc.get_text(" ", strip=True))
+        if changed:
+            try:
+                d = date(today.year, int(changed.group(2)), int(changed.group(1)))
+                if d > today:
+                    d = d.replace(year=today.year - 1)
+                newest = max(newest, d) if newest else d
+            except ValueError:
+                pass
+        result.fuels[fuel] = {"price": price, "kind": kind, "uniform": kind == "uniform", "addresses": []}
+    result.source_date = newest.isoformat() if newest else None
+    if result.fuels and result.source_date is None:
+        result.warnings.append("не найдена дата изменения цены")
+    return result
