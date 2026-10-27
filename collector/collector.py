@@ -49,7 +49,7 @@ UNAVAILABLE = {
     "astarte": ("Astarte", "нет страницы цен, доступной для автоматического чтения"),
 }
 
-FUELS = ["95", "98", "D", "DP", "LPG", "CNG", "XTL"]
+FUELS = ["95", "98", "D", "DP", "LPG", "XTL"]
 
 
 def now_iso() -> str:
@@ -162,6 +162,8 @@ def build_offers(stations: list[dict], state: dict) -> tuple[list[dict], dict]:
         fetched_at = ss["fetched_at"]
         brand_stations = [s for s in stations if s["brand"] == key]
         for fuel, info in ss["fuels"].items():
+            if fuel not in FUELS:
+                continue  # старые данные (например, CNG) из сохранённого состояния
             price = info["price"]
 
             def put(st, kind, scope):
@@ -177,8 +179,6 @@ def build_offers(stations: list[dict], state: dict) -> tuple[list[dict], dict]:
             if kind:
                 for st in brand_stations:
                     if fuel == "LPG" and not st["lpg"]:
-                        continue
-                    if fuel == "CNG" and not st["cng"]:
                         continue
                     put(st, kind, "all")
                 continue
@@ -196,7 +196,7 @@ def build_offers(stations: list[dict], state: dict) -> tuple[list[dict], dict]:
             for st in brand_stations:
                 if st["id"] in matched_ids:
                     continue
-                if fuel in ("LPG", "CNG") and not st["lpg" if fuel == "LPG" else "cng"]:
+                if fuel == "LPG" and not st["lpg"]:
                     continue
                 if st["city"] in src["regions"]:
                     put(st, "min", "region")

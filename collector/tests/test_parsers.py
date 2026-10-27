@@ -55,9 +55,9 @@ class Parsers(unittest.TestCase):
         self.assertEqual(r.fuels["D"]["price"], 2.087)
         self.assertEqual(r.fuels["95"]["addresses"], ["Brīvības gatve 297"])
         self.assertTrue(r.fuels["LPG"]["uniform"])
-        self.assertEqual(r.fuels["CNG"]["price"], 2.195)
+        self.assertNotIn("CNG", r.fuels)
         self.assertNotIn("AD", r.fuels)
-        self.assertEqual(set(r.fuels), {"D", "95", "98", "CNG", "LPG"})
+        self.assertEqual(set(r.fuels), {"D", "95", "98", "LPG"})
 
     def test_viada(self):
         r = parse_viada(VIADA)

@@ -115,7 +115,7 @@ def parse_circlek(html_or_text: str) -> ParseResult:
 
 # --- Virši ----------------------------------------------------------------
 
-VIRSI_LABELS = {"DD": "D", "95E": "95", "98E": "98", "CBG": "CNG", "LPG": "LPG"}
+VIRSI_LABELS = {"DD": "D", "95E": "95", "98E": "98", "LPG": "LPG"}
 _VIRSI_ALL = ["DD", "AD", "95E", "98E", "CBG", "LPG", "AdBLUE", "AdBlue"]
 _VIRSI_ALT = "|".join(_VIRSI_ALL)
 _VIRSI_ITEM = re.compile(

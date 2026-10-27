@@ -35,7 +35,6 @@ class Offers(unittest.TestCase):
         self.assertNotIn("LPG", by["n1"])                     # нет тега LPG
         self.assertEqual(by["n4"]["D"]["kind"], "here")
         self.assertEqual(by["n4"]["LPG"]["kind"], "uniform")
-        self.assertNotIn("CNG", by["n5"])
         self.assertIn("Krasta iela 93", " ".join(sum(um.values(), [])))
 
     def test_change_detection(self):

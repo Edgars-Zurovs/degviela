@@ -1,7 +1,7 @@
 "use strict";
 /* Топливо LV — клиентская часть. Данные: data/offers.json (обновляет сборщик). */
 
-const FUEL_NAMES = { "95": "95", "98": "98", D: "Дизель", DP: "Дизель+", LPG: "Газ", CNG: "CNG", XTL: "XTL" };
+const FUEL_NAMES = { "95": "95", "98": "98", D: "Дизель", DP: "Дизель+", LPG: "Газ", XTL: "XTL" };
 const NETS = { circlek: "Circle K", virsi: "Virši", neste: "Neste", viada: "Viada", kool: "KOOL", astarte: "Astarte", straujupite: "Straujupīte", gotika: "Gotika", intergaz: "Intergaz", propane: "Latvijas Propāna Gāze", other: "Другая сеть" };
 const CITY_RU = {
   "Rīga": "Рига", "Jūrmala": "Юрмала", "Jelgava": "Елгава", "Daugavpils": "Даугавпилс", "Liepāja": "Лиепая",
