@@ -1,6 +1,5 @@
 import unittest
-from datetime import date
-from collector.parsers import parse_circlek, parse_virsi, parse_viada, parse_leta, parse_addresses
+from collector.parsers import parse_circlek, parse_virsi, parse_viada, parse_cenometrs, parse_addresses
 from collector.geo import addresses_match, haversine_km, nearest_town, assign_city
 
 CK = ("Degvielas cenas Zemākās cenas Rīgā Cenas spēkā no 26.10.2026 "
@@ -31,15 +30,10 @@ VIADA = """<p>Cenas spēkā no 27.10 .2026.</p><table>
 </table>"""
 
 
-LETA = """<table class="nt"><thead><tr><th></th><th>95</th><th>98</th><th>D</th><th>D+</th><th>LPG</th><th>CNG</th></tr></thead><tbody>
-<tr><th class="ntb" scope="row"><a href="#b-astarte">Astarte</a></th>
-<td class="ntc"><b>1.963 €</b><span class="pc pc-user" tabindex="0">lietotāju dati · 26.10.<span class="pct">cena mainīta 26.10. 06:32</span></span></td><td class="ntc ntn">—</td>
-<td class="ntc"><b>2.105 €</b><span class="pc pc-user" tabindex="0">lietotāju dati · 27.10.<span class="pct">cena mainīta 27.10. 06:45</span></span></td><td class="ntc ntn">—</td><td class="ntc ntn">—</td><td class="ntc ntn">—</td></tr>
-<tr><th class="ntb" scope="row"><a href="#b-neste">Neste</a></th>
-<td class="ntc"><b>1.920 €</b><span class="pc" tabindex="0">tīkls · 3 h<span class="pct">cena mainīta 27.10. 13:26</span></span></td>
-<td class="ntc"><b>1.967 €</b><span class="pc" tabindex="0">zemākā · 51 min<span class="pct">cena mainīta 27.10. 11:00</span></span></td>
-<td class="ntc"><b>2.000 €</b><span class="pc" tabindex="0">šīs DUS cena · 5 min<span class="pct">cena mainīta 27.10. 11:00</span></span></td><td class="ntc ntn">—</td><td class="ntc ntn">—</td><td class="ntc ntn">—</td></tr>
-</tbody></table>"""
+CENO = ('<script>window.__INITIAL_PRICES__ = [{"type":"95","price":1.824,"location":"Ainaži","source":"Straujupite",'
+        '"timestamp":"2026-10-27T09:01:06.977Z"},{"type":"diesel","price":2.004,"location":"Ainaži","source":"Straujupite",'
+        '"timestamp":"2026-10-27T09:01:06.977Z"},{"type":"95","price":1.889,"location":"Rīga","source":"Virsi",'
+        '"timestamp":"2026-10-27T09:01:06.977Z"}];</script>')
 
 
 class Parsers(unittest.TestCase):
@@ -73,19 +67,14 @@ class Parsers(unittest.TestCase):
         self.assertEqual(r.fuels["95"]["addresses"], ["Kārļa Ulmaņa gatve 67", "Zemnieku iela 58"])
         self.assertEqual(r.fuels["LPG"]["addresses"], ["Andreja Saharova iela 10"])
 
-    def test_leta(self):
-        today = date(2026, 10, 27)
-        r = parse_leta(LETA, "astarte", today)
+    def test_cenometrs(self):
+        r = parse_cenometrs(CENO)
         self.assertEqual(set(r.fuels), {"95", "D"})
-        self.assertEqual(r.fuels["95"]["kind"], "user")
-        self.assertEqual(r.fuels["D"]["price"], 2.105)
+        self.assertEqual(r.fuels["95"]["price"], 1.824)
+        self.assertEqual(r.fuels["95"]["kind"], "min")
         self.assertEqual(r.source_date, "2026-10-27")
-        n = parse_leta(LETA, "neste", today)
-        self.assertEqual(n.fuels["95"]["kind"], "uniform")
-        self.assertEqual(n.fuels["98"]["kind"], "min")
-        self.assertNotIn("D", n.fuels)
-        self.assertFalse(parse_leta(LETA, "kool", today).ok)
-        self.assertFalse(parse_leta("nothing", "neste", today).ok)
+        self.assertFalse(parse_cenometrs("nothing").ok)
+        self.assertFalse(parse_cenometrs(CENO, "Other").ok)
 
     def test_empty(self):
         self.assertFalse(parse_circlek("nothing here").ok)

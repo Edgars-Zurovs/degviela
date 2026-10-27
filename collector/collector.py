@@ -6,7 +6,6 @@ import json
 import os
 import sys
 from datetime import datetime, timezone
-from functools import partial
 from pathlib import Path
 from urllib import robotparser
 from urllib.parse import urlsplit
@@ -37,17 +36,18 @@ SOURCES = {
     },
 }
 
-# Сети без своей страницы цен: берём из таблицы сетей LetaDegviela.lv (одна загрузка на всех).
-LETA_URL = "https://letadegviela.lv/"
-for _key, _name in [("neste", "Neste"), ("kool", "KOOL"), ("astarte", "Astarte"),
-                    ("straujupite", "Straujupīte")]:
-    SOURCES[_key] = {
-        "name": _name, "url": LETA_URL, "via": "LetaDegviela.lv",
-        "parser": partial(parsers.parse_leta, brand=_key),
-        "regions": None,  # цена сети действует для всех её станций
-    }
+# У Straujupīte нет своей страницы цен: берём минимум сети из снимка на Cenometrs.lv.
+SOURCES["straujupite"] = {
+    "name": "Straujupīte", "url": "https://www.cenometrs.lv/", "via": "Cenometrs.lv",
+    "parser": parsers.parse_cenometrs,
+    "regions": None,  # минимум сети показываем на всех её станциях
+}
 
-UNAVAILABLE: dict = {}
+UNAVAILABLE = {
+    "neste": ("Neste", "сеть больше не публикует цены, а агрегаторы закрыты для автоматического чтения"),
+    "kool": ("KOOL", "нет страницы цен, доступной для автоматического чтения"),
+    "astarte": ("Astarte", "нет страницы цен, доступной для автоматического чтения"),
+}
 
 FUELS = ["95", "98", "D", "DP", "LPG", "CNG", "XTL"]
 

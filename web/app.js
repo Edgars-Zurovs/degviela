@@ -42,7 +42,7 @@ function effPrice(st, o, settings) {
   return o.price - disc;
 }
 
-const certainty = (o) => (o.kind === "user" ? 2 : o.kind === "min" ? 1 : 0);
+const certainty = (o) => (o.kind === "min" ? 1 : 0);
 
 /* Список предложений для вида топлива -> группы (одинаковые «минимум по сети» схлопываются). */
 function collect(stations, fuel, settings, { city = null, pos = null, radius = null } = {}) {
@@ -50,7 +50,7 @@ function collect(stations, fuel, settings, { city = null, pos = null, radius = n
   for (const st of stations) {
     const o = st.offers && st.offers[fuel];
     if (!o) continue;
-    if (settings.onlyExact && (o.kind === "min" || o.kind === "user")) continue;
+    if (settings.onlyExact && o.kind === "min") continue;
     if (city && st.city !== city) continue;
     let dist = null;
     if (pos) dist = haversineKm(pos.lat, pos.lon, st.lat, st.lon);
@@ -189,7 +189,6 @@ function badges(it) {
   if (o.kind === "here") b.push(`<span class="badge ok">Цена по данным сети для этой станции</span>`);
   if (o.kind === "uniform") b.push(`<span class="badge ok">Единая цена сети${it.n > 1 ? ` · ${it.n} ст.` : ""}</span>`);
   if (o.kind === "min") b.push(`<span class="badge warn">Минимум по сети, здесь может быть выше${it.n > 1 ? ` · ${it.n} ст.` : ""}</span>`);
-  if (o.kind === "user") b.push(`<span class="badge warn">По данным водителей (LetaDegviela.lv), может быть устаревшей</span>`);
   const h = hoursSince(o.source_date);
   if (h != null && h > STALE_PRICE_HOURS) b.push(`<span class="badge bad">Цена устарела: от ${esc(fmtDate(o.source_date))}</span>`);
   return `<div class="badges">${b.join("")}</div>`;

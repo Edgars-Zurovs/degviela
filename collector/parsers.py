@@ -205,66 +205,40 @@ def parse_viada(html: str) -> ParseResult:
     return result
 
 
-# --- LetaDegviela.lv: сети без собственной страницы цен --------------------
+# --- Cenometrs.lv: Straujupīte (своей страницы цен у сети нет) --------------
 
-LETA_COLUMNS = {"95": "95", "98": "98", "D": "D", "D+": "DP", "LPG": "LPG", "CNG": "CNG"}
-
-
-def _leta_kind(label: str, is_user: bool) -> str | None:
-    label = label.lower()
-    if is_user or "lietotāj" in label:
-        return "user"
-    if "zemākā" in label:
-        return "min"
-    if label.startswith("tīkl"):
-        return "uniform"
-    return None  # «šīs DUS cena» и прочее нам не подходит
+CENOMETRS_TYPES = {"95": "95", "98": "98", "diesel": "D", "pro": "DP", "gas": "LPG"}
 
 
-def parse_leta(html: str, brand: str, today: date | None = None) -> ParseResult:
-    """Строка сети из таблицы «Tīklu cenas» -> цены с типом: uniform / min / user.
+def parse_cenometrs(html: str, source: str = "Straujupite") -> ParseResult:
+    """Берёт из снимка цен на странице (window.__INITIAL_PRICES__) строки одной сети.
 
-    user — цена, введённая водителями; она может быть устаревшей.
+    Это минимальные цены сети, поэтому на остальных её станциях цена может быть выше.
     """
-    from bs4 import BeautifulSoup
+    import json
 
-    today = today or date.today()
-    soup = BeautifulSoup(html, "lxml")
     result = ParseResult()
-    table = soup.find("table", class_="nt")
-    if table is None:
+    m = re.search(r"__INITIAL_PRICES__\s*=\s*", html)
+    if not m:
         return result
-    columns = [LETA_COLUMNS.get(th.get_text(strip=True)) for th in table.find("thead").find_all("th")]
-    link = table.find("a", href=f"#b-{brand}")
-    row = link.find_parent("tr") if link else None
-    if row is None:
+    try:
+        rows, _ = json.JSONDecoder().raw_decode(html[m.end():])
+    except ValueError:
         return result
-
     newest = None
-    for idx, td in enumerate(row.find_all("td"), start=1):
-        fuel = columns[idx] if idx < len(columns) else None
-        b = td.find("b")
-        pc = td.find("span", class_="pc")
-        if fuel is None or b is None or pc is None:
+    for row in rows if isinstance(rows, list) else []:
+        key = CENOMETRS_TYPES.get(row.get("type"))
+        if row.get("source") != source or key is None or key in result.fuels:
             continue
-        pm = re.search(r"(\d[.,]\d{2,3})", b.get_text())
-        price = _to_price(pm.group(1)) if pm else None
-        label = pc.find(string=True, recursive=False) or ""
-        kind = _leta_kind(label, "pc-user" in (pc.get("class") or []))
-        if price is None or kind is None:
-            result.warnings.append(f"пропущено: {brand} {fuel} ({label.strip()})")
+        price = _to_price(str(row.get("price", "")))
+        if price is None:
+            result.warnings.append(f"цена вне допустимого диапазона: {row.get('type')}")
             continue
-        changed = re.search(r"mainīta\s+(\d{1,2})\.(\d{1,2})\.", pc.get_text(" ", strip=True))
-        if changed:
-            try:
-                d = date(today.year, int(changed.group(2)), int(changed.group(1)))
-                if d > today:
-                    d = d.replace(year=today.year - 1)
-                newest = max(newest, d) if newest else d
-            except ValueError:
-                pass
-        result.fuels[fuel] = {"price": price, "kind": kind, "uniform": kind == "uniform", "addresses": []}
-    result.source_date = newest.isoformat() if newest else None
-    if result.fuels and result.source_date is None:
-        result.warnings.append("не найдена дата изменения цены")
+        result.fuels[key] = {"price": price, "kind": "min", "uniform": False, "addresses": []}
+        stamp = str(row.get("timestamp", ""))[:10]
+        if re.fullmatch(r"\d{4}-\d{2}-\d{2}", stamp):
+            newest = max(newest, stamp) if newest else stamp
+    result.source_date = newest
+    if result.fuels and newest is None:
+        result.warnings.append("не найдена дата снимка")
     return result
