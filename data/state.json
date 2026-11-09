@@ -3,8 +3,8 @@
   "circlek": {
    "status": "ok",
    "error": null,
-   "last_attempt": "2026-11-09T00:55:15+00:00",
-   "fetched_at": "2026-11-09T00:55:15+00:00",
+   "last_attempt": "2026-11-09T07:58:42+00:00",
+   "fetched_at": "2026-11-09T07:58:42+00:00",
    "source_date": "2026-11-06",
    "warnings": [],
    "fuels": {
@@ -69,8 +69,8 @@
   "virsi": {
    "status": "ok",
    "error": null,
-   "last_attempt": "2026-11-09T00:55:15+00:00",
-   "fetched_at": "2026-11-09T00:55:15+00:00",
+   "last_attempt": "2026-11-09T07:58:42+00:00",
+   "fetched_at": "2026-11-09T07:58:42+00:00",
    "source_date": "2026-11-04",
    "warnings": [],
    "fuels": {
@@ -105,48 +105,42 @@
   "viada": {
    "status": "ok",
    "error": null,
-   "last_attempt": "2026-11-09T00:55:15+00:00",
-   "fetched_at": "2026-11-09T00:55:15+00:00",
-   "source_date": "2026-11-07",
+   "last_attempt": "2026-11-09T07:58:42+00:00",
+   "fetched_at": "2026-11-09T07:58:42+00:00",
+   "source_date": "2026-11-09",
    "warnings": [],
    "fuels": {
     "95": {
-     "price": 1.787,
+     "price": 1.737,
      "uniform": false,
      "addresses": [
       "Kārļa Ulmaņa gatve 67",
       "Salaspils iela 4a",
       "Valdeķu iela 34",
       "Vecā Biķernieku iela 1",
-      "Andreja Saharova iela 10",
       "Valgales iela 1",
       "Zemnieku iela 58"
      ]
     },
     "98": {
-     "price": 1.892,
+     "price": 1.842,
      "uniform": false,
      "addresses": [
       "Kārļa Ulmaņa gatve 67",
       "Salaspils iela 4a",
       "Valdeķu iela 34",
       "Vecā Biķernieku iela 1",
-      "Andreja Saharova iela 10",
       "Valgales iela 1",
       "Zemnieku iela 58"
      ]
     },
     "D": {
-     "price": 1.987,
+     "price": 1.957,
      "uniform": false,
      "addresses": [
       "Kārļa Ulmaņa gatve 67",
-      "Salaspils iela 4a",
       "Valdeķu iela 34",
-      "Vecā Biķernieku iela 1",
-      "Andreja Saharova iela 10",
-      "Valgales iela 1",
-      "Zemnieku iela 58"
+      "Andreja Saharova iela 10"
      ]
     },
     "LPG": {
@@ -177,9 +171,9 @@
   "straujupite": {
    "status": "ok",
    "error": null,
-   "last_attempt": "2026-11-09T00:55:15+00:00",
-   "fetched_at": "2026-11-09T00:55:15+00:00",
-   "source_date": "2026-11-08",
+   "last_attempt": "2026-11-09T07:58:42+00:00",
+   "fetched_at": "2026-11-09T07:58:42+00:00",
+   "source_date": "2026-11-09",
    "warnings": [],
    "fuels": {
     "95": {
@@ -324,33 +318,33 @@
    "first_seen": "2026-10-27T10:42:34+00:00"
   },
   "viada|95|here:w127168352": {
-   "price": 1.787,
-   "changed_at": "2026-11-04T15:26:09+00:00",
+   "price": 1.737,
+   "changed_at": "2026-11-09T07:58:42+00:00",
    "first_seen": "2026-10-27T14:48:53+00:00"
   },
   "viada|95|here:n251468948": {
-   "price": 1.787,
-   "changed_at": "2026-11-04T15:26:09+00:00",
+   "price": 1.737,
+   "changed_at": "2026-11-09T07:58:42+00:00",
    "first_seen": "2026-10-27T14:48:53+00:00"
   },
   "viada|95|here:w145485483": {
-   "price": 1.787,
-   "changed_at": "2026-11-04T15:26:09+00:00",
+   "price": 1.737,
+   "changed_at": "2026-11-09T07:58:42+00:00",
    "first_seen": "2026-10-27T14:48:53+00:00"
   },
   "viada|95|here:w177032995": {
-   "price": 1.787,
-   "changed_at": "2026-11-04T15:26:09+00:00",
+   "price": 1.737,
+   "changed_at": "2026-11-09T07:58:42+00:00",
    "first_seen": "2026-10-27T14:48:53+00:00"
   },
   "viada|95|here:n9890487700": {
-   "price": 1.787,
-   "changed_at": "2026-11-04T15:26:09+00:00",
+   "price": 1.737,
+   "changed_at": "2026-11-09T07:58:42+00:00",
    "first_seen": "2026-10-27T14:48:53+00:00"
   },
   "viada|95|here:n9114837794": {
-   "price": 1.787,
-   "changed_at": "2026-11-04T15:26:09+00:00",
+   "price": 1.737,
+   "changed_at": "2026-11-09T07:58:42+00:00",
    "first_seen": "2026-10-27T14:48:53+00:00"
   },
   "viada|95|here:w220965927": {
@@ -359,38 +353,38 @@
    "first_seen": "2026-10-27T14:48:53+00:00"
   },
   "viada|95|region": {
-   "price": 1.787,
-   "changed_at": "2026-11-04T15:26:09+00:00",
+   "price": 1.737,
+   "changed_at": "2026-11-09T07:58:42+00:00",
    "first_seen": "2026-10-27T14:48:53+00:00"
   },
   "viada|98|here:w127168352": {
-   "price": 1.892,
-   "changed_at": "2026-11-04T15:26:09+00:00",
+   "price": 1.842,
+   "changed_at": "2026-11-09T07:58:42+00:00",
    "first_seen": "2026-10-27T14:48:53+00:00"
   },
   "viada|98|here:n251468948": {
-   "price": 1.892,
-   "changed_at": "2026-11-04T15:26:09+00:00",
+   "price": 1.842,
+   "changed_at": "2026-11-09T07:58:42+00:00",
    "first_seen": "2026-10-27T14:48:53+00:00"
   },
   "viada|98|here:w145485483": {
-   "price": 1.892,
-   "changed_at": "2026-11-04T15:26:09+00:00",
+   "price": 1.842,
+   "changed_at": "2026-11-09T07:58:42+00:00",
    "first_seen": "2026-10-27T14:48:53+00:00"
   },
   "viada|98|here:w177032995": {
-   "price": 1.892,
-   "changed_at": "2026-11-04T15:26:09+00:00",
+   "price": 1.842,
+   "changed_at": "2026-11-09T07:58:42+00:00",
    "first_seen": "2026-10-27T14:48:53+00:00"
   },
   "viada|98|here:n9890487700": {
-   "price": 1.892,
-   "changed_at": "2026-11-04T15:26:09+00:00",
+   "price": 1.842,
+   "changed_at": "2026-11-09T07:58:42+00:00",
    "first_seen": "2026-10-27T14:48:53+00:00"
   },
   "viada|98|here:n9114837794": {
-   "price": 1.892,
-   "changed_at": "2026-11-04T15:26:09+00:00",
+   "price": 1.842,
+   "changed_at": "2026-11-09T07:58:42+00:00",
    "first_seen": "2026-10-27T14:48:53+00:00"
   },
   "viada|98|here:w220965927": {
@@ -399,8 +393,8 @@
    "first_seen": "2026-10-27T14:48:53+00:00"
   },
   "viada|98|region": {
-   "price": 1.892,
-   "changed_at": "2026-11-04T15:26:09+00:00",
+   "price": 1.842,
+   "changed_at": "2026-11-09T07:58:42+00:00",
    "first_seen": "2026-10-27T14:48:53+00:00"
   },
   "viada|D|here:w127168352": {
@@ -409,8 +403,8 @@
    "first_seen": "2026-10-27T14:48:53+00:00"
   },
   "viada|D|here:n251468948": {
-   "price": 1.987,
-   "changed_at": "2026-10-29T09:58:45+00:00",
+   "price": 1.957,
+   "changed_at": "2026-11-09T07:58:42+00:00",
    "first_seen": "2026-10-27T14:48:53+00:00"
   },
   "viada|D|here:w145485483": {
@@ -424,8 +418,8 @@
    "first_seen": "2026-10-27T14:48:53+00:00"
   },
   "viada|D|here:n9890487700": {
-   "price": 1.987,
-   "changed_at": "2026-10-29T09:58:45+00:00",
+   "price": 1.957,
+   "changed_at": "2026-11-09T07:58:42+00:00",
    "first_seen": "2026-10-27T14:48:53+00:00"
   },
   "viada|D|here:n9114837794": {
@@ -434,13 +428,13 @@
    "first_seen": "2026-10-27T14:48:53+00:00"
   },
   "viada|D|here:w220965927": {
-   "price": 1.987,
-   "changed_at": "2026-10-29T09:58:45+00:00",
+   "price": 1.957,
+   "changed_at": "2026-11-09T07:58:42+00:00",
    "first_seen": "2026-10-27T14:48:53+00:00"
   },
   "viada|D|region": {
-   "price": 1.987,
-   "changed_at": "2026-10-29T09:58:45+00:00",
+   "price": 1.957,
+   "changed_at": "2026-11-09T07:58:42+00:00",
    "first_seen": "2026-10-27T14:48:53+00:00"
   },
   "viada|LPG|here:n9890487700": {
@@ -514,18 +508,18 @@
    "first_seen": "2026-10-27T15:35:23+00:00"
   },
   "viada|95|ref": {
-   "price": 1.787,
-   "changed_at": "2026-11-04T15:26:09+00:00",
+   "price": 1.737,
+   "changed_at": "2026-11-09T07:58:42+00:00",
    "first_seen": "2026-10-27T15:35:23+00:00"
   },
   "viada|98|ref": {
-   "price": 1.892,
-   "changed_at": "2026-11-04T15:26:09+00:00",
+   "price": 1.842,
+   "changed_at": "2026-11-09T07:58:42+00:00",
    "first_seen": "2026-10-27T15:35:23+00:00"
   },
   "viada|D|ref": {
-   "price": 1.987,
-   "changed_at": "2026-10-29T09:58:45+00:00",
+   "price": 1.957,
+   "changed_at": "2026-11-09T07:58:42+00:00",
    "first_seen": "2026-10-27T15:35:23+00:00"
   },
   "viada|LPG|ref": {
