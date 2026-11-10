@@ -3,8 +3,8 @@
   "circlek": {
    "status": "ok",
    "error": null,
-   "last_attempt": "2026-11-09T18:48:37+00:00",
-   "fetched_at": "2026-11-09T18:48:37+00:00",
+   "last_attempt": "2026-11-10T02:08:49+00:00",
+   "fetched_at": "2026-11-10T02:08:49+00:00",
    "source_date": "2026-11-09",
    "warnings": [],
    "fuels": {
@@ -63,8 +63,8 @@
   "virsi": {
    "status": "ok",
    "error": null,
-   "last_attempt": "2026-11-09T18:48:37+00:00",
-   "fetched_at": "2026-11-09T18:48:37+00:00",
+   "last_attempt": "2026-11-10T02:08:49+00:00",
+   "fetched_at": "2026-11-10T02:08:49+00:00",
    "source_date": "2026-11-09",
    "warnings": [],
    "fuels": {
@@ -99,8 +99,8 @@
   "viada": {
    "status": "ok",
    "error": null,
-   "last_attempt": "2026-11-09T18:48:37+00:00",
-   "fetched_at": "2026-11-09T18:48:37+00:00",
+   "last_attempt": "2026-11-10T02:08:49+00:00",
+   "fetched_at": "2026-11-10T02:08:49+00:00",
    "source_date": "2026-11-09",
    "warnings": [],
    "fuels": {
@@ -165,19 +165,19 @@
   "straujupite": {
    "status": "ok",
    "error": null,
-   "last_attempt": "2026-11-09T18:48:37+00:00",
-   "fetched_at": "2026-11-09T18:48:37+00:00",
+   "last_attempt": "2026-11-10T02:08:49+00:00",
+   "fetched_at": "2026-11-10T02:08:49+00:00",
    "source_date": "2026-11-09",
    "warnings": [],
    "fuels": {
     "95": {
-     "price": 1.754,
+     "price": 1.734,
      "kind": "min",
      "uniform": false,
      "addresses": []
     },
     "D": {
-     "price": 1.974,
+     "price": 1.954,
      "kind": "min",
      "uniform": false,
      "addresses": []
@@ -447,13 +447,13 @@
    "first_seen": "2026-10-27T14:48:53+00:00"
   },
   "straujupite|95|all": {
-   "price": 1.754,
-   "changed_at": "2026-11-09T18:48:37+00:00",
+   "price": 1.734,
+   "changed_at": "2026-11-10T02:08:49+00:00",
    "first_seen": "2026-10-27T15:00:47+00:00"
   },
   "straujupite|D|all": {
-   "price": 1.974,
-   "changed_at": "2026-11-09T18:48:37+00:00",
+   "price": 1.954,
+   "changed_at": "2026-11-10T02:08:49+00:00",
    "first_seen": "2026-10-27T15:00:47+00:00"
   },
   "circlek|95|ref": {
