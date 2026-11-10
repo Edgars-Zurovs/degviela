@@ -3,8 +3,8 @@
   "circlek": {
    "status": "ok",
    "error": null,
-   "last_attempt": "2026-11-10T09:50:32+00:00",
-   "fetched_at": "2026-11-10T09:50:32+00:00",
+   "last_attempt": "2026-11-10T17:50:34+00:00",
+   "fetched_at": "2026-11-10T17:50:34+00:00",
    "source_date": "2026-11-10",
    "warnings": [],
    "fuels": {
@@ -63,8 +63,8 @@
   "virsi": {
    "status": "ok",
    "error": null,
-   "last_attempt": "2026-11-10T09:50:32+00:00",
-   "fetched_at": "2026-11-10T09:50:32+00:00",
+   "last_attempt": "2026-11-10T17:50:34+00:00",
+   "fetched_at": "2026-11-10T17:50:34+00:00",
    "source_date": "2026-11-09",
    "warnings": [],
    "fuels": {
@@ -99,8 +99,8 @@
   "viada": {
    "status": "ok",
    "error": null,
-   "last_attempt": "2026-11-10T09:50:32+00:00",
-   "fetched_at": "2026-11-10T09:50:32+00:00",
+   "last_attempt": "2026-11-10T17:50:34+00:00",
+   "fetched_at": "2026-11-10T17:50:34+00:00",
    "source_date": "2026-11-10",
    "warnings": [],
    "fuels": {
@@ -165,8 +165,8 @@
   "straujupite": {
    "status": "ok",
    "error": null,
-   "last_attempt": "2026-11-10T09:50:32+00:00",
-   "fetched_at": "2026-11-10T09:50:32+00:00",
+   "last_attempt": "2026-11-10T17:50:34+00:00",
+   "fetched_at": "2026-11-10T17:50:34+00:00",
    "source_date": "2026-11-10",
    "warnings": [],
    "fuels": {
