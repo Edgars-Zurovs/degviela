@@ -3,8 +3,8 @@
   "circlek": {
    "status": "ok",
    "error": null,
-   "last_attempt": "2026-11-11T06:20:52+00:00",
-   "fetched_at": "2026-11-11T06:20:52+00:00",
+   "last_attempt": "2026-11-11T15:12:25+00:00",
+   "fetched_at": "2026-11-11T15:12:25+00:00",
    "source_date": "2026-11-10",
    "warnings": [],
    "fuels": {
@@ -63,20 +63,20 @@
   "virsi": {
    "status": "ok",
    "error": null,
-   "last_attempt": "2026-11-11T06:20:52+00:00",
-   "fetched_at": "2026-11-11T06:20:52+00:00",
-   "source_date": "2026-11-09",
+   "last_attempt": "2026-11-11T15:12:25+00:00",
+   "fetched_at": "2026-11-11T15:12:25+00:00",
+   "source_date": "2026-11-11",
    "warnings": [],
    "fuels": {
     "D": {
-     "price": 2.037,
+     "price": 2.024,
      "uniform": false,
      "addresses": [
       "Brīvības gatve 297"
      ]
     },
     "95": {
-     "price": 1.834,
+     "price": 1.774,
      "uniform": false,
      "addresses": [
       "Brīvības gatve 297"
@@ -99,8 +99,8 @@
   "viada": {
    "status": "ok",
    "error": null,
-   "last_attempt": "2026-11-11T06:20:52+00:00",
-   "fetched_at": "2026-11-11T06:20:52+00:00",
+   "last_attempt": "2026-11-11T15:12:25+00:00",
+   "fetched_at": "2026-11-11T15:12:25+00:00",
    "source_date": "2026-11-11",
    "warnings": [],
    "fuels": {
@@ -134,11 +134,13 @@
      "addresses": [
       "Kārļa Ulmaņa gatve 67",
       "Valdeķu iela 34",
-      "Andreja Saharova iela 10"
+      "Andreja Saharova iela 10",
+      "Valgales iela 1",
+      "Salaspils iela 4a"
      ]
     },
     "LPG": {
-     "price": 0.999,
+     "price": 1.045,
      "uniform": false,
      "addresses": [
       "Andreja Saharova iela 10",
@@ -165,9 +167,9 @@
   "straujupite": {
    "status": "ok",
    "error": null,
-   "last_attempt": "2026-11-11T06:20:52+00:00",
-   "fetched_at": "2026-11-11T06:20:52+00:00",
-   "source_date": "2026-11-10",
+   "last_attempt": "2026-11-11T15:12:25+00:00",
+   "fetched_at": "2026-11-11T15:12:25+00:00",
+   "source_date": "2026-11-11",
    "warnings": [],
    "fuels": {
     "95": {
@@ -272,23 +274,23 @@
    "first_seen": "2026-10-27T10:42:34+00:00"
   },
   "virsi|D|here:w142028451": {
-   "price": 2.037,
-   "changed_at": "2026-11-10T09:50:32+00:00",
+   "price": 2.024,
+   "changed_at": "2026-11-11T15:12:25+00:00",
    "first_seen": "2026-10-27T10:42:34+00:00"
   },
   "virsi|D|region": {
-   "price": 2.037,
-   "changed_at": "2026-11-10T09:50:32+00:00",
+   "price": 2.024,
+   "changed_at": "2026-11-11T15:12:25+00:00",
    "first_seen": "2026-10-27T10:42:34+00:00"
   },
   "virsi|95|here:w142028451": {
-   "price": 1.834,
-   "changed_at": "2026-11-10T09:50:32+00:00",
+   "price": 1.774,
+   "changed_at": "2026-11-11T15:12:25+00:00",
    "first_seen": "2026-10-27T10:42:34+00:00"
   },
   "virsi|95|region": {
-   "price": 1.834,
-   "changed_at": "2026-11-10T09:50:32+00:00",
+   "price": 1.774,
+   "changed_at": "2026-11-11T15:12:25+00:00",
    "first_seen": "2026-10-27T10:42:34+00:00"
   },
   "virsi|98|here:w142028451": {
@@ -402,8 +404,8 @@
    "first_seen": "2026-10-27T14:48:53+00:00"
   },
   "viada|D|here:w145485483": {
-   "price": 1.987,
-   "changed_at": "2026-10-29T09:58:45+00:00",
+   "price": 1.957,
+   "changed_at": "2026-11-11T15:12:25+00:00",
    "first_seen": "2026-10-27T14:48:53+00:00"
   },
   "viada|D|here:w177032995": {
@@ -417,8 +419,8 @@
    "first_seen": "2026-10-27T14:48:53+00:00"
   },
   "viada|D|here:n9114837794": {
-   "price": 1.987,
-   "changed_at": "2026-10-29T09:58:45+00:00",
+   "price": 1.957,
+   "changed_at": "2026-11-11T15:12:25+00:00",
    "first_seen": "2026-10-27T14:48:53+00:00"
   },
   "viada|D|here:w220965927": {
@@ -432,18 +434,18 @@
    "first_seen": "2026-10-27T14:48:53+00:00"
   },
   "viada|LPG|here:n9890487700": {
-   "price": 0.999,
-   "changed_at": "2026-11-09T18:48:37+00:00",
+   "price": 1.045,
+   "changed_at": "2026-11-11T15:12:25+00:00",
    "first_seen": "2026-10-27T14:48:53+00:00"
   },
   "viada|LPG|here:w220965927": {
-   "price": 0.999,
-   "changed_at": "2026-11-09T18:48:37+00:00",
+   "price": 1.045,
+   "changed_at": "2026-11-11T15:12:25+00:00",
    "first_seen": "2026-10-27T14:48:53+00:00"
   },
   "viada|LPG|region": {
-   "price": 0.999,
-   "changed_at": "2026-11-09T18:48:37+00:00",
+   "price": 1.045,
+   "changed_at": "2026-11-11T15:12:25+00:00",
    "first_seen": "2026-10-27T14:48:53+00:00"
   },
   "straujupite|95|all": {
@@ -487,13 +489,13 @@
    "first_seen": "2026-10-27T15:35:23+00:00"
   },
   "virsi|D|ref": {
-   "price": 2.037,
-   "changed_at": "2026-11-10T09:50:32+00:00",
+   "price": 2.024,
+   "changed_at": "2026-11-11T15:12:25+00:00",
    "first_seen": "2026-10-27T15:35:23+00:00"
   },
   "virsi|95|ref": {
-   "price": 1.834,
-   "changed_at": "2026-11-10T09:50:32+00:00",
+   "price": 1.774,
+   "changed_at": "2026-11-11T15:12:25+00:00",
    "first_seen": "2026-10-27T15:35:23+00:00"
   },
   "virsi|98|ref": {
@@ -517,8 +519,8 @@
    "first_seen": "2026-10-27T15:35:23+00:00"
   },
   "viada|LPG|ref": {
-   "price": 0.999,
-   "changed_at": "2026-11-09T18:48:37+00:00",
+   "price": 1.045,
+   "changed_at": "2026-11-11T15:12:25+00:00",
    "first_seen": "2026-10-27T15:35:23+00:00"
   },
   "circlek|95|here:w1356980855": {
