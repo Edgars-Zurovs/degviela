@@ -3,23 +3,25 @@
   "circlek": {
    "status": "ok",
    "error": null,
-   "last_attempt": "2026-11-13T07:57:54+00:00",
-   "fetched_at": "2026-11-13T07:57:54+00:00",
+   "last_attempt": "2026-11-13T16:24:25+00:00",
+   "fetched_at": "2026-11-13T16:24:25+00:00",
    "source_date": "2026-11-13",
    "warnings": [],
    "fuels": {
     "95": {
-     "price": 1.72,
+     "price": 1.712,
      "uniform": false,
      "addresses": [
-      "Mūkusalas iela 75"
+      "Mūkusalas iela 75",
+      "Ziepniekkalna iela 9"
      ]
     },
     "98": {
-     "price": 1.89,
+     "price": 1.782,
      "uniform": false,
      "addresses": [
-      "Mūkusalas iela 75"
+      "Mūkusalas iela 75",
+      "Ziepniekkalna iela 9"
      ]
     },
     "D": {
@@ -59,8 +61,8 @@
   "virsi": {
    "status": "ok",
    "error": null,
-   "last_attempt": "2026-11-13T07:57:54+00:00",
-   "fetched_at": "2026-11-13T07:57:54+00:00",
+   "last_attempt": "2026-11-13T16:24:25+00:00",
+   "fetched_at": "2026-11-13T16:24:25+00:00",
    "source_date": "2026-11-12",
    "warnings": [],
    "fuels": {
@@ -95,7 +97,7 @@
   "viada": {
    "status": "error",
    "error": "цены на странице не найдены (возможно, сайт изменил вёрстку)",
-   "last_attempt": "2026-11-13T07:57:54+00:00",
+   "last_attempt": "2026-11-13T16:24:25+00:00",
    "fetched_at": "2026-11-12T02:59:09+00:00",
    "source_date": "2026-11-11",
    "warnings": [],
@@ -163,9 +165,9 @@
   "straujupite": {
    "status": "ok",
    "error": null,
-   "last_attempt": "2026-11-13T07:57:54+00:00",
-   "fetched_at": "2026-11-13T07:57:54+00:00",
-   "source_date": "2026-11-12",
+   "last_attempt": "2026-11-13T16:24:25+00:00",
+   "fetched_at": "2026-11-13T16:24:25+00:00",
+   "source_date": "2026-11-13",
    "warnings": [],
    "fuels": {
     "95": {
@@ -195,8 +197,8 @@
    "first_seen": "2026-10-27T10:42:34+00:00"
   },
   "circlek|95|region": {
-   "price": 1.72,
-   "changed_at": "2026-11-13T07:57:54+00:00",
+   "price": 1.712,
+   "changed_at": "2026-11-13T16:24:25+00:00",
    "first_seen": "2026-10-27T10:42:34+00:00"
   },
   "circlek|98|here:n9178972939": {
@@ -210,8 +212,8 @@
    "first_seen": "2026-10-27T10:42:34+00:00"
   },
   "circlek|98|region": {
-   "price": 1.89,
-   "changed_at": "2026-11-13T07:57:54+00:00",
+   "price": 1.782,
+   "changed_at": "2026-11-13T16:24:25+00:00",
    "first_seen": "2026-10-27T10:42:34+00:00"
   },
   "circlek|D|here:w1351651222": {
@@ -455,13 +457,13 @@
    "first_seen": "2026-10-27T15:00:47+00:00"
   },
   "circlek|95|ref": {
-   "price": 1.72,
-   "changed_at": "2026-11-13T07:57:54+00:00",
+   "price": 1.712,
+   "changed_at": "2026-11-13T16:24:25+00:00",
    "first_seen": "2026-10-27T15:35:23+00:00"
   },
   "circlek|98|ref": {
-   "price": 1.89,
-   "changed_at": "2026-11-13T07:57:54+00:00",
+   "price": 1.782,
+   "changed_at": "2026-11-13T16:24:25+00:00",
    "first_seen": "2026-10-27T15:35:23+00:00"
   },
   "circlek|D|ref": {
@@ -595,13 +597,13 @@
    "first_seen": "2026-10-28T12:55:30+00:00"
   },
   "circlek|95|here:w1351651222": {
-   "price": 1.72,
-   "changed_at": "2026-11-13T07:57:54+00:00",
+   "price": 1.712,
+   "changed_at": "2026-11-13T16:24:25+00:00",
    "first_seen": "2026-10-29T09:58:45+00:00"
   },
   "circlek|98|here:w1351651222": {
-   "price": 1.89,
-   "changed_at": "2026-11-13T07:57:54+00:00",
+   "price": 1.782,
+   "changed_at": "2026-11-13T16:24:25+00:00",
    "first_seen": "2026-10-29T09:58:45+00:00"
   },
   "circlek|D|here:w208829778": {
