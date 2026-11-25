@@ -3,8 +3,8 @@
   "circlek": {
    "status": "ok",
    "error": null,
-   "last_attempt": "2026-11-25T12:55:37+00:00",
-   "fetched_at": "2026-11-25T12:55:37+00:00",
+   "last_attempt": "2026-11-25T22:32:41+00:00",
+   "fetched_at": "2026-11-25T22:32:41+00:00",
    "source_date": "2026-11-25",
    "warnings": [],
    "fuels": {
@@ -70,8 +70,8 @@
   "virsi": {
    "status": "ok",
    "error": null,
-   "last_attempt": "2026-11-25T12:55:37+00:00",
-   "fetched_at": "2026-11-25T12:55:37+00:00",
+   "last_attempt": "2026-11-25T22:32:41+00:00",
+   "fetched_at": "2026-11-25T22:32:41+00:00",
    "source_date": "2026-11-24",
    "warnings": [],
    "fuels": {
@@ -106,7 +106,7 @@
   "viada": {
    "status": "error",
    "error": "цены на странице не найдены (возможно, сайт изменил вёрстку)",
-   "last_attempt": "2026-11-25T12:55:37+00:00",
+   "last_attempt": "2026-11-25T22:32:41+00:00",
    "fetched_at": "2026-11-12T02:59:09+00:00",
    "source_date": "2026-11-11",
    "warnings": [],
@@ -174,8 +174,8 @@
   "straujupite": {
    "status": "ok",
    "error": null,
-   "last_attempt": "2026-11-25T12:55:37+00:00",
-   "fetched_at": "2026-11-25T12:55:37+00:00",
+   "last_attempt": "2026-11-25T22:32:41+00:00",
+   "fetched_at": "2026-11-25T22:32:41+00:00",
    "source_date": "2026-11-25",
    "warnings": [],
    "fuels": {
